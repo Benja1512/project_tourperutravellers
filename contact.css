@@ -1,0 +1,122 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Century;
+
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    height: 130vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+
+
+
+
+
+}
+
+@keyframes animate {
+    0% {
+        background-image: url(./fotos/vicuña.png);
+     
+    }20% {
+        background-image: url(./fotos/tshirt-Peru.png);
+    }40% {
+        background-image: url(./fotos/PeruvianChullo.png);
+    }60% {
+        background-image: url(./fotos/sacsayhuaman.png);
+    }80% {
+        background-image: url(./fotos/surfingteamperu.png);
+    }100% {
+        background-image: url(./fotos/parqueDelasAguas.png);
+  
+}
+
+}
+
+.container2 {
+
+    font-family: Century;
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+
+/*---SOCIAL MEDIA --*/
+
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --youtube: #55acee;
+    --linkedin: #0077b5;
+}
+.social_media{
+    display: flex;
+    height: 100h;
+    align-items: end;
+    justify-content: end;
+}
+
+.social_media ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+}
+
+.social_media ul li a{
+    display: block;
+    padding: 0 10%;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.social_media ul:hover a {
+    filter: blur(2px);
+}
+
+.social_media ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .5);
+    filter: none;
+}
+.social_media ul li .facebook.hover{
+    background: var(--facebook);
+}
+.social_media ul li .instagram.hover{
+    background: var(--instagram);
+}
+
+.social_media ul li .youtube.hover{
+    background: var(--youtube);
+}
+
+.social_media ul li .linkedin.hover{
+    background: var(--linkedin);
+}
+
