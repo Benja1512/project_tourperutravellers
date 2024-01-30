@@ -6,8 +6,8 @@ body {
 }
 
 img {
-    width: 1000px;
-    height: 550px;
+    width: 900px;
+    height: 490px;
 }
 
 
@@ -44,29 +44,49 @@ img {
 }
 
 
+/* paragraphs introduction */
+
+.para1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
 /* Card content animation */
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
 
 
+.col1 {
+
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-around;
+    margin-left: 3%;
+}
+
 .card-5 {
-
-display: flex;
-
+    margin-left: 5%;
 }
 
 .card-animation{
   --primary-color: #00cec9;
   --bg-color: #dfe6e9;
   --text-color: white;
+  display: flex;
 
 }
 
 .card-animation{
   background: var(--bg-color);
-  height: 50vh;
+  height: 70vh;
   width: 90vh;
-  display: flexbox; 
+  display: flex;
 
   justify-content: center;
   align-items: center;
