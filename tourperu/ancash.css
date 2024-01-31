@@ -43,9 +43,33 @@ header{
 
 
 
+/*---------- TEXT  OF INTRODUCTION ROUTE -------------------*/
+
+.text {
+    
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 8%;
+}
+
+.title {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.para1 {
+
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 
-/* CARDS ANIMATIONS*/
+
+
+/*------------------- CARDS ANIMATIONS ----------------------------------------*/
 
 
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
@@ -63,7 +87,7 @@ header{
         z-index: 1;
         max-width: 500px;
         height: 430px;
-        margin: 30px 10px 30px;
+        margin: 40px 40px 30px 70px;
         box-shadow: 0 6px 30px 0 rgba(0, 0, 0, .12);
         overflow: hidden;
         width: 23.333%;
@@ -120,7 +144,7 @@ header{
 
     .card-no {
         font-size: 36px;
-        color: #ffc107;
+        color: #ff2323;
         padding: 0;
         margin: 10px 0;
     }
@@ -172,7 +196,7 @@ header{
         left: 0;
         right: 0;
         bottom: 0;
-        background: #fdd744;
+        background: #ff1111;
         opacity: 0;
         transition: opacity .4s;
     }
