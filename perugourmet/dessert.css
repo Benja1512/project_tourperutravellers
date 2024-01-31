@@ -133,4 +133,14 @@ img {
 }
 
 
+/* INTRODUCCION  DESSERTS */
+
+.introduction {
+  margin: 5%;
+  border-style: solid;
+  border-color: red;
+  border-radius: 1%;
+  padding-right: 5%;
+}
+
 

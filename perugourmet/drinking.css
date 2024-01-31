@@ -1,0 +1,146 @@
+body {
+    
+    background-color: #E6E6FA;
+    height: 200vh;
+
+}
+
+img {
+    width: 900px;
+    height: 490px;
+}
+
+
+.card1  {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 80px;
+    border-style: groove;
+
+
+}
+.title-1 {
+
+    margin-bottom: 80px;
+    margin-left: 0px;
+    margin-right: 0;
+    margin-top: 80px;
+    text-align: center;
+}
+.titulo {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    
+}
+.titulo2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    
+}
+
+.card-text {
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+/* paragraphs introduction */
+
+.para1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+/* Card content animation */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
+
+.col1 {
+
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-around;
+    margin-left: 3%;
+}
+
+.card-5 {
+    margin-left: 5%;
+}
+
+.card-animation{
+  --primary-color: #00cec9;
+  --bg-color: #dfe6e9;
+  --text-color: white;
+  display: flex;
+
+}
+
+.card-animation{
+  background: var(--bg-color);
+  height: 70vh;
+  width: 90vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito Sans', sans-serif;
+
+  
+}
+
+.card-animation{
+  background: white;
+  cursor: pointer;
+  border-radius: 15px;
+  position: relative;
+  padding: 25px 30px;
+  color: var(--primary-color);
+}
+
+.card-animation::after{
+  content: '';
+  background: var(--primary-color);
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  clip-path: circle(10% at 0% 0%);           transition: all .3s ease-in;
+}
+
+.content-card{
+  position: relative;
+  z-index: 1;
+  transition: all .3s ease-in;
+}
+
+.card-animation:hover::after{
+  clip-path: circle(100%);
+}
+
+.card-animation:hover .content-card{
+      color: var(--text-color);
+}
+
+
+/* INTRODUCCION  DESSERTS */
+
+.introduction {
+  margin: 5%;
+  border-style: solid;
+  border-color: red;
+  border-radius: 1%;
+  padding-right: 5%;
+}
+
+
