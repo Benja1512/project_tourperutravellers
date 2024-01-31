@@ -1,25 +1,16 @@
 
 /*  ANIMATION AT THE TOP */
 
-
-
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Century;
-
-}
-
 header{
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    height: 80vh;
-    background-size: cover;
+    height: 68vh;
+    background-size: cover; 
     background-position: center;
     min-height: 100px;
 
     animation-name: animate;
     animation-direction: alternate-reverse;
-    animation-duration: 30s;
+    animation-duration: 15s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
@@ -33,34 +24,23 @@ header{
 
 @keyframes animate {
     0% {
-        background-image: url(../tourperu/fotoancash/fotoancash2.png);
-     
+        background-image: url(../tourperu/fotoancash/mountainsancash.png);     
     }20% {
-        background-image: url(../tourperu/fotoancash/fotoancash3.png);
+        background-image: url(../tourperu/fotoancash/fotoancash2.png);
     }40% {
         background-image: url(../tourperu/fotoancash/fotoancash4.png);
     }60% {
         background-image: url(../tourperu/fotoancash/fotoancash5.png);
     }80% {
-        background-image: url(../tourperu/fotoancash/Sin\ título.png);
-                
+        background-image: url(../tourperu/fotoancash/mountainsancash.png);            
+    }100% {
+        background-image: url(../tourperu/fotoancash/fotoancash4.png);            
     }
 
+
 }
 
-.container2 {
 
-    font-family: Century;
-    position: absolute;
-    top: 110%;
-    left: 5%;
-    font-size: 25px;
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.5 ease;
-}
 
 
 
