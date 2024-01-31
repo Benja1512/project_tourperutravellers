@@ -44,6 +44,7 @@ img {
 }
 
 
+
 /* paragraphs introduction */
 
 .para1 {
@@ -130,5 +131,6 @@ img {
 .card-animation:hover .content-card{
       color: var(--text-color);
 }
+
 
 
