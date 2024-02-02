@@ -24,17 +24,17 @@ header{
 
 @keyframes animate {
     0% {
-        background-image: url(../tourperu/fotoancash/mountainsancash.png);     
+        background-image: url(./chiclayofotos/chiclayo1.png);     
     }20% {
-        background-image: url(../tourperu/fotoancash/fotoancash2.png);
+        background-image: url(./chiclayofotos/chiclayo2.png);
     }40% {
-        background-image: url(../tourperu/fotoancash/fotoancash4.png);
+        background-image: url(./chiclayofotos/chiclayo3.png);
     }60% {
-        background-image: url(../tourperu/fotoancash/fotoancash5.png);
+        background-image: url(./chiclayofotos/chiclayp4.png);
     }80% {
-        background-image: url(../tourperu/fotoancash/mountainsancash.png);            
+        background-image: url(./chiclayofotos/chiclayo5.png);            
     }100% {
-        background-image: url(../tourperu/fotoancash/fotoancash4.png);            
+        background-image: url(./chiclayofotos/chiclayo6.png);            
     }
 
 
