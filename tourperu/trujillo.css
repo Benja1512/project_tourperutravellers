@@ -24,17 +24,17 @@ header{
 
 @keyframes animate {
     0% {
-        background-image: url(../tourperu/fotoancash/mountainsancash.png);     
+        background-image: url(./trujillofotos/foto1.png);     
     }20% {
-        background-image: url(../tourperu/fotoancash/fotoancash2.png);
+        background-image: url(./trujillofotos/foto2.png);
     }40% {
-        background-image: url(../tourperu/fotoancash/fotoancash4.png);
+        background-image: url(./trujillofotos/foto3.png);
     }60% {
-        background-image: url(../tourperu/fotoancash/fotoancash5.png);
+        background-image: url(./trujillofotos/foto4.png);
     }80% {
-        background-image: url(../tourperu/fotoancash/mountainsancash.png);            
+        background-image: url(./trujillofotos/foto5.png);            
     }100% {
-        background-image: url(../tourperu/fotoancash/fotoancash4.png);            
+        background-image: url(./trujillofotos/foto1.png);            
     }
 
 

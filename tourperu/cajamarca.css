@@ -24,17 +24,17 @@ header{
 
 @keyframes animate {
     0% {
-        background-image: url(../tourperu/fotoancash/mountainsancash.png);     
+        background-image: url(./cajamarcafotos/cajamarca1.png);     
     }20% {
-        background-image: url(../tourperu/fotoancash/fotoancash2.png);
+        background-image: url(./cajamarcafotos/cajamarca2.png);
     }40% {
-        background-image: url(../tourperu/fotoancash/fotoancash4.png);
+        background-image: url(./cajamarcafotos/cajamarca3.png);
     }60% {
-        background-image: url(../tourperu/fotoancash/fotoancash5.png);
+        background-image: url(./cajamarcafotos/cajamarca4.png);
     }80% {
-        background-image: url(../tourperu/fotoancash/mountainsancash.png);            
+        background-image: url(./cajamarcafotos/cajamarca2.png);            
     }100% {
-        background-image: url(../tourperu/fotoancash/fotoancash4.png);            
+        background-image: url(./cajamarcafotos/cajamarca3.png);            
     }
 
 

@@ -24,17 +24,17 @@ header{
 
 @keyframes animate {
     0% {
-        background-image: url(../tourperu/fotoancash/mountainsancash.png);     
+        background-image: url(./limafotos/lima1.png);     
     }20% {
-        background-image: url(../tourperu/fotoancash/fotoancash2.png);
+        background-image: url(./limafotos/lima2.png);
     }40% {
-        background-image: url(../tourperu/fotoancash/fotoancash4.png);
+        background-image: url(./limafotos/lima3.png);
     }60% {
-        background-image: url(../tourperu/fotoancash/fotoancash5.png);
+        background-image: url(./limafotos/foto4.png);
     }80% {
-        background-image: url(../tourperu/fotoancash/mountainsancash.png);            
+        background-image: url(./limafotos/lim5.png);            
     }100% {
-        background-image: url(../tourperu/fotoancash/fotoancash4.png);            
+        background-image: url(./limafotos/LIMA6.png);            
     }
 
 
