@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Use url_for for the stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='routespecific/css/chiclayo.css') }}">
+    <title>Chiclayo Inka Route</title>
+</head>
+
+<body>
+      
+    <!-- INTRODUCTION  -  ANIMATIONS AT THE TOP- CSS -->    
+    <header>
+    </header>
+
+    <div class="container-intro">
+        <div class="text">
+            <h1 class="title">Chiclayo Inka Route</h1>
+
+            <!-- Video Section -->
+            <div class="video-section">
+                <h2 class="section-title">Explore Chiclayo Through Videos</h2>
+                <!-- YouTube Video Container -->
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RahE-Tvd_0I?si=_HQHgicRi3VcdfXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <p class="para1">
+                Chiclayo, located in northern Peru, is known as the "City of Friendship" and offers a rich blend of history, culture, and coastal beauty. As a major gateway to Peru's pre-Columbian past, Chiclayo is home to some of the country’s most important archaeological sites.
+            </p>
+
+            <p class="para1">
+                All the activities you can do on your trip to the Ayacucho City!
+                <ul class="para1">
+                    <li class="para1">Visit the Chiclayo Cathedral – Located in the Plaza de Armas, it is a beautiful example of colonial architecture. Step inside to admire its stunning altars and religious art.</li>
+                    <li class="para1">Discover Túcume – Known as the Valley of the Pyramids, explore 26 ancient adobe pyramids. This site offers insights into the Moche and Lambayeque cultures, and you can enjoy hiking to the Pyramids of Túcume for stunning views of the valley.</li>
+                    <li class="para1">Visit the Sican National Museum – Dedicated to the Lambayeque culture, the museum houses an extensive collection of artifacts, including textiles, ceramics, and gold, offering a glimpse into this ancient civilization.</li>
+                </ul>
+            </p>
+
+            <p class="para1">
+                Visit the Royal Tombs of Sipán Museum. Explore the museum, home to some of the most exquisite treasures from the tomb of the Lord of Sipán, a prominent Moche leader. The museum showcases beautifully crafted artifacts, including jewelry, pottery, and ceremonial items.
+            </p>
+        </div>
+    </div>
+
+    <!-- Cards of Routes -->
+    <div class="box-wrapper">
+        <figure class="shape-box shape-box_half">
+            <!-- Use url_for for the image -->
+            <img src="{{ url_for('static', filename='tourperu/img/chiclayofotos/chiclayo1.png') }}" alt="Chiclayo Image">
+            <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+            <figcaption>
+                <div class="show-cont">
+                    <h3 class="card-no">01</h3>
+                    <h4 class="card-main-title">Inca Route</h4>
+                </div>
+                <p class="card-content">Discover Chiclayo: a vibrant city where ancient civilizations meet rich culinary traditions and breathtaking landscapes.</p>
+                <!-- Use url_for to handle links properly -->
+                <a href="{{ url_for('routespecific', page='routesspecificchiclayo1.html') }}" class="read-more-btn">Read More</a>
+            </figcaption>
+            <span class="after"></span>
+        </figure>
+    </div>
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

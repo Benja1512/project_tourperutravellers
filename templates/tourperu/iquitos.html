@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='routespecific/css/iquitos.css') }}">
+    <title>Iquitos Inka Route</title>
+</head>
+
+<body>
+    <!-- INTRODUCTION - ANIMATIONS AT THE TOP- CSS -->    
+    <header></header>
+
+    <div class="container-intro">
+        <div class="text">
+            <h1 class="title">Iquitos Inka Route</h1>
+
+            <!-- VIDEO SECTION -->
+            <div class="video-section">
+                <h2 class="section-title">Explore Iquitos Through Videos</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/542b5oQd7Fo?si=Dd4sajycMyTlKAu6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <p class="para1">
+                Iquitos, nestled in the heart of the Peruvian Amazon, is known as the 
+                "Gateway to the Jungle." This vibrant city offers a unique blend of rainforest 
+                adventure, indigenous culture, and rich biodiversity. As a key entry point to 
+                explore the Amazon River and its surrounding jungle, Iquitos is home to exotic 
+                wildlife, floating villages, and fascinating eco-lodges.
+            </p>
+
+            <p class="para1">
+                On your trip to Iquitos, you can experience a wide range of exciting activities that immerse you in the natural beauty and cultural richness of the Amazon:
+            </p>
+            <ul class="para1">
+                <li class="para1">Amazon River Cruises – Sail through the mighty Amazon River and explore its diverse ecosystems. Enjoy sightings of pink river dolphins and gray dolphins, and visit indigenous communities along the riverbanks.</li>
+                <li class="para1">Jungle Trekking – Explore the lush Amazon rainforest on guided treks, where you can discover exotic wildlife, medicinal plants, and unique ecosystems. Jungle walks can include day trips or night excursions to observe nocturnal creatures like tarantulas, frogs, and insects.</li>
+                <li class="para1">Visit Indigenous Communities – Learn about the cultures and traditions of local indigenous groups, such as the Yagua people. Participate in cultural demonstrations, see traditional dances, and try using a blowgun.</li>
+            </ul>
+
+            <p class="para1">
+                Iquitos offers a unique gateway to explore the wonders of the Amazon, providing thrilling outdoor activities, rich wildlife encounters, and cultural insights into the heart of the rainforest.
+            </p>
+        </div>
+    </div>
+
+    <!-- CARDS OF ROUTES -->
+    <div class="box-wrapper">
+        <figure class="shape-box shape-box_half">
+            <img src="{{ url_for('static', filename='tourperu/img/iquitosfotos/iquitos1.png') }}" alt="Tucan Program">
+            <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+            <figcaption>
+                <div class="show-cont">
+                    <h3 class="card-no">01</h3>
+                    <h4 class="card-main-title">Tucan Program</h4>
+                </div>
+                <p class="card-content">Experience the beauty of the Amazon with the 3-day, 2-night Tucan Program, featuring wildlife exploration, cultural encounters, and thrilling jungle adventures at Cumaceba Amazon Lodge.</p>
+                <a href="{{ url_for('routespecific', page='routesspecificiquitos-1.html') }}" class="read-more-btn">Read More</a>
+            </figcaption>
+            <span class="after"></span>
+        </figure>
+
+        <figure class="shape-box shape-box_half">
+            <img src="{{ url_for('static', filename='tourperu/img/iquitosfotos/iquitos2.png') }}" alt="Papagayo Program">
+            <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+            <figcaption>
+                <div class="show-cont">
+                    <h3 class="card-no">02</h3>
+                    <h4 class="card-main-title">Papagayo Program</h4>
+                </div>
+                <p class="card-content">Discover the wonders of the Amazon with the 4-day, 3-night Papagayo Program, featuring jungle exploration, wildlife encounters, and immersive cultural experiences at Cumaceba Amazon Lodge.</p>
+                <a href="{{ url_for('routespecific', page='routesspecificiquitos-2.html') }}" class="read-more-btn">Read More</a>
+            </figcaption>
+            <span class="after"></span>
+        </figure>
+
+        <figure class="shape-box shape-box_half">
+            <img src="{{ url_for('static', filename='tourperu/img/iquitosfotos/iquitos3.png') }}" alt="Iguana Program">
+            <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+            <figcaption>
+                <div class="show-cont">
+                    <h3 class="card-no">03</h3>
+                    <h4 class="card-main-title">Iguana Program</h4>
+                </div>
+                <p class="card-content">Immerse yourself in the heart of the Amazon with the 5-day, 4-night Iguana Program, offering wildlife exploration, cultural experiences, and jungle adventures at Cumaceba Amazon Lodge.</p>
+                <a href="{{ url_for('routespecific', page='routesspecificiquitos-3.html') }}" class="read-more-btn">Read More</a>
+            </figcaption>
+            <span class="after"></span>
+        </figure>
+
+        <figure class="shape-box shape-box_half">
+            <img src="{{ url_for('static', filename='tourperu/img/iquitosfotos/iquitos5.png') }}" alt="Delfin Program">
+            <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+            <figcaption>
+                <div class="show-cont">
+                    <h3 class="card-no">04</h3>
+                    <h4 class="card-main-title">Delfin Program</h4>
+                </div>
+                <p class="card-content">Experience the magic of the Amazon with the 2-day, 1-night Delfin Program, featuring wildlife encounters, jungle walks, and cultural immersion at Cumaceba Amazon Lodge.</p>
+                <a href="{{ url_for('routespecific', page='routesspecificiquitos-4.html') }}" class="read-more-btn">Read More</a>
+            </figcaption>
+            <span class="after"></span>
+        </figure>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+            crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/contact.css">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <header>
+      <!-- "http://127.0.0.1:5000/send_email"   <form class="formulario" action="{{ url_for('send_email', _external=True) }}" method="POST" enctype="multipart/form-data"> -->
+
+        <form class="formulario" action="{{ url_for('send_email') }}" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Form Information</legend>
+                
+                <div class="campo">
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" name="name" placeholder="First name..." required />
+                </div>
+                
+                <div class="campo">
+                    <label for="Lastname">Last Name:</label>
+                    <input type="text" id="Lastname" name="lastname" placeholder="Last name" required />
+                </div>
+        
+                <div class="campo">
+                    <label for="E-mail">Email:</label>
+                    <input type="email" id="E-mail" name="email" placeholder="Email" required />
+                </div>
+        
+                <div class="campo">
+                    <label for="date">Travel Date:</label>
+                    <input type="datetime-local" id="date" name="date" />
+                </div>                    
+                
+                <div class="campo">
+                    <label for="tel">Mobile Phone:</label>
+                    <input type="tel" id="tel" name="phone" placeholder="Mobile phone" required />
+                </div>
+        
+                <div class="campo">
+                    <label for="Address">Address</label>
+                    <input type="text" id="Address" name="address" placeholder="Address" required />
+                </div>
+        
+                <div class="campo">
+                    <label for="file">File:</label>
+                    <!-- Botón de archivo personalizado -->
+                    <label for="file" class="custom-file-upload">
+                        Browse...
+                    </label>
+                    <input type="file" id="file" name="file"  multiple />
+                </div>
+        
+                <div class="campo">
+                    <label for="text">Message:</label>
+                    <textarea name="message" id="text" cols="40" rows="8" required></textarea>
+                </div>  
+             
+                <div class="campo">
+                    <button type="submit">Send</button>
+                </div>
+            </fieldset>
+        </form>
+        
+    </header>  
+
+    <div id="success-message" style="display:none; color:green;">¡Tu mensaje ha sido enviado exitosamente!</div>
+
+    <div class="social_media">
+        <ul>
+            <li><a href="https://www.instagram.com/tourperutravellers/" target="_blank" class="instagram"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.facebook.com/TourPeruTravellers" target="_blank" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/channel/UC4zel9DlSU9GK1aS8u0AlxQ" target="_blank" class="youtube"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/tourperutravellers-team-0440b7271" target="_blank" class="linkedin"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+    </div>
+
+    <div class="container2">
+        <h1>TourPeruTravellers</h1>
+        <p>The adventures are the best way to learn.</p>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script module src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+    
+    
+
+    <script>
+        // Mostrar mensaje de éxito después del envío
+        if (window.location.search.includes("success=true")) {
+            document.getElementById('success-message').style.display = 'block';
+        }
+
+
+
+        // EL boton dE BROWSER de la fila FILE, para mostrar el archivo//
+        document.addEventListener("DOMContentLoaded", function() {
+    const fileInput = document.getElementById("file");
+    const fileLabel = document.querySelector(".custom-file-upload");
+
+    fileInput.addEventListener("change", function() {
+        if (fileInput.files.length > 0) {
+            const fileNames = Array.from(fileInput.files).map(file => file.name);
+            let displayText;
+
+            if (fileNames.length > 3) {
+                displayText = fileNames.slice(0, 3).join(", ") + ", ..."; // Muestra los primeros tres archivos y "..."
+            } else {
+                displayText = fileNames.join(", "); // Muestra todos los nombres si son tres o menos
+            }
+
+            fileLabel.textContent = displayText;
+        } else {
+            fileLabel.textContent = "Browse..."; // Texto predeterminado si no hay archivo
+        }
+    });
+});
+
+
+    </script>
+</body>
+</html>

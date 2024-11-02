@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='routespecific/css/puno.css') }}">
+    <title>Puno Inka Route</title>
+</head>
+
+<body>
+    <!-- INTRODUCTION - ANIMATIONS AT THE TOP- CSS -->    
+    <header></header>
+
+    <div class="container-intro">
+        <div class="text">
+            <h1 class="title">Puno Inka Route</h1>
+
+            <!-- VIDEO SECTION -->
+            <div class="video-section">
+                <h2 class="section-title">Explore Puno Through Videos</h2>
+
+                <!-- YouTube Video -->
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fkt1kDRn2IQ?si=UawrwYX84WE0NRuS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <p class="para1">
+                The Titicaca Lake tour takes place on Lake Titicaca, located in the Puno
+                region of southern Peru. Lake Titicaca is the highest navigable lake in 
+                the world, situated at an altitude of 3,812 meters (12,507 feet) above sea level,
+                on the border between Peru and Bolivia. The tour specifically visits the Uros 
+                Islands, Amantani Island, and Taquile Island, all within the Peruvian side of 
+                the lake.
+            </p>
+
+            <p class="para1">
+                On your trip to Peru, the Puno - Lake Titicaca tour offers an immersive blend of culture, nature, and unforgettable landscapes:
+            </p>
+            <ul class="para1">
+                <li class="para1">Uros Floating Islands – Visit the unique floating islands of Uros, where the locals have created homes from totora reeds, and learn about their way of life.</li>
+                <li class="para1">Amantani Island – Stay with local families on Amantani Island, experiencing authentic hospitality, traditional food, and folk music under the stars.</li>
+                <li class="para1">Taquile Island – Explore the serene beauty of Taquile Island, enjoy stunning views of the lake, and discover its rich cultural heritage and handwoven textiles.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Cards of Routes -->
+    <div class="box-wrapper">
+        <figure class="shape-box shape-box_half">
+            <img src="{{ url_for('static', filename='tourperu/img/punofotos/foto5.png') }}" alt="">
+            <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+            <figcaption>
+                <div class="show-cont">
+                    <h3 class="card-no">01</h3>
+                    <h4 class="card-main-title">Titicaca Lake</h4>
+                </div>
+                <p class="card-content">Join us for a 2-day adventure on Lake Titicaca, exploring the unique Uros Floating Islands and staying with locals on Amantani Island. Experience traditional culture and stunning views on Taquile Island. A journey of history, beauty, and local hospitality awaits!</p>
+                <a href="{{ url_for('routespecific', page='routesspecificpuno1.html') }}" class="read-more-btn">Read More</a>
+            </figcaption>
+            <span class="after"></span>
+        </figure>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+</body>
+</html>

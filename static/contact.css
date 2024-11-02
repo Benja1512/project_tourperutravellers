@@ -1,0 +1,253 @@
+
+*{
+    margin: 0;
+    padding: px;
+    font-family: Century;
+
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    height: 128vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+
+     /* display: flex; /* Añadido para centrar el contenido del encabezado */
+    /* justify-content: center; /* Centra horizontalmente */
+    /* align-items: center; /* Centra verticalmente */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+ 
+}
+
+
+
+/* Estilos generales del formulario */
+.formulario {
+    max-width: px; /* Tamaño máximo del formulario */
+    margin: 1.5cm auto; /* Para centrar horizontalmente */
+    padding: 0.6cm;
+    background-color: rgba(30, 30, 30, 0.5); /* Fondo blanco con transparencia */
+    border-radius: 10px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    backdrop-filter: blur(10px); /* Opcional: borroso para dar efecto de vidrio */
+    font-size: 15px; /* Tamaño de letra ligeramente reducido */
+    display: flex;
+    flex-direction: column;
+    gap: 1cm;
+ 
+ 
+
+}
+
+
+@keyframes animate {
+    0% {
+        background-image: url(/static/fotos/vicuña.png);
+     
+    }20% {
+        background-image: url(/static/fotos/tshirt-Peru.png);
+    }40% {
+        background-image: url(/static/fotos/PeruvianChullo.png);
+    }60% {
+        background-image: url(/static/fotos/sacsayhuaman.png);
+    }80% {
+        background-image: url(/static/fotos/surfingteamperu.png);
+    }100% {
+        background-image: url(/static/fotos/parqueDelasAguas.png);
+  
+}
+
+}
+
+
+/* estilos de formulario */ 
+
+/* Estilos para los campos de entrada */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="date"],
+.formulario input[type="file"],
+.formulario textarea {
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px; /* Tamaño de letra uniforme */
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente */
+}
+
+/* Botones estilo transparente */
+.formulario button,
+.formulario input[type="submit"],
+.formulario input[type="file"] {
+    width: 40%; /* Mismo tamaño para ambos botones */
+    padding: 6px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 11px; /* Tamaño de letra uniforme */
+    cursor: pointer;
+    background-color: transparent; /* Fondo transparente */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo de hover para botones */
+.formulario button:hover,
+.formulario input[type="submit"]:hover,
+.formulario input[type="file"]:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente al hacer hover */
+    color: #fff; /* Cambia el color del texto al hacer hover */
+}
+
+
+
+/*------------*/
+.container2 {
+
+    font-family: Century;
+    position: absolute;
+    top: 110%;
+    left: 5%;
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+
+/*---SOCIAL MEDIA --*/
+
+:root{
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --youtube: #55acee;
+    --linkedin: #0077b5;
+}
+.social_media{
+    display: flex;
+    height: 0;
+    align-items: end;
+    justify-content: end;
+   
+}
+
+.social_media ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+}
+
+.social_media ul li a{
+    display: block;
+    padding: 0 10%;
+    background: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.social_media ul:hover a {
+    filter: blur(2px);
+}
+
+.social_media ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .5);
+    filter: none;
+}
+.social_media ul li .facebook.hover{
+    background: var(--facebook);
+}
+.social_media ul li .instagram.hover{
+    background: var(--instagram);
+}
+
+.social_media ul li .youtube.hover{
+    background: var(--youtube);
+}
+
+.social_media ul li .linkedin.hover{
+    background: var(--linkedin);
+}
+
+/* Oculta el input de archivo original */
+input[type="file"] {
+    display: none;
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+/* Estilo para el botón de archivo personalizado */
+.custom-file-upload {
+    display: inline-block;
+    padding: 8px 40px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Ocultar el input de archivo original */
+input[type="file"] {
+    display: none;
+}
+
+
+/*-------------------------*
+
+/* Estilo para el botón de archivo personalizado */
+.custom-file-upload {
+    display: inline-block;
+    padding: 8px 40px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    max-width: 200px; /* Ancho máximo para el botón */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Trunca el texto largo con puntos suspensivos */
+}
+
+.custom-file-upload:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Ocultar el input de archivo original */
+input[type="file"] {
+    display: none;
+}

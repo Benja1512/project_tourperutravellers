@@ -1,0 +1,17 @@
+body {
+    background-color: #1d1c1c; /* Cambia esto para que coincida con el color de fondo de tu imagen */
+    color: #ffffff; /* Color del texto */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 450px; /* Redimensiona la imagen */
+    display: block;
+    margin: 20px auto; /* Centra la imagen y agrega un margen */
+}
+
+.contact-link {
+    color: rgb(241, 241, 247); /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}

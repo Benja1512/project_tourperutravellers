@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  #textContainer {
+    max-width: 80%;
+    text-align: center;
+    display: none; /* Oculto inicialmente */
+  }
+  
+  #text {
+    font-size: 1.5em;
+    overflow: hidden;
+    white-space: normal;
+  }
+  
+  #videoContainer {
+    display: none; /* Oculto hasta que se active en el JavaScript */
+    text-align: center;
+  }
+  
+  #promoVideo {
+    max-width: 550%; /* Aumenta el tamaño del video al 95% del contenedor */
+    max-height: 85vh; /* Ajusta la altura máxima del video para que ocupe más espacio vertical */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  #continueButton {
+    display: none; /* Oculto hasta que el video se muestre */
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 0.7em; /* Tamaño de fuente más pequeño boton*/
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2), 0 6px 20px rgba(255, 255, 255, 0.15);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+
+
+  /* LOGO  TOURPERUTRAVELLERS */
+  #logo {
+    max-width: 50px; /* Ajusta el tamaño del logo aquí */
+    height: auto;
+    margin-bottom: 20px; /* Espacio entre el logo y el párrafo */
+  }
+  
+  
+
+  

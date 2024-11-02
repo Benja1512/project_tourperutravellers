@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='routespecific/css/trujillo.css') }}">
+    <title>Trujillo Inka Route</title>
+</head>
+
+<body>
+    <!-- INTRODUCTION - ANIMATIONS AT THE TOP- CSS -->    
+    <header></header>
+
+    <div class="container-intro">
+        <div class="text">
+            <h1 class="title">Trujillo Inka Route</h1>
+
+            <!-- VIDEO SECTION -->
+            <div class="video-section">
+                <h2 class="section-title">Explore Trujillo Through Videos</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rE3Ajd5mul0?si=hbwviusvb_EKRQhW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <p class="para1">
+                Trujillo is located on the northern coast of Peru, approximately 550 kilometers
+                (about 342 miles) northwest of Lima, the capital city. Nestled along the banks 
+                of the Moche River, it is known for its rich history and vibrant culture. 
+                The city serves as a gateway to several important archaeological sites, including
+                the ancient Moche and Chimu civilizations. Notable nearby attractions include
+                the iconic Huacas del Sol y de la Luna, which showcase the impressive artistry 
+                and architectural prowess of the Moche culture, and the ruins of Chan Chan, 
+                the largest adobe city in the world. With its beautiful colonial architecture, 
+                bustling plazas, and close proximity to the Pacific Ocean, Trujillo is a fascinating
+                destination for travelers interested in history and culture.
+            </p>
+
+            <p class="para1">
+                On your journey through Peru, the Colonial Archaeological Trujillo tour offers an enriching experience that combines ancient history, cultural exploration, and breathtaking coastal landscapes:
+                
+                <ul class="para1">
+                    <li class="para1">Huacas del Sol y de la Luna – Explore the impressive Moche archaeological sites, where you can learn about the ancient civilization’s religious practices and admire intricate murals and architecture.</li>
+                    <li class="para1">Chan Chan – Visit the largest adobe city in the world, once the capital of the Chimu civilization, and marvel at its vast ruins and unique architectural designs.</li>
+                    <li class="para1">Huanchaco Beach – Relax at this charming coastal town, famous for its traditional fishing boats called "caballitos de totora," and enjoy fresh seafood while taking in stunning ocean views.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <!-- Cards of Routes -->
+    <div class="box-wrapper">
+        <figure class="shape-box shape-box_half">
+            <img src="{{ url_for('static', filename='tourperu/img/trujillofotos/trujillo1.jpg') }}" alt="">
+            <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+            <figcaption>
+                <div class="show-cont">
+                    <h3 class="card-no">01</h3>
+                    <h4 class="card-main-title">Trujillo Program</h4>
+                </div>
+                <p class="card-content">Join us for an unforgettable journey through Trujillo, where ancient history meets breathtaking coastal beauty.</p>
+                <a href="{{ url_for('routespecific', page='routesspecifictrujillo1.html') }}" class="read-more-btn">Read More</a>
+            </figcaption>
+            <span class="after"></span>
+        </figure>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+            crossorigin="anonymous"></script>
+</body>
+</html>

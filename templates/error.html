@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='error.css') }}"> <!-- Incluyendo el CSS -->
+</head>
+<body>
+    <header>
+
+        <h1>Error! Email NOT sent successfully</h1>
+        <p>We are sorry, an error occurred while sending your form.</p>   
+
+        <p><strong>{{ error }}</strong></p> <!-- Mostrar el mensaje de error -->
+        <a href="{{ url_for('contact') }}">Return to the contact page</a> <!-- Cambiado aquí -->
+
+        <img src="{{ url_for('static', filename='fotos/LOGO.png') }}" alt="TourPeruTravellers">
+    </header>
+</body>
+</html>

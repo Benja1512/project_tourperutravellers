@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='routespecific/css/lima.css') }}">
+    <title>Lima Inka Route</title>
+</head>
+
+<body>
+    <!-- INTRODUCTION - ANIMATIONS AT THE TOP- CSS -->    
+    <header></header>
+
+    <div class="container-intro">
+        <div class="text">
+            <h1 class="title">Lima Inka Route</h1>
+
+            <!-- VIDEO SECTION -->
+            <div class="video-section">
+                <h2 class="section-title">Explore Lima Through Videos</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZyHrKZawDKw?si=P0odAyPz9GYvEbe9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <p class="para1">
+                Lima and Ica present a captivating blend of history, culture, and natural beauty. 
+                In Lima, visitors can immerse themselves in the bohemian district of Barranco and
+                explore the historic center, featuring iconic landmarks such as Plaza Mayor and
+                the 17th-century catacombs. The vibrant city also boasts the Magic Water Circuit, 
+                offering an enchanting evening fountain show. Nearby, Pachacamac stands as a 
+                significant archaeological site, showcasing ancient adobe pyramids and temples
+                dedicated to the god Pachacamac. This vast complex, once a pilgrimage destination, 
+                features highlights like the Temple of the Sun and the Acllahuasi. In Ica, travelers
+                can enjoy the stunning Huacachina Oasis, marvel at the mysterious Nazca Lines,
+                and visit local vineyards and pisco distilleries. The Ballestas Islands offer 
+                wildlife enthusiasts the chance to observe diverse marine life, including sea 
+                lions and penguins.
+            </p>
+
+            <p class="para1">
+                On your trip to Iquitos, you can experience a wide range of exciting activities you can enjoy in Lima:
+            </p>
+            <ul class="para1">
+                <li class="para1">Lima City Tours – Discover the rich history and vibrant culture of Lima through guided city tours. Visit iconic sites such as Plaza Mayor, the Government Palace, and the stunning catacombs of San Francisco Monastery.</li>
+                <li class="para1">Culinary Experiences – Delight in Lima's culinary scene with cooking classes and food tours that highlight local dishes, traditional Peruvian ingredients, and the city’s renowned gastronomy.</li>
+                <li class="para1">Beach Activities – Enjoy the beautiful beaches of Lima along the Pacific coast. Engage in activities such as surfing, paragliding over the cliffs, or simply relaxing by the sea at popular spots like Miraflores and Barranco.</li>
+            </ul>
+
+            <p class="para1">
+                On your trip to Pachacamac, you can experience a wide range of exciting activities you can enjoy at Pachacamac:
+            </p>
+            <ul class="para1">
+                <li class="para1">Archaeological Tours – Explore the ancient ruins of Pachacamac, one of Peru's most significant pre-Columbian sites. Discover the impressive adobe pyramids, temples, and plazas that were central to the worship of the god Pachacamac.</li>
+                <li class="para1">Guided Walks – Participate in guided tours that offer in-depth insights into the history and cultural significance of the site. Learn about the rituals and daily life of the ancient peoples who once inhabited this sacred place.</li>
+                <li class="para1">Scenic Views – Enjoy panoramic views of the Pacific Ocean and the surrounding landscape from the site’s elevated areas. Capture stunning photographs of the coastal scenery and the ancient structures set against the backdrop of the Andes.</li>
+            </ul>
+
+            <p class="para1">
+                On your trip to Pachacamac, you can experience a wide range of exciting activities you can enjoy in Ica:
+            </p>
+            <ul class="para1">
+                <li class="para1">Huacachina Oasis Adventures – Experience the stunning Huacachina Oasis, where you can go sandboarding down the towering dunes or take an exhilarating dune buggy ride through the desert landscape.</li>
+                <li class="para1">Nazca Lines Flights – Take a scenic flight over the mysterious Nazca Lines, ancient geoglyphs etched into the desert floor, and marvel at the intricate designs only visible from the air.</li>
+                <li class="para1">Wine and Pisco Tastings – Visit local vineyards and pisco distilleries to learn about and sample Peru's renowned wine and pisco, gaining insight into the production process and regional flavors.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-intro">
+        <div class="text">
+            <h1 class="title">Peru Essence</h1>
+            <p class="para1">
+                Essence of Peru in 8 Days: Begin your journey in Lima, the "City of Kings,"
+                followed by a flight to Cusco, where you'll explore ancient ruins and the 
+                Sacred Valley. Discover the iconic Machu Picchu, and embark on a trek to the 
+                stunning Rainbow Mountain. Return to Lima for a city tour of its colonial and 
+                modern landmarks. Enjoy a full day in Paracas with a tour of the Ballestas 
+                Islands and visit the Huacachina Oasis in Ica before returning to Lima.
+            </p>
+
+            <p class="para1">
+                On your trip to Peru, the Essence of Peru tour offers an unforgettable mix of history, adventure, and culture:
+            </p>
+            <ul class="para1">
+                <li class="para1">Lima City Tours – Explore the vibrant capital of Peru, visiting historic landmarks like Plaza Mayor, the Government Palace, and the catacombs of San Francisco Monastery.</li>
+                <li class="para1">Sacred Valley and Machu Picchu – Journey through the stunning Sacred Valley and visit the awe-inspiring ancient citadel of Machu Picchu, one of the New Seven Wonders of the World.</li>
+                <li class="para1">Rainbow Mountain – Embark on a breathtaking hike to the colorful Rainbow Mountain, a natural wonder nestled in the Andes, offering panoramic views and an unforgettable adventure.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Cards of Routes -->
+    <div class="box-wrapper">
+        <figure class="shape-box shape-box_half">
+            <img src="{{ url_for('static', filename='tourperu/img/limafotos/1lima1.jpg') }}" alt="">
+            <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+            <figcaption>
+                <div class="show-cont">
+                    <h3 class="card-no">01</h3>
+                    <h4 class="card-main-title">Lima Program</h4>
+                </div>
+                <p class="card-content">Join us for an unforgettable adventure in Lima, Ica, and Pachacamac, where you can explore vibrant cultures, stunning landscapes, and ancient wonders.</p>
+                <a href="{{ url_for('routespecific', page='routesspecificlima1.html') }}" class="read-more-btn">Read More</a>
+            </figcaption>
+            <span class="after"></span>
+        </figure>
+
+        <figure class="shape-box shape-box_half">
+            <img src="{{ url_for('static', filename='tourperu/img/limafotos/1lima2.jpg') }}" alt="">
+            <div class="brk-abs-overlay z-index-0 bg-black opacity-60"></div>
+            <figcaption>
+                <div class="show-cont">
+                    <h3 class="card-no">02</h3>
+                    <h4 class="card-main-title">Peru Essence</h4>
+                </div>
+                <p class="card-content">Join us on the Essence of Peru Tour! Discover the magic of Lima, the ancient wonders of Cusco and Machu Picchu, and the breathtaking landscapes of the Sacred Valley and Rainbow Mountain. Immerse yourself in Peru’s rich history, vibrant culture, and natural beauty.</p>
+                <a href="{{ url_for('routespecific', page='routesspecificesenceperu.html') }}" class="read-more-btn">Read More</a>
+            </figcaption>
+            <span class="after"></span>
+        </figure>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+</body>
+</html>

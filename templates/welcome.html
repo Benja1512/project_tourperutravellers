@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Tour Peru Travellers</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='welcome.css') }}">
+</head>
+<body>
+
+  <!-- Logo de Tour Peru Travellers -->
+  <div id="logoContainer">
+    <!-- <img src="{{ url_for('static', filename='fotos/LOGO.png') }}" alt="Logo"> -->
+  </div>
+
+  <!-- Texto de bienvenida -->
+  <div id="textContainer">
+    <div id="text">
+      Thank you for choosing TourPeruTravellers! We are thrilled to be a part of your adventure and are dedicated to making your journey through Peru an unforgettable experience. Get ready to explore the wonders of this beautiful country with a team that values your trust and strives to deliver exceptional service every step of the way!
+    </div>
+  </div>
+
+  <!-- Contenedor de video -->
+  <div id="videoContainer">
+    <video id="promoVideo" controls autoplay muted width="100%">
+      <source src="{{ url_for('static', filename='video/videonuevo.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Botón de continuar -->
+  <div id="continueButton">
+    <button onclick="redirectToIndex()">Watch, Skip or Finish the Video to Continue Your Trip on TourPeruTravellers</button>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/welcome.js') }}"></script>
+  <script>
+    // Definir la función de redirección directamente aquí si no está en welcome.js
+    function redirectToIndex() {
+      window.location.href = "{{ url_for('index') }}";
+    }
+  </script>
+</body>
+</html>
