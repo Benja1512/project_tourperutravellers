@@ -1,18 +1,25 @@
-
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Century;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Century, sans-serif;
 }
 
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 2vw; /* Fuente adaptable */
+    background-color: #f5f5f5;
+    max-width: 100%;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     height: 100vh;
     background-size: cover;
     background-position: center;
-    min-height: 100px;
-
+    min-height: 10vh;
+    position: relative;
     animation-name: animate;
     animation-direction: alternate-reverse;
     animation-duration: 30s;
@@ -20,44 +27,36 @@ header{
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-timing-function: ease-in-out;
-
-
-
-
-
 }
 
 @keyframes animate {
     0% {
         background-image: url(./fotos/lima.png);
-     
-    }20% {
+    }
+    20% {
         background-image: url(./fotos/arequipa.png);
-    }40% {
-        background-image: url(./fotos/paracas\ ica.png);
-    }60% {
+    }
+    40% {
+        background-image: url(./fotos/paracas ica.png);
+    }
+    60% {
         background-image: url(./fotos/tarapoto.png);
-    }80% {
-        background-image: url(./fotos/colca\ canyon.png);
-    }100% {
+    }
+    80% {
+        background-image: url(./fotos/colca canyon.png);
+    }
+    100% {
         background-image: url(./fotos/puno.png);
-  
+    }
 }
-
-}
-
-
-
 
 ul {
     float: right;
     list-style-type: none;
-    margin-top: 30px;
-    min-height: 400px;
-    margin-right: 60px;
-    font-size: 17px;
+    margin-top: 1.5rem;
+    margin-right: 3.75rem;
+    font-size: 1rem; /* Ajustado a un tamaño más adecuado para pantallas grandes */
 }
-
 
 ul li {
     display: inline-block;
@@ -66,80 +65,154 @@ ul li {
 ul li a {
     text-decoration: none;
     color: #fff;
-    padding: 5px 20px;
+    padding: 0.3125rem 1.25rem;
     border: 1px solid transparent;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
 }
 
-
 ul li a:hover {
-    background-color: #fff; 
-    color:#000;
+    background-color: #fff;
+    color: #000;
+    text-shadow: none; /* Elimina la sombra en hover */
 }
 
 .container2 {
-
-    font-family: Century;
+    font-family: Century, sans-serif;
     position: absolute;
     top: 70%;
     left: 5%;
-    font-size: 25px;
+    font-size: 2.5vw;
     text-decoration: none;
     color: #fff;
-    padding: 5px 20px;
+    padding: 0.3125rem 1.25rem;
     border: 1px solid transparent;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
+    max-width: 90%;
+    word-wrap: break-word;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
 }
 
-____________________________________
-
-
-
-/*body {
-     margin: 0px;
-     padding: 0px;
-     height: 100%;
-     width: 100%;
-
+.container2 h1 {
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    font-size: 6vw; /* Tamaño mediano de fuente */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+    color: #fff;
 }
 
-.container {
-    height: 100vh;
+/* Media query para pantallas grandes */
+@media screen and (min-width: 1200px) {
+    .container2 h1 {
+        font-size: 4vw; /* Ajuste el tamaño de fuente moderado en pantallas grandes */
+    }
+
+    /* Aumentamos el tamaño de la fuente para el menú en pantallas grandes */
+    ul {
+        font-size: 1.5rem; /* Tamaño mayor para el menú en pantallas grandes */
+    }
+}
+
+/* Media query para pantallas con resolución 1920x1080 */
+@media screen and (min-width: 1920px) {
+    /* Aumentamos el tamaño del menú aún más para pantallas grandes */
+    ul {
+        font-size: 2.5rem; /* Más grande en pantallas 1920px o más grandes */
+    }
+
+    /* Aumentamos el tamaño de los links del menú */
+    ul li a {
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+/* Media query para pantallas pequeñas (dispositivos móviles) */
+@media screen and (max-width: 768px) {
+    body, html {
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    ul {
+        margin-right: 1rem;
+        font-size: 1.2rem; /* Ajuste el tamaño de la fuente en pantallas más pequeñas */
+        margin-top: 3rem; /* Mueve el menú más abajo para evitar que quede tan cerca del borde */
+    }
+
+    ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    ul li a {
+        padding: 0.3125rem 1rem;
+    }
+
+    .container2 {
+        font-size: 8vw; /* Aumentamos el tamaño de la fuente solo en pantallas pequeñas */
+        left: 10%;
+        top: 60%;
+        padding: 0.25rem 1rem;
+        border: none;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+    }
+
+    header {
+        min-height: 50vh;
+    }
+
+    header img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media query para pantallas muy pequeñas (dispositivos de 480px o menos) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 5vw;
+    }
+
+    .container2 {
+        font-size: 9vw; /* Aumentamos aún más el tamaño de la fuente en pantallas más pequeñas */
+        left: 10%;
+        top: 55%;
+        padding: 0.25rem 0.75rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+    }
+
+    header {
+        min-height: 40vh;
+    }
+
+    header img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Aumentamos el tamaño de los elementos del menú para pantallas más pequeñas */
+    ul {
+        font-size: 1.4rem; /* Aumenta el tamaño de la fuente */
+    }
+
+    ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    ul li a {
+        padding: 0.5rem 1.25rem;
+    }
+}
+
+/* Contenedor principal para mejorar el layout */
+.main-container {
     width: 100%;
-    background-image: url(./fotos/Peru-Tourist-Attractions-Machu-Picchu.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 5s;
-
-
-    animation-name: animate;
-    animation-direction: alternate-reverse;
-    animation-duration: 30s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-timing-function: ease-in-out;
-
+    max-width: 1200px; /* Asegura que no se estire demasiado en pantallas grandes */
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-
-@keyframes animate {
-    0% {
-        background-image: url(./fotos/lima.png);
-     
-    }20% {
-        background-image: url(./fotos/arequipa.png);
-    }40% {
-        background-image: url(./fotos/paracas\ ica.png);
-    }60% {
-        background-image: url(./fotos/tarapoto.png);
-    }80% {
-        background-image: url(./fotos/colca\ canyon.png);
-    }100% {
-        background-image: url(./fotos/puno.png);
-  
+/* Mejora en la legibilidad */
+header, .container2, ul li a {
+    line-height: 1.5; /* Espaciado de línea */
 }
-}
-
-*/

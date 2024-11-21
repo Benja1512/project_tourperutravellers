@@ -1,18 +1,15 @@
-
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: Century;
-
 }
 
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     height: 100vh;
     background-size: cover;
     background-position: center;
     min-height: 100px;
-
     animation-name: animate;
     animation-direction: alternate-reverse;
     animation-duration: 30s;
@@ -20,35 +17,30 @@ header{
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-timing-function: ease-in-out;
-
-
-
-
-
 }
 
 @keyframes animate {
     0% {
         background-image: url(./fotos/Ancash1..png);
-     
-    }20% {
+    }
+    20% {
         background-image: url(./fotos/montañaSieteColores.png);
-    }40% {
+    }
+    40% {
         background-image: url(./fotos/sandBoarding.png);
-    }60% {
+    }
+    60% {
         background-image: url(./fotos/Ancash2..png);
-    }80% {
+    }
+    80% {
         background-image: url(./fotos/sandBoarding.png);
-    }100% {
+    }
+    100% {
         background-image: url(./fotos/nazcaLines.png);
-  
+    }
 }
-
-}
-
 
 .container2 {
-
     font-family: Century;
     position: absolute;
     top: 70%;
@@ -58,15 +50,11 @@ header{
     color: #fff;
     padding: 5px 20px;
     border: 1px solid transparent;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
+    max-width: 90%;
 }
 
-
-
-/*--- cards---*/
-
 .container_cards {
-
     width: 80%;
     max-width: 450px;
     padding: 1rem 1.5rem;
@@ -75,7 +63,6 @@ header{
     align-items: center;
 }
 
-
 .card-body {
     width: 100%;
     max-width: 500px;
@@ -83,23 +70,17 @@ header{
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 18px;
-    background: rgba(255, 255, 255, .5)
-
-
+    background: rgba(255, 255, 255, .5);
 }
 
-
-
-
-/*---SOCIAL MEDIA --*/
-
-:root{
+:root {
     --facebook: #3b5999;
     --instagram: #e4405f;
     --youtube: #55acee;
     --linkedin: #0077b5;
 }
-.social_media{
+
+.social_media {
     display: flex;
     height: 45vh;
     align-items: flex-end;
@@ -112,10 +93,9 @@ header{
     width: 40px;
     height: 50px;
     text-align: center;
-
 }
 
-.social_media ul li a{
+.social_media ul li a {
     display: block;
     padding: 0 10%;
     background: #333;
@@ -135,56 +115,175 @@ header{
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .5);
     filter: none;
 }
-.social_media ul li .facebook.hover{
+
+.social_media ul li .facebook.hover {
     background: var(--facebook);
 }
-.social_media ul li .instagram.hover{
+
+.social_media ul li .instagram.hover {
     background: var(--instagram);
 }
 
-.social_media ul li .youtube.hover{
+.social_media ul li .youtube.hover {
     background: var(--youtube);
 }
 
-.social_media ul li .linkedin.hover{
+.social_media ul li .linkedin.hover {
     background: var(--linkedin);
 }
 
+.icons-below-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+}
 
+.icon {
+    width: 40px;
+    height: 40px;
+}
 
-/*------- nav ----------*/
+.icon ion-icon {
+    font-size: 40px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.icon a:hover ion-icon {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 60vh;
+    }
+    .container2 {
+        top: 50%;
+        font-size: 22px;
+    }
+    .container_cards {
+        width: 90%;
+        padding: 1rem;
+    }
+    .social_media {
+        margin-top: 60px;
+    }
+    .social_media ul li {
+        width: 35px;
+        height: 45px;
+    }
+    .icons-below-text {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 50vh;
+    }
+    .container2 {
+        top: 40%;
+        font-size: 18px;
+    }
+    .social_media {
+        margin-top: 80px;
+    }
+    .social_media ul li {
+        width: 30px;
+        height: 40px;
+    }
+    .icons-below-text {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 360px) and (min-height: 740px) {
+    .social_media {
+        margin-top: 60px;
+    }
+
+    .social_media ul li {
+        margin: 0 15px;
+    }
+
+    .social_media ul li a {
+        letter-spacing: 5px;
+    }
+
+    .icons-below-text {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 360px) and (min-height: 760px) {
+    .social_media {
+        margin-top: 10px;
+    }
+
+    .social_media ul li {
+        margin: 0 15px;
+    }
+
+    .social_media ul li a {
+        letter-spacing: 5px;
+    }
+
+    .icons-below-text {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .icons-below-text {
+        gap: 15px;
+    }
+
+    .icon ion-icon {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icons-below-text {
+        gap: 10px;
+    }
+
+    .icon ion-icon {
+        font-size: 30px;
+    }
+}
+
 a {
-text-decoration: none;
+    text-decoration: none;
 }
 
 .nav {
     width: 350px;
-
 }
 
 .nav__link {
     color: #303;
-   
 }
+
 .list__inside {
     list-style: none;
 }
 
 .nav__link--inside:hover {
     background: #f6f8fa;
-   
-
 }
 
 .list {
     width: 100%;
     height: 50vh;
     display: flex;
-    justify-content:  center;
+    justify-content: center;
     flex-direction: column;
     border-radius: 0 16px 16px 0;
-    background: rgba(255, 255, 255, .5)
-    }
+    background: rgba(255, 255, 255, .5);
+}
 
 .list__item {
     list-style: none;
@@ -194,10 +293,9 @@ text-decoration: none;
 
 .list__item--click {
     cursor: pointer;
-
 }
 
-.list__button{
+.list__button {
     display: flex;
     align-items: center;
     gap: 1em;

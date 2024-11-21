@@ -1,18 +1,24 @@
-
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: Century;
-
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century, sans-serif;
 }
 
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    height: 122vh;
-    background-size: cover;
-    background-position: center;
-    min-height: 100px;
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evitar desplazamiento horizontal no deseado */
+}
 
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: auto; /* Asegura que el header tenga una altura automática */
+    min-height: 80vh; /* Garantiza una altura mínima */
+    background-size: cover; /* Imagen de fondo ajustada para cubrir todo el espacio */
+    background-position: center;
+    padding: 2rem 0; /* Agrega algo de espacio interno */
+    overflow: hidden; /* Evitar desbordamientos */
+    
     animation-name: animate;
     animation-direction: alternate-reverse;
     animation-duration: 30s;
@@ -20,117 +26,159 @@ header{
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-timing-function: ease-in-out;
-
-
 }
-
-
 
 @keyframes animate {
-    0% {
-        background-image: url(.//fotos/tarapoto.png);
-     
-    }20% {
-        background-image: url(./fotos/selva.png);
-    }40% {
-        background-image: url(./fotos/Gocta.png);
-    }60% {
-        background-image: url(./fotos/peruniño.png);
-    }80% {
-        background-image: url(./fotos/limaPeru.png);
-    }100% {
-        background-image: url(./fotos/arequipa2.png);
-  
-    }
-
+    0% { background-image: url(./fotos/tarapoto.png); }
+    20% { background-image: url(./fotos/selva.png); }
+    40% { background-image: url(./fotos/Gocta.png); }
+    60% { background-image: url(./fotos/peruniño.png); }
+    80% { background-image: url(./fotos/limaPeru.png); }
+    100% { background-image: url(./fotos/arequipa2.png); }
 }
 
-/*---  Titulo de  Tour Peru travellers ----*/
-.titulo{
-  
+/* Ajustes para el título TourPeruTravellers */
+.titulo {
     width: 100%;
-    max-width: 650px;
+    max-width: 100%; /* El contenedor se ajustará al ancho de la pantalla */
     color: black;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    font-size: 17px;
-    background: rgba(255, 255, 255, .5);
-    
-
-
-  
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0 auto; /* Centra el contenedor */
+    word-wrap: normal; /* Evita el ajuste de palabras */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
 
+/* TourPeruTravellers */
+.TourPeruTravellers {
+    font-size: 3vw; /* Ajuste dinámico para que se ajuste al 4% del ancho de la pantalla */
+    color: black;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem;
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap; /* Evita saltos de línea */
+    max-width: 100%; /* Asegura que el texto no se desborde */
+    overflow: hidden; /* Previene desbordamientos */
+    text-align: center; /* Centra el texto */
+    box-sizing: border-box; /* Asegura que el texto se ajuste al ancho del contenedor */
+    /* Cambiar margenes con unidades relativas */
+    margin-bottom: 0rem; /* 3 veces el tamaño de fuente raíz */
+    margin-top: 1rem; /* 5 veces el tamaño de fuente raíz */
+    }
 
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .TourPeruTravellers {
+        font-size: 5vw; /* Ajusta el tamaño para pantallas medianas */
+    }
+}
 
+/* Para tamaños móviles menores a 480px */
+@media (max-width: 480px) {
+    .TourPeruTravellers {
+        font-size: 5vw; /* Ajusta el tamaño aún más en pantallas más pequeñas */
+    }
+}
 
-/*--- cards---*/
+@media (max-width: 412px) {
+    /* Estilos específicos para Samsung Galaxy S10+, A41+, A22+, A33+ */
+    .TourPeruTravellers {
+        font-size: 8vw; /* Ajusta el tamaño para pantallas pequeñas */
+    }
+}
 
+@media (max-width: 360px) {
+    /* Estilos específicos para Samsung Galaxy S23, A35, S24, A25 */
+    .TourPeruTravellers {
+        font-size: 8vw; /* Ajusta el tamaño aún más en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 360px) {
+    /* Estilos específicos para Samsung Galaxy S9, S9+ */
+    .TourPeruTravellers {
+        font-size: 8vw; /* Ajusta el tamaño aún más en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 414px) {
+    /* Estilos específicos para iPhone 13, 14, 15 Pro Max */
+    .TourPeruTravellers {
+        font-size: 8vw; /* Ajusta el tamaño aún más en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 375px) {
+    /* Estilos específicos para iPhone 13, 14, 15 */
+    .TourPeruTravellers {
+        font-size: 8vw; /* Ajusta el tamaño aún más en pantallas más pequeñas */
+    }
+}
+
+/*--- Tarjetas ---*/
 .container_cards {
-
     width: 80%;
-    max-width: 450px;
+    max-width: 28rem;
     padding: 1rem 1.5rem;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: center; /* Alinea las tarjetas verticalmente */
+    flex-direction: column; /* Coloca las tarjetas una debajo de la otra */
+    margin-bottom: 0.5rem; /* Espacio entre tarjetas */
+    margin-top: 0.5rem; /* Espacio para que las tarjetas no se sobrepongan con el título */
 }
-
 
 .card-body {
     width: 100%;
-    max-width: 500px;
+    max-width: 31.25rem;
     color: black;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    font-size: 18px;
-    background: rgba(255, 255, 255, .5)
-
-
+    font-size: 1.3rem;
+    background: rgba(255, 255, 255, 0.5);
 }
 
-/*About us, Mision, Vision */
-.card-title{
-    font-size: 45px;
-    background: rgba(211, 71, 71, 0.5)
+/* Acerca de nosotros, Misión, Visión */
+.card-title {
+    font-size: 1.4rem;
+    background: rgba(211, 71, 71, 0.5);
 }
 
-
-
-
-/*---SOCIAL MEDIA --*/
-
-:root{
+/* Redes Sociales */
+:root {
     --facebook: #3b5999;
     --instagram: #e4405f;
     --youtube: #55acee;
     --linkedin: #0077b5;
 }
-.social_media{
+
+.social_media {
     display: flex;
+    justify-content: flex-end; /* Mueve los íconos a la derecha */
     height: 5vh;
-    align-items: end;
-    justify-content: end;
+    margin-top: 2rem; /* Espacio entre las tarjetas y las redes sociales */
 }
 
 .social_media ul li {
     display: inline-block;
-    margin: 0 5px;
-    width: 50px;
-    height: 50px;
+    margin: 0 0.25rem;
+    width: 3.125rem;
+    height: 3.125rem;
     text-align: center;
-
 }
 
-.social_media ul li a{
+.social_media ul li a {
     display: block;
     padding: 0 10%;
     background: #333;
     color: #fff;
-    line-height: 50px;
-    font-size: 18px;
-    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
-    transition: .2s;
+    line-height: 3.125rem;
+    font-size: 1.125rem;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
 }
 
 .social_media ul:hover a {
@@ -138,236 +186,12 @@ header{
 }
 
 .social_media ul li a:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .5);
+    transform: translateY(-0.3rem) scale(1.05);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
     filter: none;
 }
-.social_media ul li .facebook.hover{
-    background: var(--facebook);
-}
-.social_media ul li .instagram.hover{
-    background: var(--instagram);
-}
 
-.social_media ul li .youtube.hover{
-    background: var(--youtube);
-}
-
-.social_media ul li .linkedin.hover{
-    background: var(--linkedin);
-}
-
-
-
-
-
-/*--- SOCIAL MEDIA DISEÑO ---- */
-/*
-ul {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
-    display: flex;
-
-}
-
-ul li {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    display: block;
-    text-align: center;
-    margin: 0 10px;
-    border-radius: 50%;
-    padding: 4px;
-    box-sizing: border-box;
-    text-decoration: none;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    background-color: linear-gradient(0deg, #ddd, #fff);
-    transition: .5s
-    
-}
-
-ul li a:hover {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-}
-
-ul li a .fab {
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: linear-gradient(0deg, #fff, #ddd);
-    border-radius: 50%;
-    line-height: calc(60px -12px);
-    font-size: 24px;
-    color: #262626;
-    transition: .5s;
-}
-
-ul li:nth-child(1) a:hover .fab{
-    color:#3b5998;
-
-}
-
-ul li:nth-child(2) a:hover .fab{
-    color: #00aced;
-
-}
-
-ul li:nth-child(3) a:hover .fab{
-    color:#dd4b39;
-}
-
-
-ul li:nth-child(4) a:hover .fab{
-    color:#007bb6;
-}
- */
-
-/*SOCIAL MEDIA DISEÑOS*/
-/*
-
-ul {
-    float: right;
-    list-style-type: none;
-    margin-top: 30px;
-    min-height: 400px;
-    margin-right: 60px;
-    font-size: 17px;
-}
-
-
-ul li {
-    display: inline-block;
-}
-
-.social_media {
-
-        
-    display: flex;
-    *align-items: flex-end;     
-    *float: right;
-    height: 100svh; 
-    
-    justify-content: right;
-    align-items: end;
-}
-
-ul li a {
-    
-    
-    width: 100 px;
-    height: 150 px;
-   color: #fff;
-    border: 1px solid rgba(255, 255, 255, .2);
-    margin: 20px;
-    text-decoration: none;
-    color: #fff;
-    overflow: hidden;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, .2);
-    backdrop-filter: blur(2px);
-    border-right-color: rgba(255, 255, 255, .2);
-    border-block-color: rgba(255,255,255, .1);
-    box-shadow:  0 20px 30px rgba(255,255,255, .1);
-    font-size: 2rem;
-    border-radius: 5px;
-    transition: .2s;
-     padding: 5px 15px;
-    border: 1px solid transparent;
-    
-    transition: 0.5 ease;
-} 
-
-a::before{
-    
-    content: '';
-    position: absolute;
-    display: block;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, .5);
-    filter: blur(0);
-    transform: skewX(20deg) translateX(calc(100px +50%));
-
-
-}
-
-a:hover::before{
-    transform: skewX(20deg) translateX(calc(100px * -1 -50%));
-
-}
-a:hover{
-    transform: translateY(-20px);
-    outline: 1px solid rgba(255, 255, 255, .5);
-}
-
-a:focus {
-    outline: none;
-}
-
-
-/* ul li a:hover {
-   background-color: #fff;
-    color:#000;
-}*/
-
-/*
-.social_media {
-
-        
-        display: flex;
-        align-items: flex-end;      
-        float: right;
-        height: 100vh;       
-        list-style-type: none;
-        text-decoration: none;
-       
-}
-
-
-.social_media ul li{
-    display: inline-block;
-    margin: 0 5px;
-    width: 50px;
-    height: 50px;
-
-}
-.social_media ul li a{
-   font-size: 30px;
-   color: white;
-
-}
-
-*/
-
-
-
-/*________--------------------------___________*/
-
-
-/*-------------------*/
-
-/*
-.container2 {
-
-    font-family: Century;
-    position: absolute;
-    top: 70%;
-    left: 5%;
-    font-size: 25px;
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.5 ease;
-}
-
-*/
+.social_media ul li .facebook.hover { background: var(--facebook); }
+.social_media ul li .instagram.hover { background: var(--instagram); }
+.social_media ul li .youtube.hover { background: var(--youtube); }
+.social_media ul li .linkedin.hover { background: var(--linkedin); }
