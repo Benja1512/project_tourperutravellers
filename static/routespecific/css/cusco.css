@@ -24,17 +24,17 @@ header{
 
 @keyframes animate {
     0% {
-        background-image: url(/static/tourperu/img/cuscofotos/cusco1.png);     
+        background-image: url(/static/tourperu/img/cuscofotos/10cuscocaminoinca1.jpg);     
     }20% {
-        background-image: url(/static/tourperu/img/cuscofotos/cusco2.png);
+        background-image: url(/static/tourperu/img/cuscofotos/1choquequirao3.jpg);
     }40% {
-        background-image: url(/static/tourperu/img/cuscofotos/cusco3.png);
+        background-image: url(/static/tourperu/img/cuscofotos/10cuscocaminoinca2.jpg);
     }60% {
-        background-image: url(/static/tourperu/img/cuscofotos/cusco4.png);
+        background-image: url(/static/tourperu/img/cuscofotos/1cuscovallemapi2.jpg);
     }80% {
-        background-image: url(/static/tourperu/img/cuscofotos/cusco5.png);            
+        background-image: url(/static/tourperu/img/cuscofotos/1cuscovallemapi1.jpg);            
     }100% {
-        background-image: url(/static/tourperu/img/cuscofotos/cusco6.png);            
+        background-image: url(/static/tourperu/img/cuscofotos/1cuscoinkajungle4..jpg);            
     }
 
 
@@ -56,6 +56,9 @@ header{
 
 .title {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 65px;
+    text-align: center; /**/
+    margin: 5% 5% 5% 5%;/**/
 }
 .para1 {
 
@@ -64,7 +67,12 @@ header{
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
+    font-size: 18px;
+    text-align: justify; /**/
+   
 }
+
+
 
 
 
@@ -96,6 +104,7 @@ header{
     .shape-box_half {
         overflow: hidden;
         text-align: left;
+        width: 15rem;
     }
 
     .shape-box_half:before {
@@ -220,8 +229,7 @@ header{
 
 
 
-
-    /* DISEÑO DE VIDEO*/
+      /* DISEÑO DE VIDEO*/
 
 /* Estilos para la sección de videos */
 .video-section {
@@ -305,4 +313,119 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+}
+
+
+/* ----- RESPONSIVE ------*/
+
+/* ---------- 320x844 ----------*/ 
+@media (max-width: 320px) and (max-height: 844px)  {
+    .title {
+        font-size: 33px;
+    }
+
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 7rem; /* Máximo ancho de 14rem */
+        margin: 4rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+      .para1 {
+
+        font-size: 15px;
+    }
+}
+
+/* ---------- 412x869 ----------*/ 
+@media (max-width: 412px) and (max-height: 869px) {
+
+    .title {
+        font-size: 33px;
+    }
+
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 18rem; /* Máximo ancho de 14rem */
+        margin: 4rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+      .para1 {
+
+        font-size: 15px;
+    }
+}
+
+/* ---------- 360x760----------*/ 
+@media (max-width: 360px) and (max-height: 760px) {
+
+    .title {
+        font-size: 33px;
+    }
+
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 18rem; /* Máximo ancho de 14rem */
+        margin: 2rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+      .para1 {
+
+        font-size: 15px;
+    }
+}
+
+/* ---------- 360x896----------*/ 
+@media (max-width: 414px) and (max-height: 896px) {
+
+    .title {
+        font-size: 33px;
+    }
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 16rem; /* Máximo ancho de 14rem */
+        margin: 1rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+    .para1 {
+
+        font-size: 15px;
+    }
+}
+
+
+/* ---------- 768x1024----------*/ 
+@media (max-width: 768px) and (max-height: 1024px) {
+
+    .title {
+        font-size: 33px;
+    }
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 16rem; /* Máximo ancho de 14rem */
+        margin: 1rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+    .para1 {
+
+        font-size: 15px;
+    }
+}
+
+
+/* ---------- 768x1024----------*/ 
+@media (max-width: 2048px) and (max-height: 1536px) {
+
+    .title {
+        font-size: 33px;
+    }
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 16rem; /* Máximo ancho de 14rem */
+        margin: 1rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+    .para1 {
+
+        font-size: 15px;
+    }
 }

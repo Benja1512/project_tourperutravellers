@@ -1,13 +1,34 @@
-
-*{
+/* Estilos Generales */
+* {
     margin: 0px;
     padding: 0px;
     font-family: Century;
-
+    box-sizing: border-box;
 }
 
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Evita barras de desplazamiento horizontal */
+}
+
+
+h1 {
+    font-family: Century, sans-serif;
+    font-size: 2.3vw;
+    border: 1px solid transparent;
+}
+
+
+p {
+    font-family: Century, sans-serif;
+    font-size: 1.7vw;
+    border: 1px solid transparent;
+}
+
+/* Header */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -20,79 +41,70 @@ header{
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-timing-function: ease-in-out;
-
-
 }
 
 @keyframes animate {
     0% {
         background-image: url(./fotos/causaRellena.png);
-     
-    }20% {
+    }
+    20% {
         background-image: url(./fotos/incaKola.png);
-    }40% {
+    }
+    40% {
         background-image: url(./fotos/piscoPeru.png);
-    }60% {
+    }
+    60% {
         background-image: url(./fotos/picarones.png);
-    }80% {
+    }
+    80% {
         background-image: url(./fotos/Cuzqueña.png);
-    }100% {
+    }
+    100% {
         background-image: url(./fotos/papaHuancaina.png);
-  
+    }
 }
 
-
-
-}
-
-
-.container2 {
-
-    font-family: Century;
-    position: absolute;
-    top: 70%;
-    left: 5%;
-    font-size: 25px;
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.5 ease;
-}
-
-
-
-/*---- navigation var-------*/
-
+/* Contenedor */
 .container {
-    
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content:space-between;
-
+    justify-content: space-between;
 }
 
+.container2 {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+/* Navegación */
 nav {
     background: rgba(270, 270, 270, .5);
     border-radius: 50px;
-    padding: 10px;
+    padding: 6px;
     box-shadow: 0 25px 20px -20px rgba(0, 0, 0, .4);
-
 }
- 
+
 nav ul li a {
     text-decoration: none;
     list-style: none;
 }
-nav  ul li {
+
+nav ul li {
     text-decoration: none;
     list-style: none;
     display: inline-block;
-    padding: 13px 35x;
-    margin: 10px;
-    font-size: 15px;
+    padding: 10px 30px;
+    margin: 8px;
+    font-size: 25px;
     font-weight: 400;
     color: #b11a1a;
     cursor: pointer;
@@ -102,7 +114,7 @@ nav  ul li {
 }
 
 nav ul li a::after {
-    content:'';
+    content: '';
     background: #759be2;
     width: 120%;
     height: 120%;
@@ -114,9 +126,6 @@ nav ul li a::after {
     z-index: -1;
     opacity: 0;
     transition: top 0.5s, opacity 0.5s;
-
-   
-
 }
 
 nav ul li a:hover {
@@ -126,19 +135,17 @@ nav ul li a:hover {
 nav ul li a:hover::after {
     top: 50%;
     opacity: 1;
-} 
+}
 
-
-
-/*---SOCIAL MEDIA --*/
-
-:root{
+/* Redes Sociales */
+:root {
     --facebook: #3b5999;
     --instagram: #e4405f;
     --youtube: #55acee;
     --linkedin: #0077b5;
 }
-.social_media{
+
+.social_media {
     display: flex;
     height: 0vh;
     align-items: flex-end;
@@ -151,10 +158,9 @@ nav ul li a:hover::after {
     width: 40px;
     height: 50px;
     text-align: center;
-
 }
 
-.social_media ul li a{
+.social_media ul li a {
     display: block;
     padding: 0 10%;
     background: #333;
@@ -174,19 +180,282 @@ nav ul li a:hover::after {
     box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .5);
     filter: none;
 }
-.social_media ul li .facebook.hover{
-    background: var(--facebook);
-}
-.social_media ul li .instagram.hover{
-    background: var(--instagram);
-}
-
-.social_media ul li .youtube.hover{
-    background: var(--youtube);
-}
-
-.social_media ul li .linkedin.hover{
-    background: var(--linkedin);
-}
 
 
+/************************ RESPONSIVE ************************** /
+
+
+
+
+/* Media Queries para dispositivos específicos */
+
+/* Samsung Galaxy S10+, A41+, A22+, A33+ (412x869) */
+
+
+@media (max-width: 320px) and (max-height: 658px) {
+
+    h1 {
+
+        font-size: 1.2rem;
+
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .container2 {
+        margin-top: 2rem;
+    }
+    header {
+        background-size: cover;
+    }
+}
+
+/* Samsung Galaxy S23, A35, S24, A25 (360x760) */
+@media (max-width: 360px) and (max-height: 760px) {
+    .container2 {
+        font-size: 14px;
+    }
+    header {
+        background-size: cover;
+    }
+}
+@media (max-width: 412px) and (max-height: 869px) {
+
+    h1 {
+
+        font-size: 1.3rem;
+
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .container2 {
+        font-size: 14px;
+    }
+    header {
+        background-size: cover;
+    }
+}
+
+/* Samsung Galaxy S23, A35, S24, A25 (360x760) */
+@media (max-width: 360px) and (max-height: 760px) {
+    .container2 {
+        font-size: 14px;
+    }
+    header {
+        background-size: cover;
+    }
+}
+
+/* Samsung Galaxy S9, S9+ (360x740) */
+@media (max-width: 360px) and (max-height: 740px) {
+    .container2 {
+        font-size: 14px;
+    }
+    header {
+        background-size: cover;
+    }
+}
+
+/* iPhone 13, 14, 15 Pro Max (414x896) */
+@media (max-width: 414px) and (max-height: 896px) {
+
+    h1 {
+
+        font-size: 1.3rem;
+
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .container2 {
+        font-size: 14px;
+    }
+    header {
+        background-size: cover;
+    }
+}
+
+/* iPhone 13, 14, 15 (375x812) */
+@media (max-width: 375px) and (max-height: 812px) {
+    .container2 {
+        font-size: 14px;
+    }
+    header {
+        background-size: cover;
+    }
+}
+
+
+
+@media (max-width: 430px) and (max-height: 932px) {
+    
+    h1 {
+
+        font-size: 1.3rem;
+
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .container2 {
+        font-size: 14px;
+    }
+    header {
+        background-size: cover;
+    }
+}
+
+
+@media (max-width: 768px) and (max-height: 1024px) {
+    
+
+    nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+
+        font-size: 1.8rem;
+
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .container2 {
+        font-size: 14px;
+    }
+    header {
+        background-size: cover;
+    }
+}
+
+@media (min-width: 820px) and (min-height: 1180px) {
+    
+
+    nav ul li a {
+        font-size: 2rem;
+    }
+    
+    h1 {
+
+        font-size: 2.4rem;
+
+    }
+
+    p {
+        font-size: 2.4rem;
+    }
+
+    .container2 {
+        font-size: 20px;
+    }
+    header {
+        background-size: cover;
+    }
+}
+
+
+@media (width: 882px) and (height: 344px) {
+    
+    nav {
+       
+        
+        padding: 0.5px;
+       
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+    
+    h1 {
+
+        font-size: 1.4rem;
+
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .container2 {
+        font-size: 20px;
+    }
+    header {
+        background-size: cover;
+    }
+}
+
+@media (width: 412px) and (height: 914px) {
+    
+    nav {
+       
+        
+        padding: 0.5px;
+       
+    }
+
+    nav ul li a {
+        font-size: 1.4rem;
+    }
+    
+    h1 {
+
+        font-size: 1.5rem;
+
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    .container2 {
+        font-size: 20px;
+    }
+    header {
+        background-size: cover;
+    }
+}
+
+
+@media (min-width: 420px) and (min-height: 1080px) {
+    
+    nav {
+       
+        
+        padding: 0.5px;
+       
+    }
+
+    nav ul li a {
+        font-size: 1.8rem;
+    }
+    
+    h1 {
+
+        font-size: 1.6rem;
+
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .container2 {
+        font-size: 20px;
+    }
+    header {
+        background-size: cover;
+    }
+}

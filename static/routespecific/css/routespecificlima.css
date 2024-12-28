@@ -8,6 +8,14 @@ h1{
   font-size:60px;
   text-align:center;
 }
+
+
+p {
+  margin: 10px 10px 10px;
+  padding: 40px;
+  justify-content: center;
+}
+
 .timeline{
   position:relative;
   margin:50px auto;
@@ -78,7 +86,7 @@ h1{
   font-weight:600;
 }
 .timeline ul li p{
-  margin:10px 0 0;
+  margin: 15px 15px 15px 15px;
   padding:0;
 }
 .timeline ul li .time h4{
@@ -162,10 +170,254 @@ h1{
 
 .introduction {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 0%px;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding: 0%;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;    /* Centrar verticalmente */
+  height: auto;           /* Permitir que la altura se ajuste al contenido */
+  margin: 2% 6%;          /* Ajustar los márgenes */
+  padding: 0;             /* Eliminar el relleno */
+  text-align: center;     /* Centrar el texto dentro del elemento */
+}
+
+
+/* ---------------- RESPONSIVE --------------------------- */
+
+
+
+/*---------------------  320x658 ------------------------*/
+@media (width: 320px) and (width: 658px)  {
+
+  p {
+    margin: 15px 15px 15px 15px; /* Elimina el margen predeterminado */
+    padding: 15px; /* Elimina el padding */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas para mejorar la legibilidad */
+    text-align: justify; /* Opcional: justifica el texto */
+    padding: 1rem rem 0.5rem 0.5rem;
+  }
+  .timeline:before {
+    left: 20px; /* Línea a la izquierda */
+  }
+
+  .timeline ul li {
+    width: 50%; /* Ocupa todo el ancho */
+    padding-left: 50px;
+    padding-right: 0;
+    text-align: left; /* Todos los textos a la izquierda */
+  }
+
+  .timeline ul li::before {
+    left: 10px; /* Punto alineado a la línea */
+  }
+
+  .timeline ul li .time {
+    left: 40px; /* Tiempo alineado */
+    right: auto;
+    top: 0;
+  }
+}
+
+
+/*---------------------  375x667 ------------------------*/
+
+
+
+
+@media (width: 320px) and (width: 658px)  {
+
+  p {
+    margin: 15px 15px 15px 15px; /* Elimina el margen predeterminado */
+    padding: 15px; /* Elimina el padding */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas para mejorar la legibilidad */
+    text-align: justify; /* Opcional: justifica el texto */
+    padding: 1rem rem 0.5rem 0.5rem;
+  }
+  .timeline:before {
+    left: 20px; /* Línea a la izquierda */
+  }
+
+  .timeline ul li {
+    width: 100%; /* Ocupa todo el ancho */
+    padding-left: 50px;
+    padding-right: 0;
+    text-align: left; /* Todos los textos a la izquierda */
+  }
+
+  .timeline ul li::before {
+    left: 10px; /* Punto alineado a la línea */
+  }
+
+  .timeline ul li .time {
+    left: 40px; /* Tiempo alineado */
+    right: auto;
+    top: 0;
+  }
+}
+
+
+
+
+@media (width: 360px) and (width: 740px)  {
+
+  p {
+    margin: 15px 15px 15px 15px; /* Elimina el margen predeterminado */
+    padding: 15px; /* Elimina el padding */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas para mejorar la legibilidad */
+    text-align: justify; /* Opcional: justifica el texto */
+    padding: 1rem rem 0.5rem 0.5rem;
+  }
+  .timeline:before {
+    left: 20px; /* Línea a la izquierda */
+  }
+
+  .timeline ul li {
+    width: 100%; /* Ocupa todo el ancho */
+    padding-left: 50px;
+    padding-right: 0;
+    text-align: left; /* Todos los textos a la izquierda */
+  }
+
+  .timeline ul li::before {
+    left: 10px; /* Punto alineado a la línea */
+  }
+
+  .timeline ul li .time {
+    left: 40px; /* Tiempo alineado */
+    right: auto;
+    top: 0;
+  }
+}
+
+
+@media (width: 375px) and (width: 667px)  {
+
+  p {
+    margin: 15px 15px 15px 15px; /* Elimina el margen predeterminado */
+    padding: 15px; /* Elimina el padding */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas para mejorar la legibilidad */
+    text-align: justify; /* Opcional: justifica el texto */
+    padding: 1rem rem 0.5rem 0.5rem;
+  }
+  .timeline:before {
+    left: 20px; /* Línea a la izquierda */
+  }
+
+  .timeline ul li {
+    width: 100%; /* Ocupa todo el ancho */
+    padding-left: 50px;
+    padding-right: 0;
+    text-align: left; /* Todos los textos a la izquierda */
+  }
+
+  .timeline ul li::before {
+    left: 10px; /* Punto alineado a la línea */
+  }
+
+  .timeline ul li .time {
+    left: 40px; /* Tiempo alineado */
+    right: auto;
+    top: 0;
+  }
+}
+
+
+/*---------------------  414x896 ------------------------*/
+@media (width: 414px) and (width: 896px)  {
+  h1 {
+    padding: 15px;
+  }
+
+  p {
+    margin: 15px 15px 15px 15px; /* Elimina el margen predeterminado */
+    padding: 15px; /* Elimina el padding */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas para mejorar la legibilidad */
+    text-align: justify; /* Opcional: justifica el texto */
+    padding: 1rem rem 0.5rem 0.5rem;
+  }
+  .timeline:before {
+    left: 20px; /* Línea a la izquierda */
+  }
+
+  .timeline ul li {
+    width: 100%; /* Ocupa todo el ancho */
+    padding-left: 50px;
+    padding-right: 0;
+    text-align: left; /* Todos los textos a la izquierda */
+  }
+
+  .timeline ul li::before {
+    left: 10px; /* Punto alineado a la línea */
+  }
+
+  .timeline ul li .time {
+    left: 40px; /* Tiempo alineado */
+    right: auto;
+    top: 0;
+  }
+}
+
+
+/*---------------------  430x932 ------------------------*/
+@media (width: 430px) and (width: 932px)  {
+
+  p {
+    margin: 15px 15px 15px 15px; /* Elimina el margen predeterminado */
+    padding: 15px; /* Elimina el padding */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas para mejorar la legibilidad */
+    text-align: justify; /* Opcional: justifica el texto */
+    padding: 1rem rem 0.5rem 0.5rem;
+  }
+  .timeline:before {
+    left: 20px; /* Línea a la izquierda */
+  }
+
+  .timeline ul li {
+    width: 100%; /* Ocupa todo el ancho */
+    padding-left: 50px;
+    padding-right: 0;
+    text-align: left; /* Todos los textos a la izquierda */
+  }
+
+  .timeline ul li::before {
+    left: 10px; /* Punto alineado a la línea */
+  }
+
+  .timeline ul li .time {
+    left: 40px; /* Tiempo alineado */
+    right: auto;
+    top: 0;
+  }
+}
+
+
+
+
+/*---------------------  430x932 ------------------------*/
+@media (width: 412px) and (width: 915px)  {
+
+  p {
+    margin: 15px 15px 15px 15px; /* Elimina el margen predeterminado */
+    padding: 15px; /* Elimina el padding */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas para mejorar la legibilidad */
+    text-align: justify; /* Opcional: justifica el texto */
+    padding: 1rem rem 0.5rem 0.5rem;
+  }
+  .timeline:before {
+    left: 20px; /* Línea a la izquierda */
+  }
+
+  .timeline ul li {
+    width: 100%; /* Ocupa todo el ancho */
+    padding-left: 50px;
+    padding-right: 0;
+    text-align: left; /* Todos los textos a la izquierda */
+  }
+
+  .timeline ul li::before {
+    left: 10px; /* Punto alineado a la línea */
+  }
+
+  .timeline ul li .time {
+    left: 40px; /* Tiempo alineado */
+    right: auto;
+    top: 0;
+  }
 }

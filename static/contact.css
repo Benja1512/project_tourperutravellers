@@ -1,17 +1,36 @@
-
-*{
+/* Estilo base (sin cambios en el diseño ni estructura) */
+* {
     margin: 0;
-    padding: px;
+    padding: 0;
     font-family: Century;
-
 }
 
-header{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    height: 128vh;
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: Century, sans-serif;
+    font-size: 2vw;
+    border: 1px solid transparent;
+}
+
+
+p {
+    font-family: Century, sans-serif;
+    font-size: 1.4vw;
+    border: 1px solid transparent;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    height: 110vh;
     background-size: cover;
     background-position: center;
-    min-height: 100px;
+    min-height: 10vh;
+
+    position: relative;
 
     animation-name: animate;
     animation-direction: alternate-reverse;
@@ -21,149 +40,189 @@ header{
     animation-play-state: running;
     animation-timing-function: ease-in-out;
 
-     /* display: flex; /* Añadido para centrar el contenido del encabezado */
-    /* justify-content: center; /* Centra horizontalmente */
-    /* align-items: center; /* Centra verticalmente */
     display: flex;
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
- 
+    justify-content: center;
+    align-items: center;
 }
 
 
+legend {
+    font-size: 1.8rem;
+    
+}
 
-/* Estilos generales del formulario */
 .formulario {
-    max-width: px; /* Tamaño máximo del formulario */
-    margin: 1.5cm auto; /* Para centrar horizontalmente */
-    padding: 0.6cm;
-    background-color: rgba(30, 30, 30, 0.5); /* Fondo blanco con transparencia */
-    border-radius: 10px;
-    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    backdrop-filter: blur(10px); /* Opcional: borroso para dar efecto de vidrio */
-    font-size: 15px; /* Tamaño de letra ligeramente reducido */
+    max-width: 40%;
+    width: 30%; /* Adaptable a todo el ancho */
+
+    margin: auto;
+    padding: 0.5rem;
+    background-color: rgba(30, 30, 30, 0.5);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.125rem 0.0625rem rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1cm;
- 
- 
+    gap: 1rem;
+    position: relative
+}
+
+.campo {
+    display: flex;
+    align-items: center; /* Alisnea los elementos verticalmente */
+    gap: .2rem; /* Espaciado entre los elementos */
+    margin-bottom: 0.1rem; /* Espacio entre las filas de campos */
+  
+}
+
+
+fieldset {
+    display: block;
+    min-inline-size: min-content;
+    margin-inline: 2px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+    padding-block: 0.35em 0.625em;
+    padding-inline: 0.75em;
+   
+}
+
+.campo label {
+    flex: 0 0 5%; /* Define un ancho fijo para los labels */
+    text-align: right; /* Alinea el texto del label a la derecha */
+}
+
+.campo input,
+.campo textarea,
+.campo select {
+    flex: 0.6; /* Los campos de entrada ocuparán el resto del espacio */
+    padding: 0.1rem;
+    border: .3px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    min-width: 10px; /* Define un ancho mínimo para los campos */
 
 }
+form.formulario .campo input[type="text"], 
+form.formulario .campo input[type="email"], 
+form.formulario .campo input[type="date"], 
+form.formulario .campo textarea {
+    flex: 0.95;
+    padding: 0.3125rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+}
+
 
 
 @keyframes animate {
     0% {
         background-image: url(/static/fotos/vicuña.png);
-     
-    }20% {
+    }
+    20% {
         background-image: url(/static/fotos/tshirt-Peru.png);
-    }40% {
+    }
+    40% {
         background-image: url(/static/fotos/PeruvianChullo.png);
-    }60% {
+    }
+    60% {
         background-image: url(/static/fotos/sacsayhuaman.png);
-    }80% {
+    }
+    80% {
         background-image: url(/static/fotos/surfingteamperu.png);
-    }100% {
+    }
+    100% {
         background-image: url(/static/fotos/parqueDelasAguas.png);
-  
+    }
 }
 
-}
-
-
-/* estilos de formulario */ 
-
-/* Estilos para los campos de entrada */
 .formulario input[type="text"],
 .formulario input[type="email"],
 .formulario input[type="date"],
-.formulario input[type="file"],
 .formulario textarea {
-    width: 70%;
-    padding: 5px;
-    margin-bottom: 7px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 13px; /* Tamaño de letra uniforme */
+    width: 10%;
+    padding: 0.1rem;
+    margin-bottom: 0.4375rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 0.8125rem;
     color: #333;
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* Botones estilo transparente */
 .formulario button,
-.formulario input[type="submit"],
-.formulario input[type="file"] {
-    width: 40%; /* Mismo tamaño para ambos botones */
-    padding: 6px;
+.formulario input[type="submit"] {
+    width: 20%;
+    padding: 0.375rem;
     color: #333;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 11px; /* Tamaño de letra uniforme */
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+    font-size: 0.6875rem;
     cursor: pointer;
-    background-color: transparent; /* Fondo transparente */
+    background-color: transparent;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Estilo de hover para botones */
 .formulario button:hover,
-.formulario input[type="submit"]:hover,
-.formulario input[type="file"]:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente al hacer hover */
-    color: #fff; /* Cambia el color del texto al hacer hover */
+.formulario input[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
 }
 
-
-
-/*------------*/
 .container2 {
-
     font-family: Century;
     position: absolute;
-    top: 110%;
+    margin-top: 5rem;
+    top: 83%;
     left: 5%;
-    font-size: 25px;
+    font-size: 5rem;
     text-decoration: none;
     color: #fff;
-    padding: 5px 20px;
-    border: 1px solid transparent;
-    transition: 0.5 ease;
+    padding: 0.3125rem 1.25rem;
+    border: 0.0625rem solid transparent;
+    transition: 0.5s ease;
 }
 
-
-/*---SOCIAL MEDIA --*/
-
-:root{
-    --facebook: #3b5999;
-    --instagram: #e4405f;
-    --youtube: #55acee;
-    --linkedin: #0077b5;
-}
-.social_media{
+.social_media {
     display: flex;
-    height: 0;
-    align-items: end;
-    justify-content: end;
-   
+    height: 0vh;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.social_media ul {
+    display: flex; /* Asegura que los elementos estén en una fila */
+    justify-content: center; /* Centra los elementos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .social_media ul li {
     display: inline-block;
-    margin: 0 5px;
-    width: 50px;
-    height: 50px;
+    margin: 0 0.3125rem;
+    width: 2.5rem;
+    height: 3.125rem;
     text-align: center;
-
 }
 
-.social_media ul li a{
+.social_media ul li a {
     display: block;
     padding: 0 10%;
     background: #333;
     color: #fff;
-    line-height: 50px;
-    font-size: 18px;
-    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
-    transition: .2s;
+    line-height: 3.125rem;
+    font-size: 1.125rem;
+    box-shadow: 0 0.1875rem 0.3125rem 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
 }
 
 .social_media ul:hover a {
@@ -171,83 +230,3532 @@ header{
 }
 
 .social_media ul li a:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .5);
+    transform: translateY(-0.1875rem) scale(1.05);
+    box-shadow: 0 0.3125rem 0.3125rem 0 rgba(0, 0, 0, 0.5);
     filter: none;
 }
-.social_media ul li .facebook.hover{
-    background: var(--facebook);
-}
-.social_media ul li .instagram.hover{
-    background: var(--instagram);
-}
 
-.social_media ul li .youtube.hover{
-    background: var(--youtube);
+.icons-below-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+    margin-top: 2.5rem;
 }
 
-.social_media ul li .linkedin.hover{
-    background: var(--linkedin);
+.icon {
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
-/* Oculta el input de archivo original */
-input[type="file"] {
-    display: none;
-}
-
-
-/*------------------------------------------------------------------*/
-
-
-/* Estilo para el botón de archivo personalizado */
-.custom-file-upload {
-    display: inline-block;
-    padding: 8px 40px;
-    cursor: pointer;
-    background-color: transparent;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 13px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.custom-file-upload:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.icon ion-icon {
+    font-size: 2.5rem;
     color: #fff;
+    transition: transform 0.3s ease;
 }
 
-/* Ocultar el input de archivo original */
+.icon a:hover ion-icon {
+    transform: scale(1.2);
+}
+
+
+
+
+/* Ocultar el input original */
 input[type="file"] {
     display: none;
 }
 
-
-/*-------------------------*
-
 /* Estilo para el botón de archivo personalizado */
 .custom-file-upload {
     display: inline-block;
-    padding: 8px 40px;
+    padding: 0.5rem 2.5rem;
     cursor: pointer;
     background-color: transparent;
     color: #333;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 13px;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+    font-size: 0.8rem;
     transition: background-color 0.3s ease, color 0.3s ease;
-    max-width: 200px; /* Ancho máximo para el botón */
+    max-width: 3rem;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; /* Trunca el texto largo con puntos suspensivos */
+    text-overflow: ellipsis;
 }
 
+/* Efecto hover en el botón personalizado */
 .custom-file-upload:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
 }
 
-/* Ocultar el input de archivo original */
-input[type="file"] {
-    display: none;
+
+.campo {
+    display: flex;
+    flex-direction: row; /* Coloca los elementos en una línea horizontal */
+    align-items: center; /* Alinea verticalmente los elementos */
+    gap: .2rem; /* Espaciado entre los elementos */
+    flex-wrap: wrap;
+}
+
+.campo label {
+    flex: 0 0 auto; /* El label tendrá un ancho automático */
+    width: 100px; /* Puedes ajustar este valor para controlar el ancho del label */
+    text-align: right; /* Alinea el texto del label a la derecha */
+    margin-right: 0.5rem; /* Espacio entre el label y el input */
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="date"],
+.campo textarea {
+    flex: 1; /* Los inputs ocuparán el espacio restante */
+    padding: 0.125rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Media queries (adaptar solo el tamaño de pantalla) */
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 375px) and (height: 667px) {
+    
+
+    .formulario {
+        width: 90%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+    }
+
+
+    h1{
+
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 11px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 0.9rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.7em; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+}
+}
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 320px) and (height: 658px) {
+    
+
+    .formulario {
+        width: 90%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+    }
+
+
+    h1{
+
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: .8rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 11px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 0.9rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.7em; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+}
+}
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 414px) and (height: 896px) {
+    
+
+    .formulario {
+        width: 90%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+    }
+
+
+    h1{
+
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+}
+}
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 390px) and (height: 844px) {
+    
+
+    .formulario {
+        width: 90%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 43rem;
+    }
+
+
+    h1{
+
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 390px) and (height: 844px) {
+    
+
+    .formulario {
+        width: 90%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 43rem;
+    }
+
+
+    h1{
+
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 430px) and (height: 932px) {
+    
+
+    .formulario {
+        width: 90%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 49rem;
+    }
+
+
+    h1{
+
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 412px) and (height: 915px) {
+    
+
+    .formulario {
+        width: 90%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 49rem;
+    }
+
+
+    h1{
+
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 360px) and (height: 740px) {
+    
+    header {
+        height: 130vh;
+    }
+
+    .formulario {
+        width: 90%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 45rem;
+    }
+
+
+    h1{
+
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 768px) and (height: 1024px) {
+    
+    header {
+        height: 120vh;
+    }
+
+    .formulario {
+        width: 50%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 55rem;
+    }
+
+
+    h1{
+
+        font-size: 1.9rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (min-width: 820px) and (min-height: 1180px) {
+    
+    header {
+        height: 110vh;
+    }
+
+    .formulario {
+        width: 40%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 80%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 86rem;
+    }
+
+
+    h1{
+
+        font-size: 2.8rem;
+    }
+
+    p {
+        font-size: 2.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 1024px) and (height: 1366px) {
+    
+    header {
+        height: 90vh;
+    }
+
+    .formulario {
+        width: 45%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 90rem;
+    }
+
+
+    h1{
+
+        font-size: 2.8rem;
+    }
+
+    p {
+        font-size: 2.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 912px) and (height: 1368px) {
+    
+    header {
+        height: 110vh;
+    }
+
+    .formulario {
+        width: 50%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 75rem;
+    }
+
+
+    h1{
+
+        font-size: 2.8rem;
+    }
+
+    p {
+        font-size: 2.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 540px) and (height: 720px) {
+    
+    header {
+        height: 130vh;
+    }
+
+    .formulario {
+        width: 60%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 80%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 45rem;
+    }
+
+
+    h1{
+
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 344px) and (height: 882px) {
+    
+    header {
+        height: 140vh;
+    }
+
+    .formulario {
+        max-width: 100vh;
+        min-height: 50vh;
+        width: 90%;
+        
+        
+        margin: auto;
+        padding: 0.5rem;
+        background-color: rgba(30, 30, 30, 0.5);
+        border-radius: 0.625rem;
+        box-shadow: 0 0.125rem 0.0625rem rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        font-size: 1rem;
+        display: flex
+    ;
+        gap: 0.5rem;
+        position: relative;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 56rem;
+    }
+
+
+    h1{
+
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 412px) and (height: 914px) {
+    
+    header {
+        height: 135vh;
+    }
+
+    .formulario {
+        max-width: 100vh;
+        min-height: 50vh;
+        width: 90%;
+        
+        
+        margin: auto;
+        padding: 0.5rem;
+        background-color: rgba(30, 30, 30, 0.5);
+        border-radius: 0.625rem;
+        box-shadow: 0 0.125rem 0.0625rem rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        font-size: 1rem;
+        display: flex
+    ;
+        gap: 0.5rem;
+        position: relative;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 57rem;
+    }
+
+
+    h1{
+
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 1024px) and (height: 600px) {
+    
+    header {
+        height: 190vh;
+    }
+
+    .formulario {
+        max-width: 70vh;
+        min-height: 30vh;
+        width: 90%;
+        
+        
+        
+        margin: auto;
+        padding: 0.5rem;
+        background-color: rgba(30, 30, 30, 0.5);
+        border-radius: 0.625rem;
+        box-shadow: 0 0.125rem 0.0625rem rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        font-size: 1rem;
+        display: flex
+    ;
+        gap: 0.5rem;
+        position: relative;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 57rem;
+    }
+
+
+    h1{
+
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+/************************************************************************************/
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 412px) and (height: 869px) {
+    
+    header {
+        height: 120vh;
+    }
+
+    .formulario {
+        width: 90%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 49rem;
+    }
+
+
+    h1{
+
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 360px) and (height: 760px) {
+    
+    header {
+        height: 120vh;
+    }
+
+    .formulario {
+        width: 90%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 43rem;
+    }
+
+
+    h1{
+
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 360px) and (height: 740px) {
+    
+    header {
+        height: 120vh;
+    }
+
+    .formulario {
+        width: 90%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 42rem;
+    }
+
+
+    h1{
+
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 375px) and (height: 812px) {
+    
+    header {
+        height: 125vh;
+    }
+
+    .formulario {
+        width: 90%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 100%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 49rem;
+    }
+
+
+    h1{
+
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 2048px) and (height: 1536px) {
+    
+    header {
+        height: 125vh;
+    }
+
+    .formulario {
+        width: 35%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 35%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 89rem;
+    }
+
+
+    h1{
+
+        font-size: 2.8rem;
+    }
+
+    p {
+        font-size: 2.4rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 1280px) and (height: 720px) {
+    
+    header {
+        height: 135vh;
+    }
+
+    .formulario {
+        width: 35%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 35%; /* Evita que supere los límites */
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+    }
+    
+    .container2 {
+        font-size: 4px;
+        top: 45rem;
+    }
+
+
+    h1{
+
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1.1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 17px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 1.3rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 1.3rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 1.2rem; /* Ajustar el tamaño del texto */
+        padding: 0.4rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 1.5rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #333;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+/**************************  HORIZONTAL +++++++++++++++++++++++++++++++++ /
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 658px) and (height: 320px) {
+    
+    header {
+        height: 200vh;
+    }
+
+    .formulario {
+        width: 50%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 53%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 28rem;
+    }
+
+
+    h1{
+
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 9px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 0.6rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.55rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.8rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+        
+    }
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 667px) and (height: 375px) {
+    
+    header {
+        height: 170vh;
+    }
+
+    .formulario {
+        width: 50%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 53%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 28rem;
+    }
+
+
+    h1{
+
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 9px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.11rem;
+    }
+
+    .campo label {
+        font-size: 0.6rem; /* Ajustar el tamaño del texto */
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.55rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.8rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+        
+    }
+
+
+
+    
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 896px) and (height: 414px) {
+    
+    header {
+        height: 180vh;
+    }
+
+    .formulario {
+        width: 50%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 50%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 32rem;
+    }
+
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+        
+    }
+
+
+
+
+
+
+    
+    
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 844px) and (height: 390px) {
+    
+    header {
+        height: 180vh;
+    }
+
+    .formulario {
+        width: 50%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 53%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 32rem;
+    }
+
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+        
+    }
+
+
+
+
+
+       
+    
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 932px) and (height: 430px) {
+    
+    header {
+        height: 180vh;
+    }
+
+    .formulario {
+        width: 50%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 53%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 34rem;
+    }
+
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+}
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 915px) and (height: 412px) {
+    
+    header {
+        height: 180vh;
+    }
+
+    .formulario {
+        width: 50%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 53%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 34rem;
+    }
+
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+}
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 740px) and (height: 360px) {
+    
+    header {
+        height: 190vh;
+    }
+
+    .formulario {
+        width: 50%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 58%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 30rem;
+    }
+
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+}
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 1024px) and (height: 768px) {
+    
+    header {
+        height: 100vh;
+    }
+
+    .formulario {
+        width: 50%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 58%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 35rem;
+    }
+
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+}
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 882px) and (height: 344px) {
+    
+    header {
+        height: 200vh;
+    }
+
+    .formulario {
+        width: 50%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 50%;
+        min-height: 55%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 30rem;
+    }
+
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+}
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 720px) and (height: 540px) {
+    
+    header {
+        height: 130vh;
+    }
+
+    .formulario {
+        width: 50%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 55%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 31rem;
+    }
+
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+}
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 914px) and (height: 412px) {
+    
+    header {
+        height: 160vh;
+    }
+
+    .formulario {
+        width: 70%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 55%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 30rem;
+    }
+
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+}
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 869px) and (height: 412px) {
+    
+    header {
+        height: 160vh;
+    }
+
+    .formulario {
+        width: 70%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 55%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 30rem;
+    }
+
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+}
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 760px) and (height: 360px) {
+    
+    header {
+        height: 190vh;
+    }
+
+    .formulario {
+        width: 70%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 55%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 30rem;
+    }
+
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+}
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 812px) and (height: 375px) {
+    
+    header {
+        height: 190vh;
+    }
+
+    .formulario {
+        width: 70%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 55%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 30rem;
+    }
+
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+}
+
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 1536px) and (height: 2048px) {
+    
+    header {
+        height: 190vh;
+    }
+
+    .formulario {
+        width: 70%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 55%;
+        min-height: 40%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 30rem;
+    }
+
+
+    h1{
+
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
+}
+
+
+
+
+/* Ajuste para Samsung Galaxy S10+, A41+, A22+, A33+ (412 x 869) */
+@media screen and (width: 720px) and (height: 1280px) {
+    
+    header {
+        height: 140vh;
+    }
+
+    .formulario {
+        width: 75%; /* Ajusta el ancho para que se adapte a pantallas más pequeñas */
+        max-width: 40%; /* Evita que supere los límites */
+        height: 21%;
+        min-height: 18%;
+        margin: 0 auto; /* Centra el formulario */
+        padding: 1rem; /* Proporciona espacio interno */
+        font-size: 0.5rem;
+    }
+
+
+   
+    legend {
+        font-size: 1rem;
+    }
+    
+    
+    .container2 {
+        font-size: 4px;
+        top: 75rem;
+    }
+
+
+    h1{
+
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    form.formulario .campo input[type="text"],
+    form.formulario .campo input[type="email"],
+    form.formulario .campo input[type="date"],
+    form.formulario .campo textarea {
+        width: 100%;             /* Make fields expand to fill the container */
+        padding: 1px;           /* Add space inside the fields */
+        margin: 2px 0;           /* Add vertical spacing between fields */
+        border: 1px solid #ccc;  /* Light border around the fields */
+        border-radius: 4px;      /* Rounded corners */
+        font-size: 12px;         /* Set font size */
+        box-sizing: border-box;  /* Include padding and border in element's total width/height */
+    
+    }
+
+
+    .campo label {
+        font-size: 0.8rem; /* Reducir texto del label */
+        gap: 0.7rem;
+    }
+
+   
+
+    .campo input,
+    .campo textarea {
+        font-size: 0.8rem; /* Ajustar el tamaño del texto */
+        padding: 0.1rem; /* Reducir el padding interno */
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 0.9rem; /* Ajustar tamaño del texto */
+        padding: 0.5rem; /* Reducir tamaño del botón */
+    }
+
+    .formulario button, .formulario input[type="submit"] {
+        width: 20%;
+        padding: 0.375rem;
+        color: #161616;
+        border: 0.0625rem solid #ccc;
+        border-radius: 0.3125rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    
+    .custom-file-upload {
+        display: inline-block; /* Comportamiento en línea */
+        padding: 0.5rem 2rem; /* Espaciado interno */
+        cursor: pointer; /* Muestra el puntero de clic */
+        background-color: rgba(180, 172, 172, 0.8); /* Fondo oscuro con transparencia */
+        color: #fff; /* Color del texto */
+        border: 1px solid #ccc; /* Borde claro */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 1rem; /* Tamaño de la fuente */
+        transition: all 0.3s ease; /* Animación suave al interactuar */
+        text-align: center; /* Alineación del texto */
+        white-space: nowrap; /* Evita que el texto se corte */
+    }
+
+       
 }

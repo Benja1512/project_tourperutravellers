@@ -24,17 +24,17 @@ header{
 
 @keyframes animate {
     0% {
-        background-image: url(./tacnafotos/tacna1.png);     
+        background-image: url(/static/tourperu/img/chiclayofotos/1chiclayo2.jpg);     
     }20% {
-        background-image: url(./tacnafotos/foto2.png);
+        background-image: url(/static/tourperu/img/chiclayofotos/chiclayo2.png);
     }40% {
-        background-image: url(./tacnafotos/tacna3.png);
+        background-image: url(/static/tourperu/img/chiclayofotos/chiclayo3.png);
     }60% {
-        background-image: url(./tacnafotos/foto4.png);
+        background-image: url(/static/tourperu/img/chiclayofotos/1chiclayo4.jpg);
     }80% {
-        background-image: url(./tacnafotos/tacna5.png);            
+        background-image: url(/static/tourperu/img/chiclayofotos/chiclayo5.png);            
     }100% {
-        background-image: url(./tacnafotos/tacna1.png);            
+        background-image: url(/static/tourperu/img/chiclayofotos/chiclayo6.png);            
     }
 
 
@@ -56,6 +56,9 @@ header{
 
 .title {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 65px;
+    text-align: center; /**/
+    margin: 5% 5% 5% 5%;/**/
 }
 .para1 {
 
@@ -64,7 +67,11 @@ header{
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
+    font-size: 18px;
+    text-align: justify; /**/
+   
 }
+
 
 
 
@@ -96,6 +103,7 @@ header{
     .shape-box_half {
         overflow: hidden;
         text-align: left;
+        width: 15rem;
     }
 
     .shape-box_half:before {
@@ -219,7 +227,8 @@ header{
     }
 
 
-              /* DISEÑO DE VIDEO*/
+
+      /* DISEÑO DE VIDEO*/
 
 /* Estilos para la sección de videos */
 .video-section {
@@ -303,4 +312,119 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+}
+
+
+/* ----- RESPONSIVE ------*/
+
+/* ---------- 320x844 ----------*/ 
+@media (max-width: 320px) and (max-height: 844px)  {
+    .title {
+        font-size: 33px;
+    }
+
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 7rem; /* Máximo ancho de 14rem */
+        margin: 4rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+      .para1 {
+
+        font-size: 15px;
+    }
+}
+
+/* ---------- 412x869 ----------*/ 
+@media (max-width: 412px) and (max-height: 869px) {
+
+    .title {
+        font-size: 33px;
+    }
+
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 18rem; /* Máximo ancho de 14rem */
+        margin: 4rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+      .para1 {
+
+        font-size: 15px;
+    }
+}
+
+/* ---------- 360x760----------*/ 
+@media (max-width: 360px) and (max-height: 760px) {
+
+    .title {
+        font-size: 33px;
+    }
+
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 18rem; /* Máximo ancho de 14rem */
+        margin: 2rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+      .para1 {
+
+        font-size: 15px;
+    }
+}
+
+/* ---------- 360x896----------*/ 
+@media (max-width: 414px) and (max-height: 896px) {
+
+    .title {
+        font-size: 33px;
+    }
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 16rem; /* Máximo ancho de 14rem */
+        margin: 1rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+    .para1 {
+
+        font-size: 15px;
+    }
+}
+
+
+/* ---------- 768x1024----------*/ 
+@media (max-width: 768px) and (max-height: 1024px) {
+
+    .title {
+        font-size: 33px;
+    }
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 16rem; /* Máximo ancho de 14rem */
+        margin: 1rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+    .para1 {
+
+        font-size: 15px;
+    }
+}
+
+
+/* ---------- 768x1024----------*/ 
+@media (max-width: 2048px) and (max-height: 1536px) {
+
+    .title {
+        font-size: 33px;
+    }
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 16rem; /* Máximo ancho de 14rem */
+        margin: 1rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+    .para1 {
+
+        font-size: 15px;
+    }
 }

@@ -13,7 +13,7 @@ body {
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     height: auto; /* Asegura que el header tenga una altura automática */
-    min-height: 80vh; /* Garantiza una altura mínima */
+    min-height: 100vh; /* Garantiza una altura mínima */
     background-size: cover; /* Imagen de fondo ajustada para cubrir todo el espacio */
     background-position: center;
     padding: 2rem 0; /* Agrega algo de espacio interno */
@@ -136,7 +136,7 @@ header {
     max-width: 31.25rem;
     color: black;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.3);
     font-size: 1.3rem;
     background: rgba(255, 255, 255, 0.5);
 }

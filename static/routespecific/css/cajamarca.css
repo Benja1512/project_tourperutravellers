@@ -24,17 +24,17 @@ header{
 
 @keyframes animate {
     0% {
-        background-image: url(./cajamarcafotos/cajamarca1.png);     
+        background-image: url(/static/tourperu/img/chiclayofotos/1chiclayo2.jpg);     
     }20% {
-        background-image: url(./cajamarcafotos/cajamarca2.png);
+        background-image: url(/static/tourperu/img/chiclayofotos/chiclayo2.png);
     }40% {
-        background-image: url(./cajamarcafotos/cajamarca3.png);
+        background-image: url(/static/tourperu/img/chiclayofotos/chiclayo3.png);
     }60% {
-        background-image: url(./cajamarcafotos/cajamarca4.png);
+        background-image: url(/static/tourperu/img/chiclayofotos/1chiclayo4.jpg);
     }80% {
-        background-image: url(./cajamarcafotos/cajamarca2.png);            
+        background-image: url(/static/tourperu/img/chiclayofotos/chiclayo5.png);            
     }100% {
-        background-image: url(./cajamarcafotos/cajamarca3.png);            
+        background-image: url(/static/tourperu/img/chiclayofotos/chiclayo6.png);            
     }
 
 
@@ -56,6 +56,9 @@ header{
 
 .title {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 65px;
+    text-align: center; /**/
+    margin: 5% 5% 5% 5%;/**/
 }
 .para1 {
 
@@ -64,7 +67,11 @@ header{
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
+    font-size: 18px;
+    text-align: justify; /**/
+   
 }
+
 
 
 
@@ -96,6 +103,7 @@ header{
     .shape-box_half {
         overflow: hidden;
         text-align: left;
+        width: 15rem;
     }
 
     .shape-box_half:before {
@@ -217,3 +225,206 @@ header{
     .shape-box_half:hover>.after {
         opacity: 1;
     }
+
+
+
+      /* DISEÑO DE VIDEO*/
+
+/* Estilos para la sección de videos */
+.video-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f7f9fb;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de secciones */
+.section-title {
+    font-size: 2em;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+/* Efecto decorativo en el título */
+.section-title:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #db3236;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Contenedor de cada video */
+.video-container {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Relación de aspecto 16:9 */
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animación de zoom al pasar el ratón */
+.video-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para videos locales */
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Estilos para videos de YouTube o iframes */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/* Efecto de sombra suave alrededor de cada video */
+.video-container {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Fondo general para la página */
+body {
+    background-color: #eaeff2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ----- RESPONSIVE ------*/
+
+/* ---------- 320x844 ----------*/ 
+@media (max-width: 320px) and (max-height: 844px)  {
+    .title {
+        font-size: 33px;
+    }
+
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 7rem; /* Máximo ancho de 14rem */
+        margin: 4rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+      .para1 {
+
+        font-size: 15px;
+    }
+}
+
+/* ---------- 412x869 ----------*/ 
+@media (max-width: 412px) and (max-height: 869px) {
+
+    .title {
+        font-size: 33px;
+    }
+
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 18rem; /* Máximo ancho de 14rem */
+        margin: 4rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+      .para1 {
+
+        font-size: 15px;
+    }
+}
+
+/* ---------- 360x760----------*/ 
+@media (max-width: 360px) and (max-height: 760px) {
+
+    .title {
+        font-size: 33px;
+    }
+
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 18rem; /* Máximo ancho de 14rem */
+        margin: 2rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+      .para1 {
+
+        font-size: 15px;
+    }
+}
+
+/* ---------- 360x896----------*/ 
+@media (max-width: 414px) and (max-height: 896px) {
+
+    .title {
+        font-size: 33px;
+    }
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 16rem; /* Máximo ancho de 14rem */
+        margin: 1rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+    .para1 {
+
+        font-size: 15px;
+    }
+}
+
+
+/* ---------- 768x1024----------*/ 
+@media (max-width: 768px) and (max-height: 1024px) {
+
+    .title {
+        font-size: 33px;
+    }
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 16rem; /* Máximo ancho de 14rem */
+        margin: 1rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+    .para1 {
+
+        font-size: 15px;
+    }
+}
+
+
+/* ---------- 768x1024----------*/ 
+@media (max-width: 2048px) and (max-height: 1536px) {
+
+    .title {
+        font-size: 33px;
+    }
+    .shape-box_half {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 16rem; /* Máximo ancho de 14rem */
+        margin: 1rem; /* Centrado horizontal */
+        overflow: hidden; /* Evita desbordamientos */
+      }
+    .para1 {
+
+        font-size: 15px;
+    }
+}
