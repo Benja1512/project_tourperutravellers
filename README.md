@@ -68,19 +68,3 @@ Using the Contact Form
     Fill in your information, attach files if needed, and submit your inquiry.
     The application will send an automated response to confirm receipt.
 
-Project Structure
-
-tourperutravellers/
-├── app.py               # Main Flask application file
-├── requirements.txt     # Project dependencies
-├── .env                 # Environment variables for sensitive info (email credentials)
-├── templates/           # HTML templates for each page
-│   ├── index.html
-│   ├── contact.html
-│   ├── success.html
-│   └── error.html
-├── static/              # Static assets (CSS, images, JS files)
-│   ├── css/
-│   └── images/
-└── README.md            # Project documentation
-
