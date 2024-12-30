@@ -5,20 +5,25 @@
     font-family: Century, sans-serif;
 }
 
-body {
-    width: 100%;
-    overflow-x: hidden;
- 
+html, body {
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+    width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+    height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+
+    overflow-x: hidden; 
     background-color: #f5f5f5;
-    max-width: 100%;
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
+
+   
+
 }
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     height: 100vh;
     background-size: cover;
-    background-position: center;
-    min-height: 10vh;
+    background-position: center;   
     position: relative;
     animation-name: animate;
     animation-direction: alternate-reverse;
@@ -107,7 +112,7 @@ ul li a:hover {
 
 /*** RES´PONSIVE **/
 
-@media screen and (max-width: 162px) and (max-width: 197px)  {
+@media screen and (max-width: 162px)  {
 
     header {
         height: 100vh;
@@ -128,16 +133,16 @@ ul li a:hover {
     ul li a {
         text-decoration: none;
         color: #fff;
-        padding: 0.111rem 0.11rem;
+        padding: 0rem;
         border: 0px solid transparent;
         transition: 0.5s ease;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 5vw;
+        font-size: 10vw;
     }
 
     .container2 {
   
-        font-size: 3.5vw;
+        font-size: 4vw;
      
     }
 
@@ -506,6 +511,10 @@ ul li a:hover {
 }
 
 
+
+
+
+
 /****-------------------- RESPONSIVE----------------------- ****/
 
 @media screen and (max-width: 912px)  {
@@ -586,3 +595,90 @@ ul li a:hover {
 
 
 
+/*+++++ HORIZONTAL +++++++++++ */
+
+
+
+
+
+
+
+
+/****-------------------- RESPONSIVE  landscape ----------------------- ****/
+
+/****-------------------- RESPONSIVE----------------------- ****/
+
+@media screen and (max-width: 915px)  and (orientation: landscape) {
+
+    ul li {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 10px;
+        
+    }
+
+    ul  {
+        margin: 40px 0;
+        padding: 0;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 0rem;
+        border: 2px solid transparent;
+        transition: 0.5s ease;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+        font-size: 2vw;
+    }
+
+    .container2 h1{
+  
+        font-size: 2.8vw;
+     
+    }
+
+    P {
+        font-size: 2.1vw; /* Tamaño mediano de fuente */
+        margin: 0rem;
+    }
+}
+
+
+/****-------------------- RESPONSIVE----------------------- ****/
+
+@media screen and (width: 1024px)  and (orientation: landscape) {
+
+    ul li {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 10px;
+        
+    }
+
+    ul  {
+        margin: 40px 0;
+        padding: 0;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 0.3rem;
+        border: 2px solid transparent;
+        transition: 0.5s ease;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+        font-size: 2.2vw;
+    }
+
+    .container2 h1{
+  
+        font-size: 3vw;
+     
+    }
+
+    P {
+        font-size: 2.4vw; /* Tamaño mediano de fuente */
+        margin: 0rem;
+    }
+}
