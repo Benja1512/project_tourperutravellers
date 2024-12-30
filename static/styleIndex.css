@@ -8,7 +8,7 @@
 body {
     width: 100%;
     overflow-x: hidden;
-    font-size: 2vw; /* Fuente adaptable */
+ 
     background-color: #f5f5f5;
     max-width: 100%;
 }
@@ -37,13 +37,13 @@ header {
         background-image: url(./fotos/arequipa.png);
     }
     40% {
-        background-image: url(./fotos/paracas ica.png);
+        background-image: url(./fotos/paracas\ ica.png);
     }
     60% {
         background-image: url(./fotos/tarapoto.png);
     }
     80% {
-        background-image: url(./fotos/colca canyon.png);
+        background-image: url(./fotos/colca\ canyon.png);
     }
     100% {
         background-image: url(./fotos/puno.png);
@@ -60,6 +60,7 @@ ul {
 
 ul li {
     display: inline-block;
+    
 }
 
 ul li a {
@@ -104,9 +105,93 @@ ul li a:hover {
 
 
 
+/*** RES´PONSIVE **/
+
+@media screen and (max-width: 162px) and (max-width: 197px)  {
+
+    header {
+        height: 100vh;
+    }
+
+    ul li {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
+        
+    }
+
+    ul  {
+        margin: 0px 0;
+        padding: 0;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 0.111rem 0.11rem;
+        border: 0px solid transparent;
+        transition: 0.5s ease;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+        font-size: 5vw;
+    }
+
+    .container2 {
+  
+        font-size: 3.5vw;
+     
+    }
+
+    .container2 h1 {
+        font-size: 3.5vw; /* Tamaño mediano de fuente */
+    }
+}
+
+
+/** RESPONSIVE **/
+
+
+@media screen and (max-width: 320px)  {
+
+    ul li {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
+        
+    }
+
+    ul  {
+        margin: 45px 0;
+        padding: 0;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 0.3125rem 1.25rem;
+        border: 1px solid transparent;
+        transition: 0.5s ease;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+        font-size: 4vw;
+    }
+
+    .container2 {
+  
+        font-size: 3vw;
+     
+    }
+
+    .container2 h1 {
+        font-size: 4vw; /* Tamaño mediano de fuente */
+    }
+}
+
+
+
+
+
 /****-------------------- RESPONSIVE----------------------- ****/
 
-@media screen and (width: 320px) and (height: 658px) {
+@media screen and (max-width: 360px)  {
 
     ul li {
         display: flex;
@@ -127,22 +212,29 @@ ul li a:hover {
         border: 1px solid transparent;
         transition: 0.5s ease;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 5.5vw;
+        font-size: 5vw;
     }
 
     .container2 {
   
-        font-size: 6.6vw;
+        font-size: 5vw;
      
     }
 
     .container2 h1 {
-        font-size: 6.6vw; /* Tamaño mediano de fuente */
+        font-size: 6vw; /* Tamaño mediano de fuente */
     }
 }
 
 
-@media screen and (width: 375px) and (height: 667px) {
+
+
+
+
+
+/****-------------------- RESPONSIVE----------------------- ****/
+
+@media screen and (max-width: 375px)  {
 
     ul li {
         display: flex;
@@ -163,21 +255,27 @@ ul li a:hover {
         border: 1px solid transparent;
         transition: 0.5s ease;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 5.5vw;
+        font-size: 5vw;
     }
 
     .container2 {
   
-        font-size: 6.6vw;
+        font-size: 5vw;
      
     }
 
     .container2 h1 {
-        font-size: 6.6vw; /* Tamaño mediano de fuente */
+        font-size: 6vw; /* Tamaño mediano de fuente */
     }
 }
 
-@media screen and (width: 414px) and (height: 896px) {
+
+
+
+
+/****-------------------- RESPONSIVE----------------------- ****/
+
+@media screen and (max-width: 412px)  {
 
     ul li {
         display: flex;
@@ -198,24 +296,29 @@ ul li a:hover {
         border: 1px solid transparent;
         transition: 0.5s ease;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 5.5vw;
+        font-size: 5vw;
     }
 
     .container2 {
   
-        font-size: 6.6vw;
+        font-size: 5vw;
      
     }
 
     .container2 h1 {
-        font-size: 6.6vw; /* Tamaño mediano de fuente */
+        font-size: 6vw; /* Tamaño mediano de fuente */
     }
 }
 
 
 
 
-@media screen and (width: 390px) and (height: 844px) {
+
+
+
+/****-------------------- RESPONSIVE----------------------- ****/
+
+@media screen and (max-width: 430px)  {
 
     ul li {
         display: flex;
@@ -236,25 +339,24 @@ ul li a:hover {
         border: 1px solid transparent;
         transition: 0.5s ease;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 5.5vw;
+        font-size: 5vw;
     }
 
     .container2 {
   
-        font-size: 6.6vw;
+        font-size: 5vw;
      
     }
 
     .container2 h1 {
-        font-size: 6.6vw; /* Tamaño mediano de fuente */
+        font-size: 6vw; /* Tamaño mediano de fuente */
     }
 }
 
 
+/****-------------------- RESPONSIVE----------------------- ****/
 
-
-
-@media screen and (width: 360px) and (height: 740px) {
+@media screen and (max-width: 768px)  {
 
     ul li {
         display: flex;
@@ -275,24 +377,24 @@ ul li a:hover {
         border: 1px solid transparent;
         transition: 0.5s ease;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 5.5vw;
+        font-size: 5vw;
     }
 
     .container2 {
   
-        font-size: 6.6vw;
+        font-size: 5vw;
      
     }
 
     .container2 h1 {
-        font-size: 6.6vw; /* Tamaño mediano de fuente */
+        font-size: 6vw; /* Tamaño mediano de fuente */
     }
 }
 
 
+/****-------------------- RESPONSIVE----------------------- ****/
 
-
-@media screen and (width: 430px) and (height: 932px) {
+@media screen and (max-width: 820px)  {
 
     ul li {
         display: flex;
@@ -302,196 +404,7 @@ ul li a:hover {
     }
 
     ul  {
-        margin: 45px 0;
-        padding: 0;
-    }
-    
-    ul li a {
-        text-decoration: none;
-        color: #fff;
-        padding: 0.3125rem 1.25rem;
-        border: 1px solid transparent;
-        transition: 0.5s ease;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 5.5vw;
-    }
-
-    .container2 {
-  
-        font-size: 6.6vw;
-     
-    }
-
-    .container2 h1 {
-        font-size: 6.6vw; /* Tamaño mediano de fuente */
-    }
-}
-
-
-
-
-
-
-@media screen and (width: 412px) and (height: 915px) {
-
-    ul li {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 30px;
-        
-    }
-
-    ul  {
-        margin: 45px 0;
-        padding: 0;
-    }
-    
-    ul li a {
-        text-decoration: none;
-        color: #fff;
-        padding: 0.3125rem 1.25rem;
-        border: 1px solid transparent;
-        transition: 0.5s ease;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 5.5vw;
-    }
-
-    .container2 {
-  
-        font-size: 6.6vw;
-     
-    }
-
-    .container2 h1 {
-        font-size: 6.6vw; /* Tamaño mediano de fuente */
-    }
-}
-
-
-
-@media screen and (width: 412px) and (height: 914px) {
-
-    ul li {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 30px;
-        
-    }
-
-    ul  {
-        margin: 45px 0;
-        padding: 0;
-    }
-    
-    ul li a {
-        text-decoration: none;
-        color: #fff;
-        padding: 0.3125rem 1.25rem;
-        border: 1px solid transparent;
-        transition: 0.5s ease;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 5.5vw;
-    }
-
-    .container2 {
-  
-        font-size: 6.6vw;
-     
-    }
-
-    .container2 h1 {
-        font-size: 6.6vw; /* Tamaño mediano de fuente */
-    }
-}
-
-
-
-
-@media screen and (width: 344px) and (height: 882px) {
-
-    ul li {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 30px;
-        
-    }
-
-    ul  {
-        margin: 45px 0;
-        padding: 0;
-    }
-    
-    ul li a {
-        text-decoration: none;
-        color: #fff;
-        padding: 0.3125rem 1.25rem;
-        border: 1px solid transparent;
-        transition: 0.5s ease;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 6vw;
-    }
-
-    .container2 {
-  
-        font-size: 6.6vw;
-     
-    }
-
-    .container2 h1 {
-        font-size: 6.6vw; /* Tamaño mediano de fuente */
-    }
-}
-
-
-
-@media screen and (width: 540px) and (height: 720px) {
-
-    ul li {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 30px;
-        
-    }
-
-    ul  {
-        margin: 45px 0;
-        padding: 0;
-    }
-    
-    ul li a {
-        text-decoration: none;
-        color: #fff;
-        padding: 0.3125rem 1.25rem;
-        border: 1px solid transparent;
-        transition: 0.5s ease;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 4vw;
-    }
-
-    .container2 {
-  
-        font-size: 4.6vw;
-     
-    }
-
-    .container2 h1 {
-        font-size: 4.6vw; /* Tamaño mediano de fuente */
-    }
-}
-
-
-
-@media screen and (width: 768px) and (height: 1024px) {
-
-    ul li {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 30px;
-        
-    }
-
-    ul  {
-        margin: 45px 0;
+        margin: 60px 0;
         padding: 0;
     }
     
@@ -512,200 +425,14 @@ ul li a:hover {
     }
 
     .container2 h1 {
-        font-size: 5vw; /* Tamaño mediano de fuente */
+        font-size: 6vw; /* Tamaño mediano de fuente */
     }
 }
 
 
+/****-------------------- RESPONSIVE----------------------- ****/
 
-
-
-@media screen and (width: 912px) and (height: 1368px) {
-      
-    ul li {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 10px;
-        
-    }
-
-    ul  {
-        margin: 45px 0;
-        padding: 0;
-    }
-    
-    ul li a {
-        text-decoration: none;
-        color: #fff;
-        padding: 0.3125rem 1.25rem;
-        border: 1px solid transparent;
-        transition: 0.5s ease;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 4.6vw;  
-    }
-
-    .container2 {
-  
-        font-size: 4.6vw;
-     
-    }
-
-    .container2 h1 {
-        font-size: 4.6vw; /* Tamaño mediano de fuente */
-    }
-}
-
-
-
-
-
-
-@media screen and (min-width: 853px) and (max-width: 1280px)  {
-  
-    ul li {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 10px;
-    }
-    ul {
-        margin: 45px 0;
-        padding: 0;
-    }
-    ul li a {
-        text-decoration: none;
-        color: #fff;
-        padding: 0.3125rem 1.25rem;
-        border: 1px solid transparent;
-        transition: 0.5s ease;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        font-size: 3vw;  
-    }
-    .container2 {
-        font-size: 3vw;
-    }
-    .container2 h1 {
-        font-size: 3vw;
-    }
-}
-
-
-
-/************************/
-
-@media screen and (width: 412px) and (height: 869px) {
-
-    ul li {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 30px;
-        
-    }
-
-    ul  {
-        margin: 45px 0;
-        padding: 0;
-    }
-    
-    ul li a {
-        text-decoration: none;
-        color: #fff;
-        padding: 0.3125rem 1.25rem;
-        border: 1px solid transparent;
-        transition: 0.5s ease;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 5.5vw;
-    }
-
-    .container2 {
-  
-        font-size: 6.6vw;
-     
-    }
-
-    .container2 h1 {
-        font-size: 6.6vw; /* Tamaño mediano de fuente */
-    }
-}
-
-
-
-@media screen and (width: 360px) and (height: 760px) {
-
-    ul li {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 30px;
-        
-    }
-
-    ul  {
-        margin: 45px 0;
-        padding: 0;
-    }
-    
-    ul li a {
-        text-decoration: none;
-        color: #fff;
-        padding: 0.3125rem 1.25rem;
-        border: 1px solid transparent;
-        transition: 0.5s ease;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 5.5vw;
-    }
-
-    .container2 {
-  
-        font-size: 6.6vw;
-     
-    }
-
-    .container2 h1 {
-        font-size: 6.6vw; /* Tamaño mediano de fuente */
-    }
-}
-
-
-
-@media screen and (width: 2048px) and (height: 1536px) {
-
-    ul li {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 30px;
-        
-    }
-
-    ul  {
-        margin: 45px 0;
-        padding: 0;
-    }
-    
-    ul li a {
-        text-decoration: none;
-        color: #fff;
-        padding: 0.3125rem 1.25rem;
-        border: 1px solid transparent;
-        transition: 0.5s ease;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 3vw;
-    }
-
-    .container2 {
-  
-        font-size: 3vw;
-     
-    }
-
-    .container2 h1 {
-        font-size: 3vw; /* Tamaño mediano de fuente */
-    }
-}
-
-
-
-
-
-@media screen and (width: 1536px) and (height: 2048px) {
+@media screen and (max-width: 834px)  {
 
     ul li {
         display: flex;
@@ -736,54 +463,14 @@ ul li a:hover {
     }
 
     .container2 h1 {
-        font-size: 5vw; /* Tamaño mediano de fuente */
+        font-size: 6vw; /* Tamaño mediano de fuente */
     }
 }
 
 
+/****-------------------- RESPONSIVE----------------------- ****/
 
-
-@media screen and (width: 375px) and (height: 812px) {
-
-    ul li {
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 30px;
-        
-    }
-
-    ul  {
-        margin: 45px 0;
-        padding: 0;
-    }
-    
-    ul li a {
-        text-decoration: none;
-        color: #fff;
-        padding: 0.3125rem 1.25rem;
-        border: 1px solid transparent;
-        transition: 0.5s ease;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 5.5vw;
-    }
-
-    .container2 {
-  
-        font-size: 6.6vw;
-     
-    }
-
-    .container2 h1 {
-        font-size: 6.6vw; /* Tamaño mediano de fuente */
-    }
-}
-
-
-
-
-
-
-@media screen and (width: 1080px) and (height: 1920px) {
+@media screen and (max-width: 884px)  {
 
     ul li {
         display: flex;
@@ -814,17 +501,24 @@ ul li a:hover {
     }
 
     .container2 h1 {
-        font-size: 5vw; /* Tamaño mediano de fuente */
+        font-size: 6vw; /* Tamaño mediano de fuente */
     }
 }
 
 
+/****-------------------- RESPONSIVE----------------------- ****/
 
+@media screen and (max-width: 912px)  {
 
-@media screen and (width: 658px) and (height: 320px) {
+    ul li {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
+        
+    }
 
-      ul  {
-        margin: 20px 0;
+    ul  {
+        margin: 45px 0;
         padding: 0;
     }
     
@@ -835,17 +529,17 @@ ul li a:hover {
         border: 1px solid transparent;
         transition: 0.5s ease;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-        font-size: 2vw;
+        font-size: 5vw;
     }
 
     .container2 {
   
-        font-size: 2vw;
+        font-size: 5vw;
      
     }
 
     .container2 h1 {
-        font-size: 2vw; /* Tamaño mediano de fuente */
+        font-size: 6vw; /* Tamaño mediano de fuente */
     }
 }
 
@@ -853,253 +547,42 @@ ul li a:hover {
 
 
 
+/****-------------------- RESPONSIVE----------------------- ****/
 
-@media screen and (width: 667px) and (height: 375px) {
+@media screen and (width: 1114px)  {
+
+    ul li {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
+        
+    }
 
     ul  {
-      margin: 20px 0;
-      padding: 0;
-  }
+        margin: 45px 0;
+        padding: 0;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 0.3125rem 1.25rem;
+        border: 1px solid transparent;
+        transition: 0.5s ease;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+        font-size: 2.3vw;
+    }
+
+    .container2 {
   
-  ul li a {
-      text-decoration: none;
-      color: #fff;
-      padding: 0.3125rem 1.25rem;
-      border: 1px solid transparent;
-      transition: 0.5s ease;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-      font-size: 2vw;
-  }
+        font-size: 2.3vw;
+     
+    }
 
-  .container2 {
-
-      font-size: 2vw;
-   
-  }
-
-  .container2 h1 {
-      font-size: 2vw; /* Tamaño mediano de fuente */
-  }
+    .container2 h1 {
+        font-size: 2.3vw; /* Tamaño mediano de fuente */
+    }
 }
 
 
-
-
-
-@media screen and (width: 932px) and (height: 430px) {
-
-    ul  {
-      margin: 20px 0;
-      padding: 0;
-  }
-  
-  ul li a {
-      text-decoration: none;
-      color: #fff;
-      padding: 0.3125rem 1.25rem;
-      border: 1px solid transparent;
-      transition: 0.5s ease;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-      font-size: 2vw;
-  }
-
-  .container2 {
-
-      font-size: 2vw;
-   
-  }
-
-  .container2 h1 {
-      font-size: 2vw; /* Tamaño mediano de fuente */
-  }
-}
-
-
-
-
-@media screen and (width: 896px) and (height: 414px) {
-
-    ul  {
-      margin: 20px 0;
-      padding: 0;
-  }
-  
-  ul li a {
-      text-decoration: none;
-      color: #fff;
-      padding: 0.3125rem 1.25rem;
-      border: 1px solid transparent;
-      transition: 0.5s ease;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-      font-size: 2vw;
-  }
-
-  .container2 {
-
-      font-size: 2vw;
-   
-  }
-
-  .container2 h1 {
-      font-size: 2vw; /* Tamaño mediano de fuente */
-  }
-}
-
-
-
-
-
-@media screen and (width: 915px) and (height: 412px) {
-
-    ul  {
-      margin: 20px 0;
-      padding: 0;
-  }
-  
-  ul li a {
-      text-decoration: none;
-      color: #fff;
-      padding: 0.3125rem 1.25rem;
-      border: 1px solid transparent;
-      transition: 0.5s ease;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-      font-size: 2vw;
-  }
-
-  .container2 {
-
-      font-size: 2vw;
-   
-  }
-
-  .container2 h1 {
-      font-size: 2vw; /* Tamaño mediano de fuente */
-  }
-}
-
-
-
-
-
-@media screen and (width: 740px) and (height: 360px) {
-
-    ul  {
-      margin: 20px 0;
-      padding: 0;
-  }
-  
-  ul li a {
-      text-decoration: none;
-      color: #fff;
-      padding: 0.3125rem 1.25rem;
-      border: 1px solid transparent;
-      transition: 0.5s ease;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-      font-size: 2vw;
-  }
-
-  .container2 {
-
-      font-size: 2vw;
-   
-  }
-
-  .container2 h1 {
-      font-size: 2vw; /* Tamaño mediano de fuente */
-  }
-}
-
-
-
-
-
-@media screen and (width: 720px) and (height: 540px) {
-
-    ul  {
-      margin: 20px 0;
-      padding: 0;
-  }
-  
-  ul li a {
-      text-decoration: none;
-      color: #fff;
-      padding: 0.3125rem 1.25rem;
-      border: 1px solid transparent;
-      transition: 0.5s ease;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-      font-size: 2vw;
-  }
-
-  .container2 {
-
-      font-size: 2vw;
-   
-  }
-
-  .container2 h1 {
-      font-size: 2vw; /* Tamaño mediano de fuente */
-  }
-}
-
-
-
-
-@media screen and (width: 882px) and (height: 344px) {
-
-    ul  {
-      margin: 20px 0;
-      padding: 0;
-  }
-  
-  ul li a {
-      text-decoration: none;
-      color: #fff;
-      padding: 0.3125rem 1.25rem;
-      border: 1px solid transparent;
-      transition: 0.5s ease;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-      font-size: 2vw;
-  }
-
-  .container2 {
-
-      font-size: 2vw;
-   
-  }
-
-  .container2 h1 {
-      font-size: 2vw; /* Tamaño mediano de fuente */
-  }
-}
-
-
-
-
-@media screen and (width: 914px) and (height: 412px) {
-
-    ul  {
-      margin: 20px 0;
-      padding: 0;
-  }
-  
-  ul li a {
-      text-decoration: none;
-      color: #fff;
-      padding: 0.3125rem 1.25rem;
-      border: 1px solid transparent;
-      transition: 0.5s ease;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
-      font-size: 2vw;
-  }
-
-  .container2 {
-
-      font-size: 2vw;
-   
-  }
-
-  .container2 h1 {
-      font-size: 2vw; /* Tamaño mediano de fuente */
-  }
-}
 
