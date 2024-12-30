@@ -12,6 +12,8 @@ html, body {
     height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
 
     overflow-x: hidden; 
+    overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+
     background-color: #f5f5f5;
     box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
 
@@ -22,6 +24,12 @@ html, body {
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: absolute; /* Asegura que el header esté posicionado en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
     background-size: cover;
     background-position: center;   
     position: relative;
