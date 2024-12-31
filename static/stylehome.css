@@ -121,6 +121,10 @@ header {
     }
 }
 
+
+
+
+
 /*--- Tarjetas ---*/
 .container_cards {
     width: 80%;
@@ -146,8 +150,14 @@ header {
 
 /* Acerca de nosotros, Misión, Visión */
 .card-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     background: rgba(211, 71, 71, 0.5);
+}
+
+
+.card-text:last-child {
+    margin-bottom: 0;
+    font-size: 1.1rem;
 }
 
 /* Redes Sociales */
