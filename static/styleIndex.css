@@ -32,9 +32,9 @@ header {
     right: 0;
     background-size: cover;
     background-position: center;   
-     animation-name: animate;
+    animation-name: animate;
     animation-direction: alternate-reverse;
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
@@ -49,13 +49,13 @@ header {
         background-image: url(./fotos/arequipa.png);
     }
     40% {
-        background-image: url(./fotos/paracas\ ica.png);
+        background-image: url(./fotos/paracas.png);
     }
     60% {
         background-image: url(./fotos/tarapoto.png);
     }
     80% {
-        background-image: url(./fotos/colca\ canyon.png);
+        background-image: url(./fotos/colca.png);
     }
     100% {
         background-image: url(./fotos/puno.png);
