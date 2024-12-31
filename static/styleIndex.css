@@ -22,8 +22,7 @@ html, body {
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('./fotos/montañaSieteColores.png'); /* Imagen de fondo debajo del gradiente */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     height: 100vh;
     margin: 0;
     padding: 0;
