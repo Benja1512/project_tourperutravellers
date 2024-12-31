@@ -32,10 +32,9 @@ header {
     right: 0;
     background-size: cover;
     background-position: center;   
-    position: relative;
-    animation-name: animate;
+     animation-name: animate;
     animation-direction: alternate-reverse;
-    animation-duration: 30s;
+    animation-duration: 10s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-play-state: running;
