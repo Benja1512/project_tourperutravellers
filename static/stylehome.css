@@ -59,7 +59,7 @@ header {
     color: black;
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 0.5rem;
+    padding: 0.2rem;
     margin: 0;
     display: inline-block;
     white-space: nowrap; /* Evita saltos de línea */
@@ -72,70 +72,18 @@ header {
     margin-top: 1rem; /* 5 veces el tamaño de fuente raíz */
     }
 
-/* Ajustes para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .TourPeruTravellers {
-        font-size: 5vw; /* Ajusta el tamaño para pantallas medianas */
-    }
-}
-
-/* Para tamaños móviles menores a 480px */
-@media (max-width: 480px) {
-    .TourPeruTravellers {
-        font-size: 5vw; /* Ajusta el tamaño aún más en pantallas más pequeñas */
-    }
-}
-
-@media (max-width: 412px) {
-    /* Estilos específicos para Samsung Galaxy S10+, A41+, A22+, A33+ */
-    .TourPeruTravellers {
-        font-size: 8vw; /* Ajusta el tamaño para pantallas pequeñas */
-    }
-}
-
-@media (max-width: 360px) {
-    /* Estilos específicos para Samsung Galaxy S23, A35, S24, A25 */
-    .TourPeruTravellers {
-        font-size: 8vw; /* Ajusta el tamaño aún más en pantallas más pequeñas */
-    }
-}
-
-@media (max-width: 360px) {
-    /* Estilos específicos para Samsung Galaxy S9, S9+ */
-    .TourPeruTravellers {
-        font-size: 8vw; /* Ajusta el tamaño aún más en pantallas más pequeñas */
-    }
-}
-
-@media (max-width: 414px) {
-    /* Estilos específicos para iPhone 13, 14, 15 Pro Max */
-    .TourPeruTravellers {
-        font-size: 8vw; /* Ajusta el tamaño aún más en pantallas más pequeñas */
-    }
-}
-
-@media (max-width: 375px) {
-    /* Estilos específicos para iPhone 13, 14, 15 */
-    .TourPeruTravellers {
-        font-size: 8vw; /* Ajusta el tamaño aún más en pantallas más pequeñas */
-    }
-}
-
-
-
-
 
 /*--- Tarjetas ---*/
 .container_cards {
     width: 80%;
     max-width: 28rem;
-    padding: 1rem 1.5rem;
+    padding: 0rem 0rem;
     display: flex;
     justify-content: center; /* Centra las tarjetas horizontalmente */
     align-items: center; /* Alinea las tarjetas verticalmente */
     flex-direction: column; /* Coloca las tarjetas una debajo de la otra */
-    margin-bottom: 0.5rem; /* Espacio entre tarjetas */
-    margin-top: 0.5rem; /* Espacio para que las tarjetas no se sobrepongan con el título */
+    margin-bottom: 0.4rem; /* Espacio entre tarjetas */
+    margin-top: 0.4rem; /* Espacio para que las tarjetas no se sobrepongan con el título */
 }
 
 .card-body {
@@ -143,11 +91,22 @@ header {
     max-width: 31.25rem;
     color: black;
     text-align: center;
-    border: 3px solid rgba(255, 255, 255, 0.3);
-    font-size: 1.3rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 1.1rem;
     background: rgba(255, 255, 255, 0.5);
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+
 }
 
+div.container_cards > div.card-body {
+    padding: 0;
+ 
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
 /* Acerca de nosotros, Misión, Visión */
 .card-title {
     font-size: 1.3rem;
@@ -208,3 +167,2105 @@ header {
 .social_media ul li .instagram.hover { background: var(--instagram); }
 .social_media ul li .youtube.hover { background: var(--youtube); }
 .social_media ul li .linkedin.hover { background: var(--linkedin); }
+
+
+
+/** responsive **/
+
+
+
+
+
+
+
+@media screen and (width: 320px) {
+    .TourPeruTravellers {
+        font-size: 4vw; /* Ajusta el tamaño para pantallas medianas */
+       margin: 1rem 0rem 0.2rem 0rem;
+       padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .card-body {
+        width: 95%;
+        padding: 0rem;
+    
+    }
+
+    .card-title {
+        font-size: 0.6rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.6rem;
+    }
+
+    .social_media {
+          margin-top: 1rem;
+    }
+}
+
+
+@media screen and (width: 344px) {
+    .TourPeruTravellers {
+        font-size: 5vw; /* Ajusta el tamaño para pantallas medianas */
+       margin: 1rem 0rem 0.2rem 0rem;
+       padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .card-body {
+        width: 95%;
+        padding: 0.6rem;
+    
+    }
+
+    .card-title {
+        font-size: 0.8rem;
+        margin-bottom: 0.1rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+    }
+
+    .social_media {
+          margin-top: 1rem;
+    }
+}
+
+
+
+
+
+@media screen and (width: 360px)  {
+    .TourPeruTravellers {
+        font-size: 5vw; /* Ajusta el tamaño para pantallas medianas */
+       margin: 2.5rem 0rem 0.2rem 0rem;
+       padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .card-body {
+        width: 95%;
+        padding: 0.2rem;
+    
+    }
+   
+    .card-title {
+        font-size: 0.9rem;
+        margin-bottom: 0.1rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+    }
+
+    .social_media {
+          margin-top: 0.1rem;
+    }
+}
+
+
+
+
+
+@media screen and (width: 375px) {
+    .TourPeruTravellers {
+        font-size: 5vw; /* Ajusta el tamaño para pantallas medianas */
+       margin: 1rem 0rem 0.1rem 0rem;
+       padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .card-body {
+        width: 95%;
+        padding: 0.6rem;
+    
+    }
+
+    .card-title {
+        font-size: 0.7rem;
+        margin-bottom: 0.1rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.7rem;
+    }
+
+    .social_media {
+          margin-top: 0.1rem;
+    }
+}
+
+
+
+@media screen and (width: 390px) {
+    .TourPeruTravellers {
+        font-size: 6vw; /* Ajusta el tamaño para pantallas medianas */
+       margin: 2rem 0rem 0.2rem 0rem;
+       padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .card-body {
+        width: 95%;
+        padding: 0.6rem;
+    
+    }
+
+    .card-title {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+    }
+
+    .social_media {
+          margin-top: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (width: 393px) {
+    .TourPeruTravellers {
+        font-size: 6vw; /* Ajusta el tamaño para pantallas medianas */
+       margin: 2rem 0rem 0.2rem 0rem;
+       padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .card-body {
+        width: 95%;
+        padding: 0.6rem;
+    
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.1rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+
+    .social_media {
+          margin-top: 3rem;
+    }
+}
+
+
+
+
+
+
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (width: 412px) {
+    .TourPeruTravellers {
+        font-size: 8vw; /* Ajusta el tamaño para pantallas medianas */
+        padding: 0.1rem;
+        margin: 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    
+    .titulo {
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .container_cards {
+        
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+
+    .card-body {
+        width: 100%;
+    
+        
+    }
+
+    .card-title {
+        font-size: 1rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 1.2rem;
+    }
+
+    .social_media {
+          margin-top: 9rem;
+    }
+}
+
+
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (width: 414px) {
+    .TourPeruTravellers {
+        font-size: 4vw; /* Ajusta el tamaño para pantallas medianas */
+        padding: 0.1rem;
+        margin: 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    
+    .titulo {
+        padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+        margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+    .container_cards {
+        
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+
+    .card-body {
+        width: 100%;
+    
+        
+    }
+
+    .card-title {
+        font-size: 0.3rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.5rem;
+    }
+
+    .social_media {
+          margin-top: 0.1rem;
+    }
+}
+
+
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (width: 428px) {
+    .TourPeruTravellers {
+        font-size: 6vw; /* Ajusta el tamaño para pantallas medianas */
+        padding: 0.1rem;
+        margin: 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    
+    .titulo {
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .container_cards {
+        
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+
+    .card-body {
+        width: 100%;
+    
+        
+    }
+
+    .card-title {
+        font-size: 0.5rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.5rem;
+    }
+
+    .social_media {
+          margin-top: 0.7rem;
+    }
+}
+
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (width: 430px) {
+    .TourPeruTravellers {
+        font-size: 6vw; /* Ajusta el tamaño para pantallas medianas */
+        padding: 0.1rem;
+        margin: 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    
+    .titulo {
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .container_cards {
+        
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+
+    .card-body {
+        width: 100%;
+    
+        
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 1.2rem;
+    }
+
+    .social_media {
+          margin-top: 2rem;
+    }
+}
+
+
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (width: 540px) {
+    .TourPeruTravellers {
+        font-size: 6vw; /* Ajusta el tamaño para pantallas medianas */
+        padding: 0.1rem;
+        margin: 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    
+    .titulo {
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .container_cards {
+        
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+
+    .card-body {
+        width: 70%;
+    
+        
+    }
+
+    .card-title {
+        font-size: 1rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+    }
+
+    .social_media {
+          margin-top: 2rem;
+    }
+}
+
+
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (width: 768px) {
+    .TourPeruTravellers {
+        font-size: 6vw; /* Ajusta el tamaño para pantallas medianas */
+        padding: 0.1rem;
+        margin: 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    
+    .titulo {
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .container_cards {
+        
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+
+    .card-body {
+        width: 100%;
+    
+        
+    }
+
+    .card-title {
+        font-size: 2rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 1.3rem;
+    }
+
+    .social_media {
+          margin-top: 12rem;
+    }
+}
+
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (width: 912px) {
+    .TourPeruTravellers {
+        font-size: 6vw; /* Ajusta el tamaño para pantallas medianas */
+        padding: 0.1rem;
+        margin: 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    
+    .titulo {
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .container_cards {
+        
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+
+    .card-body {
+        width: 100%;
+    
+        
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 1.1rem;
+    }
+
+    .social_media {
+          margin-top: 3rem;
+    }
+}
+
+
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (width: 1024px) {
+    .TourPeruTravellers {
+        font-size: 5vw; /* Ajusta el tamaño para pantallas medianas */
+        padding: 0.1rem;
+        margin: 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    
+    .titulo {
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    .container_cards {
+        
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+
+    .card-body {
+        width: 150%;
+    
+        
+    }
+
+    .card-title {
+        font-size: 1rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+
+    .social_media {
+          margin-top: 0.2rem;
+    }
+}
+
+
+
+/* Ajustes para pantallas más pequeñas */
+@media screen and (width: 2048px) {
+    .TourPeruTravellers {
+        font-size: 5vw; /* Ajusta el tamaño para pantallas medianas */
+        padding: 0.1rem;
+        margin: 0rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+    .container_cards {
+        
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+    }
+
+
+    .card-body {
+        width: 150%;
+    
+        
+    }
+
+    .card-title {
+        font-size: 0.1rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.1rem;
+    }
+
+    .social_media {
+          margin-top: 0.1rem;
+    }
+}
+
+
+
+
+/*********************** ****************************************************************/
+
+
+
+
+
+@media screen and (width: 851px)  and (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.5vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.6rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.6rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+@media screen and (width: 780px)  and (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.4vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.8rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.7rem;  
+    }
+
+    .social_media {
+        margin-top: 0.3rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+@media screen and (width: 800px)  and (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.5vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.6rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.6rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+@media screen and (width: 812px)  and (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 0.3vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.3rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.3rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+@media screen and (min-width: 500px) and (max-width: 600px) and (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 2vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.7rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.7rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+@media screen and (width: 844px) and  (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.2vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.7rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.7rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+@media screen and (width: 658px) and  (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.6vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.6rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.6rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+@media screen and (width: 667px) and  (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.1vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.4rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.4rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+
+@media screen and (width: 896px) and  (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.6vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.6rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.6rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+
+
+@media screen and (width: 740px) and  (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.6vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.6rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.6rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+
+@media screen and (width: 915px) and  (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.6vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.6rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.6rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+
+@media screen and (width: 720px) and  (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.6vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.6rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.6rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (width: 882px) and  (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.6vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.6rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.6rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+
+
+@media screen and (width: 851px)  and (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.5vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.6rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.6rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+@media screen and (width: 880px)  and (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.4vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.8rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.7rem;  
+    }
+
+    .social_media {
+        margin-top: 0.3rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+@media screen and (width: 914px) and  (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.6vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.6rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.6rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+
+
+@media screen and (width: 932px) and  (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.9vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 1rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 1rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (width: 851px)  and (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.5vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.6rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.6rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+@media screen and (max-width: 869px)  and (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.4vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 0.8rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.7rem;  
+    }
+
+    .social_media {
+        margin-top: 0.3rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 2%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
+
+
+
+
+
+@media screen and (width: 1114px)  and (height: 705px)   and (orientation: landscape) {
+
+    
+    html, body {
+    
+        width: 100%; /* Asegura que el cuerpo ocupe todo el ancho */
+        height: 100%; /* Asegura que el cuerpo ocupe todo el alto del viewport */
+        overflow-x: hidden;         
+        overflow-y: hidden; /* Añadido para evitar barras de desplazamiento no deseadas */
+      
+    }
+
+        
+    .TourPeruTravellers {
+    font-size: 1.5vw; /* Ajusta el tamaño para pantallas medianas */
+    margin: 0.1rem 0.1rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+    }
+
+    header {
+
+        padding: 0rem;
+    }
+
+    .titulo {
+        padding: 0rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .container_cards {
+        margin-bottom: 0.1rem;
+        margin-top: 0.1rem;
+    }
+
+    div.container_cards > div.card-body {
+        padding: 0rem;
+        padding: 0.0rem;
+        width: 100%;
+    }
+
+    .card-title {
+        font-size: 1rem;
+        margin-bottom: 0rem;
+
+    }
+    .card-text:last-child {
+        margin-bottom: 0;
+        font-size: 1rem;  
+    }
+
+    .social_media {
+        margin-top: 0.1rem;
+    }
+
+
+    .social_media ul li a {
+        display: block;
+        padding: 0 5%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 1rem;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+    }
+
+}
