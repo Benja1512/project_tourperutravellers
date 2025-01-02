@@ -19,7 +19,7 @@ header {
     min-height: 100vh; /* Garantiza una altura mínima */
     background-size: cover; /* Imagen de fondo ajustada para cubrir todo el espacio */
     background-position: center;
-    padding: 2rem 0; /* Agrega algo de espacio interno */
+    padding: 1.4rem 0; /* Agrega algo de espacio interno */
     overflow: hidden; /* Evitar desbordamientos */
     
     animation-name: animate;
@@ -55,7 +55,7 @@ header {
 
 /* TourPeruTravellers */
 .TourPeruTravellers {
-    font-size: 3vw; /* Ajuste dinámico para que se ajuste al 4% del ancho de la pantalla */
+    font-size: 4vw; /* Ajuste dinámico para que se ajuste al 4% del ancho de la pantalla */
     color: black;
     background: rgba(255, 255, 255, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -69,7 +69,7 @@ header {
     box-sizing: border-box; /* Asegura que el texto se ajuste al ancho del contenedor */
     /* Cambiar margenes con unidades relativas */
     margin-bottom: 0rem; /* 3 veces el tamaño de fuente raíz */
-    margin-top: 1rem; /* 5 veces el tamaño de fuente raíz */
+    margin-top: 0.1rem; /* 5 veces el tamaño de fuente raíz */
     }
 
 
@@ -82,13 +82,13 @@ header {
     justify-content: center; /* Centra las tarjetas horizontalmente */
     align-items: center; /* Alinea las tarjetas verticalmente */
     flex-direction: column; /* Coloca las tarjetas una debajo de la otra */
-    margin-bottom: 0.4rem; /* Espacio entre tarjetas */
-    margin-top: 0.4rem; /* Espacio para que las tarjetas no se sobrepongan con el título */
+    margin-bottom: 0.1rem; /* Espacio entre tarjetas */
+    margin-top: 0.1rem; /* Espacio para que las tarjetas no se sobrepongan con el título */
 }
 
 .card-body {
     width: 100%;
-    max-width: 31.25rem;
+    max-width: 39.25rem;
     color: black;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -259,7 +259,7 @@ div.container_cards > div.card-body {
 
 
 
-@media screen and (width: 360px)  {
+@media screen and (width: 360px)   {
     .TourPeruTravellers {
         font-size: 5vw; /* Ajusta el tamaño para pantallas medianas */
        margin: 2.5rem 0rem 0.2rem 0rem;
@@ -281,19 +281,23 @@ div.container_cards > div.card-body {
         padding: 0.2rem;
     
     }
+    div.container_cards > div.card-body {
+      
+        padding: 0.1rem;
+    }
    
     .card-title {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         margin-bottom: 0.1rem;
 
     }
     .card-text:last-child {
         margin-bottom: 0;
-        font-size: 0.9rem;
+        font-size: 0.8em;
     }
 
     .social_media {
-          margin-top: 0.1rem;
+          margin-top: 1rem;
     }
 }
 
@@ -335,7 +339,7 @@ div.container_cards > div.card-body {
     }
 
     .social_media {
-          margin-top: 0.1rem;
+          margin-top: 1rem;
     }
 }
 
@@ -365,7 +369,7 @@ div.container_cards > div.card-body {
     }
 
     .card-title {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-bottom: 0.8rem;
 
     }
@@ -410,17 +414,17 @@ div.container_cards > div.card-body {
     }
 
     .card-title {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         margin-bottom: 0.1rem;
 
     }
     .card-text:last-child {
         margin-bottom: 0;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .social_media {
-          margin-top: 3rem;
+          margin-top: 2rem;
     }
 }
 
