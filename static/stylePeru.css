@@ -229,7 +229,7 @@ p {
         left: 110px; /* Mueve los íconos completamente al borde izquierdo */
         display: flex;
         gap: 0.5rem;
-        margin-top: 120%;
+        margin-top: 130%;
     }
     
     ul.list {
@@ -247,11 +247,9 @@ p {
     }
 
     p {
-        font-size: 5%;
+        font-size: 3.4%;
     }
 }
-
-
 
 
 
@@ -287,7 +285,7 @@ p {
         left: 110px; /* Mueve los íconos completamente al borde izquierdo */
         display: flex;
         gap: 0.5rem;
-        margin-top: 120%;
+        margin-top: 135%;
     }
     
     ul.list {
@@ -310,3 +308,730 @@ p {
 }
 
 
+
+
+
+
+
+
+
+
+/* Responsiveness */
+@media screen and (width: 320px) and (height:568px) {
+    .header_peru {
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    nav.nav {
+        margin-top: 0%;
+    }
+
+    a {
+        
+        font-size: 1.1rem;
+    }
+
+    .container2 {
+        
+        margin-top: 0.1%;
+    }
+    .social_media ul {
+        margin: 6rem 0rem 0rem 0rem;    
+    }
+
+    .social_media {
+        position: fixed;
+        bottom: 1%; /* Ajusta la posición vertical */
+        left: 110px; /* Mueve los íconos completamente al borde izquierdo */
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 0%;
+    }
+    
+    ul.list {
+        list-style: none; /* Elimina el estilo de lista predeterminado */
+        margin: 2.8rem 0rem 0rem 0rem;
+    }
+
+    .social_media ul li a {
+        font-size: 1rem;
+       
+    }
+
+    h1 {
+        font-size: 4vh;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+}
+
+
+
+
+
+
+/* Responsiveness */
+@media screen and (min-width: 1200px) and (min-height: 1366px)  {
+    .header_peru {
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    nav.nav {
+        margin-top: 0%;
+    }
+
+    a {
+        
+        font-size: 2.8rem;
+    }
+
+    .container2 {
+        
+        margin-top: 0.1%;
+    }
+    .social_media ul {
+        margin: 6rem 0rem 0rem 0rem;    
+    }
+
+    .social_media {
+        position: fixed;
+        bottom: 1%; /* Ajusta la posición vertical */
+        left: 2; /* Mueve los íconos completamente al borde izquierdo */
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 0%;
+    }
+    
+    ul.list {
+        list-style: none; /* Elimina el estilo de lista predeterminado */
+        margin: 2.8rem 0rem 0rem 0rem;
+    }
+
+    .social_media ul li a {
+        font-size: 1.5rem;
+       
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+}
+
+
+
+
+
+/* Responsiveness */
+@media screen and (min-width: 912px) and (min-height: 1368px)  {
+    .header_peru {
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    nav.nav {
+        margin-top: 0%;
+    }
+
+    a {
+        
+        font-size: 2.5rem;
+    }
+
+    .container2 {
+        
+        margin-top: 0.1%;
+    }
+    .social_media ul {
+        margin: 6rem 0rem 0rem 0rem;    
+    }
+
+    .social_media {
+        position: fixed;
+        bottom: 1%; /* Ajusta la posición vertical */
+        left: 2; /* Mueve los íconos completamente al borde izquierdo */
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 0%;
+    }
+    
+    ul.list {
+        list-style: none; /* Elimina el estilo de lista predeterminado */
+        margin: 2.8rem 0rem 0rem 0rem;
+    }
+
+    .social_media ul li a {
+        font-size: 1.5rem;
+       
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+}
+
+
+
+
+/************************ Horizontal ***************************************/
+
+
+/* Responsiveness */
+@media screen and (width: 568px) and (orientation: landscape) {
+    .header_peru {
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    nav.nav {
+        margin-top: 0%;
+    }
+
+    a {
+        
+        font-size: 0.7rem;
+    }
+
+    .container2 {
+        
+        margin-top: 0%;
+        top:60%;
+    }
+
+    .social_media {
+        position: absolute;
+        bottom: 0%; /* Ajusta la posición vertical */
+        left: 370px; /* Mueve los íconos completamente al borde izquierdo */
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 5%;
+    }
+    
+    ul.list {
+        list-style: none; /* Elimina el estilo de lista predeterminado */
+        margin: 0rem 0;
+    }
+
+    .social_media ul li a {
+        font-size: 0.7rem;
+
+        display: block;
+        padding: 0 0%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4rem;       
+        box-shadow: 0 0.1875rem 0.3125rem 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        margin: 0% 10% 10% 10% 10%;
+        
+    }
+
+    h1 {
+        font-size: 6.5vh;
+    }
+
+    p {
+        font-size: 5vh;
+    }
+}
+
+
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+    .header_peru {
+        background-size: cover;
+        background-position: center;
+    }
+
+    nav.nav {
+        margin-top: 0%;
+    }
+
+    a {
+        font-size: 0.7rem;
+    }
+
+    .container2 {
+        margin-top: 0%;
+    }
+
+    .social_media {
+        position: absolute;
+        bottom: 0%; /* Ajusta la posición vertical */
+        left: 60%; /* Coloca los íconos al borde izquierdo */
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 0%;
+    }
+
+    ul.list {
+        list-style: none; /* Elimina el estilo de lista predeterminado */
+        margin: 1.3rem 0;
+    }
+
+    .social_media ul li a {
+        font-size: 0.7rem;
+        display: block;
+        padding: 0.3rem 0.5rem; /* Proporciona espacio interno uniforme */
+        background: #333;
+        color: #fff;
+        line-height: 1.4rem;
+        box-shadow: 0 0.1875rem 0.3125rem 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        margin: 0.5rem 0; /* Margen uniforme para evitar el desbordamiento */
+    }
+
+    h1 {
+        font-size: 6.5vh;
+    }
+
+    p {
+        font-size: 5vh;
+    }
+}
+
+
+/* Responsiveness */
+@media screen and (width: 851px) and (orientation: landscape) {
+    .header_peru {
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    nav.nav {
+        margin-top: 0%;
+    }
+
+    a {
+        
+        font-size: 0.7rem;
+    }
+
+    .container2 {
+        
+        margin-top: 0%;
+    }
+
+    .social_media {
+        position: absolute;
+        bottom: 0%; /* Ajusta la posición vertical */
+        left: 520px; /* Mueve los íconos completamente al borde izquierdo */
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 130%;
+    }
+    
+    ul.list {
+        list-style: none; /* Elimina el estilo de lista predeterminado */
+        margin: 1.3rem 0;
+    }
+
+    .social_media ul li a {
+        font-size: 0.7rem;
+
+        display: block;
+        padding: 0 0%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4rem;       
+        box-shadow: 0 0.1875rem 0.3125rem 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        margin: 0% 10% 10% 10% 10%;
+        
+    }
+
+    h1 {
+        font-size: 6.5vh;
+    }
+
+    p {
+        font-size: 5vh;
+    }
+}
+
+/* Responsiveness */
+@media screen and (width: 882px) and (orientation: landscape) {
+    .header_peru {
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    nav.nav {
+        margin-top: 0%;
+    }
+
+    a {
+        
+        font-size: 0.7rem;
+    }
+
+    .container2 {
+        
+        margin-top: 0%;
+    }
+
+    .social_media {
+        position: absolute;
+        bottom: 0%; /* Ajusta la posición vertical */
+        left: 360px; /* Mueve los íconos completamente al borde izquierdo */
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 130%;
+    }
+    
+    ul.list {
+        list-style: none; /* Elimina el estilo de lista predeterminado */
+        margin: 1.3rem 0;
+    }
+
+    .social_media ul li a {
+        font-size: 0.7rem;
+
+        display: block;
+        padding: 0 0%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4rem;       
+        box-shadow: 0 0.1875rem 0.3125rem 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        margin: 0% 10% 10% 10% 10%;
+        
+    }
+
+    h1 {
+        font-size: 6.5vh;
+    }
+
+    p {
+        font-size: 5vh;
+    }
+}
+
+
+
+/* Responsiveness */
+@media screen and (width: 844px) and (orientation: landscape) {
+    .header_peru {
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    nav.nav {
+        margin-top: 0%;
+    }
+
+    a {
+        
+        font-size: 0.7rem;
+    }
+
+    .container2 {
+        
+        margin-top: 0%;
+    }
+
+    .social_media {
+        position: absolute;
+        bottom: 0%; /* Ajusta la posición vertical */
+        left: 320px; /* Mueve los íconos completamente al borde izquierdo */
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 130%;
+    }
+    
+    ul.list {
+        list-style: none; /* Elimina el estilo de lista predeterminado */
+        margin: 1.3rem 0;
+    }
+
+    .social_media ul li a {
+        font-size: 0.7rem;
+
+        display: block;
+        padding: 0 0%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4rem;       
+        box-shadow: 0 0.1875rem 0.3125rem 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        margin: 0% 10% 10% 10% 10%;
+        
+    }
+
+    h1 {
+        font-size: 6.5vh;
+    }
+
+    p {
+        font-size: 5vh;
+    }
+}
+
+
+
+
+
+/* Responsiveness */
+@media screen and (width: 882px) and (orientation: landscape) {
+    .header_peru {
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    nav.nav {
+        margin-top: 0%;
+    }
+
+    a {
+        
+        font-size: 0.7rem;
+    }
+
+    .container2 {
+        
+        margin-top: 0%;
+    }
+
+    .social_media {
+        position: absolute;
+        bottom: 0%; /* Ajusta la posición vertical */
+        left: 360px; /* Mueve los íconos completamente al borde izquierdo */
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 130%;
+    }
+    
+    ul.list {
+        list-style: none; /* Elimina el estilo de lista predeterminado */
+        margin: 1.3rem 0;
+    }
+
+    .social_media ul li a {
+        font-size: 0.7rem;
+
+        display: block;
+        padding: 0 0%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4rem;       
+        box-shadow: 0 0.1875rem 0.3125rem 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        margin: 0% 10% 10% 10% 10%;
+        
+    }
+
+    h1 {
+        font-size: 6.5vh;
+    }
+
+    p {
+        font-size: 5vh;
+    }
+}
+
+
+
+/* Responsiveness */
+@media screen and (width: 880px) and (orientation: landscape) {
+    .header_peru {
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    nav.nav {
+        margin-top: 0%;
+    }
+
+    a {
+        
+        font-size: 0.7rem;
+    }
+
+    .container2 {
+        
+        margin-top: 0%;
+    }
+
+    .social_media {
+        position: absolute;
+        bottom: 0%; /* Ajusta la posición vertical */
+        left: 560px; /* Mueve los íconos completamente al borde izquierdo */
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 130%;
+    }
+    
+    ul.list {
+        list-style: none; /* Elimina el estilo de lista predeterminado */
+        margin: 1.3rem 0;
+    }
+
+    .social_media ul li a {
+        font-size: 0.7rem;
+
+        display: block;
+        padding: 0 0%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4rem;       
+        box-shadow: 0 0.1875rem 0.3125rem 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        margin: 0% 10% 10% 10% 10%;
+        
+    }
+
+    h1 {
+        font-size: 6.5vh;
+    }
+
+    p {
+        font-size: 5vh;
+    }
+}
+
+
+
+
+
+
+
+
+/* Responsiveness */
+@media screen and (width: 915px) and (orientation: landscape) {
+    .header_peru {
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    nav.nav {
+        margin-top: 0%;
+    }
+
+    a {
+        
+        font-size: 0.7rem;
+    }
+
+    .container2 {
+        
+        margin-top: 0%;
+    }
+
+    .social_media {
+        position: absolute;
+        bottom: 0%; /* Ajusta la posición vertical */
+        left: 580px; /* Mueve los íconos completamente al borde izquierdo */
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 30%;
+    }
+    
+    ul.list {
+        list-style: none; /* Elimina el estilo de lista predeterminado */
+        margin: 0rem 0;
+    }
+
+    .social_media ul li a {
+        font-size: 0.7rem;
+
+        display: block;
+        padding: 0 0%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4rem;       
+        box-shadow: 0 0.1875rem 0.3125rem 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        margin: 0% 10% 10% 10% 10%;
+        
+    }
+
+    h1 {
+        font-size: 6.5vh;
+    }
+
+    p {
+        font-size: 5vh;
+    }
+}
+
+
+
+/* Responsiveness */
+@media screen and (max-width: 926px) and (orientation: landscape) {
+    .header_peru {
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+    nav.nav {
+        margin-top: 0%;
+    }
+
+    a {
+        
+        font-size: 0.7rem;
+    }
+
+    .container2 {
+        
+        margin-top: 0%;
+    }
+
+    .social_media {
+        position: absolute;
+        bottom: 0%; /* Ajusta la posición vertical */
+        left: 340px; /* Mueve los íconos completamente al borde izquierdo */
+        display: flex;
+        gap: 0.5rem;
+        margin-top: 0%;
+    }
+    
+    ul.list {
+        list-style: none; /* Elimina el estilo de lista predeterminado */
+        margin: 1.3rem 0;
+    }
+
+    .social_media ul li a {
+        font-size: 0.7rem;
+
+        display: block;
+        padding: 0 0%;
+        background: #333;
+        color: #fff;
+        line-height: 1.4rem;       
+        box-shadow: 0 0.1875rem 0.3125rem 0 rgba(0, 0, 0, 0.2);
+        transition: 0.2s;
+        margin: 0% 0% 0% 0% 0%;
+        
+    }
+
+    h1 {
+        font-size: 6.5vh;
+    }
+
+    p {
+        font-size: 5vh;
+    }
+}
