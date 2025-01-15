@@ -28,9 +28,6 @@ p{margin: 0px;}
 	height: 100%;
 	float: left;	
 }
-.signin_email{
-	margin-top: 150px;
-}
 
 .signin_social_media{
 	width: 100%;
@@ -49,7 +46,7 @@ p{margin: 0px;}
 h1{
     display: flex;
     font-weight: 300;
-    font-size: 50px;
+    font-size: 35px;
     color: #000000;
     margin: 15px 0px 15px 0px;
 }
@@ -109,8 +106,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0 auto;
-	margin-bottom: 200px;
+    margin-top: 350px;
+	margin-bottom: 10px;
 }
 
 .signin_email a{
@@ -150,139 +147,14 @@ h1{
     margin-top: 65px;
 }	
 
-/* Media Query para dispositivos de 412px de ancho */
+/*------------------------------------------------------------------------------------------*/
 
-@media (max-width: 412px) and (max-height: 869px) {
-
-	#wrapper {
-		width: 500px;
-		height: 1160px;
-	}
-
-    body {
-        padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
-		height: 16vh;	
-
-    }
-
-    .signin_social_media {
-        padding: 5px 25px ; /* Reduce el padding en dispositivos pequeños */
-        text-align: center; /* Centra el contenido si es necesario */
-    }
-
-    h1 {
-        font-size: 20px; /* Tamaño de fuente reducido */
-        font-weight: bold;
-        text-align: center; /* Centra el texto */
-        margin: 10px auto; /* Espaciado uniforme */
-        color: #000; /* Asegura el contraste */
-        display: block; /* Asegura que sea visible */
-    }
-
-    .description {
-        font-size: 14px; /* Ajusta el tamaño del texto de descripción */
-        line-height: 1.4; /* Mejora la legibilidad en pantallas pequeñas */
-        margin: 0 0px; /* Añade márgenes internos */
-    }
-
-    .box_social {
-        height: auto; /* Permite que la altura se ajuste automáticamente */
-        margin: 10px 0; /* Reduce márgenes */
-        padding: 6px; /* Añade padding interno */
-    }
-
-    .box_social div {
-        width: 8%; /* Ajusta el tamaño de los íconos sociales */
-		padding: 0px 0px 5px 0px;
-    }
-
-    .box_social p {
-        font-size: 12px; /* Reduce el tamaño del texto en las cajas sociales */
-		padding: 1px;
-    }
-
-    /* Contenedor del texto */
-.signin_email {
-    text-align: center; /* Centra el contenido horizontalmente */
-	height: 320px;
-    margin-top: 890px; /* Baja el bloque hacia abajo */
-    padding: 20px; /* Añade espacio interno */
-    font-size: 8px; /* Ajusta el tamaño del texto */
-    line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
-}
-
-/* Estilo para el enlace */
-.signin_email a {
-    display: inline-block; /* Asegura que el enlace ocupe su propio espacio */
-    margin-top: 0px; /* Baja el enlace más abajo del texto */
-    font-size: 11px; /* Ajusta el tamaño del texto */
-    color: #a9d066; /* Color del texto */
-    text-decoration: none; /* Quita el subrayado */
-}
-
-.signin_email a:hover {
-    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
-}
-	
-
-.signin_email p {
-	font-size: 13px; /* Reduce el tamaño de la fuente */
-	text-align: left;
-	height: 0px;
-	width: 35%;
-	
-	
-	
-}
-
-/* Ajustar el enlace de Threads */
-	.signin_email a {
-		display: block; /* Asegura que el enlace ocupe su propia línea */
-		font-size: 13px; /* Ajusta el tamaño del texto del enlace */
-		color: #a9d066; /* Color del texto */
-		text-decoration: none; /* Quita el subrayado */
-		margin-top: 925px; /* Baja el enlace más abajo */
-		width: 35%;
-	}
-
-
-	
-.signin_social_media {
-    width: 100%;
-    height: 35%;   
-    box-sizing: border-box;
-}
-
-   /* Contenedor de las imágenes */
-.img_container {
-    display: flex; /* Usa flexbox para alinear las imágenes */
-    flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente fila si no caben */
-    justify-content: space-between; /* Espacio uniforme entre imágenes */
-    margin-bottom: 0px; /* Espaciado inferior del contenedor */
-}
-
-/* Ajustar las imágenes individuales */
-	.img_background,
-	.img_background2,
-	.img_background3 {
-		width: 32%; /* Las imágenes ocuparán aproximadamente un tercio del ancho */
-		height: 300px; /* Altura fija para mantener proporción */
-		background-position: center;
-		background-size: cover; /* Asegura que la imagen cubra todo el área */
-		border-radius: 2px; /* Opcional: redondea las esquinas */
-		margin-bottom: 15px; /* Espacio entre filas de imágenes */
-		margin-right: 0px;
-	}
-
-}
-
-
-@media (max-width: 360px) and (max-height: 760px) {
+@media (width: 360px) and (height: 740px)   {
 
 	
 	#wrapper {
 		width: 500px;
-		height: 1260px;
+		height: 1680px;
 	}
 
     body {
@@ -335,7 +207,7 @@ h1{
     text-align: center; /* Centra el contenido horizontalmente */
 	height: 320px;
     margin-top: 230px; /* Baja el bloque hacia abajo */
-    padding: 20px; /* Añade espacio interno */
+    padding: 0px; /* Añade espacio interno */
     font-size: 7px; /* Ajusta el tamaño del texto */
     line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
 }
@@ -401,26 +273,164 @@ h1{
 		border-radius: 2px; /* Opcional: redondea las esquinas */
 		margin-bottom: 0px; /* Espacio entre filas de imágenes */
 		margin-right: 0px;
-		margin-top: 500px;
+		margin-top: 250px;
 	}
 
 }
 
 
-@media (max-width: 360px) and (max-height: 740px) {
+
+
+@media (width: 390px)  {
 
 	
+	#wrapper {
+		width: 500px;
+		height: 1200px;
+	}
+
+    body {
+        padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
+		height: 16vh;	
+
+    }
+	.signin_email{
+		margin-top: 200px;
+	}
+
+    .signin_social_media {
+        padding: 5px 25px ; /* Reduce el padding en dispositivos pequeños */
+        text-align: center; /* Centra el contenido si es necesario */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamaño de fuente reducido */
+        font-weight: bold;
+        text-align: center; /* Centra el texto */
+        margin: 10px auto; /* Espaciado uniforme */
+        color: #000; /* Asegura el contraste */
+        display: block; /* Asegura que sea visible */
+    }
+
+    .description {
+        font-size: 14px; /* Ajusta el tamaño del texto de descripción */
+        line-height: 1.4; /* Mejora la legibilidad en pantallas pequeñas */
+        margin: 0 0px; /* Añade márgenes internos */
+    }
+
+    .box_social {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px 0; /* Reduce márgenes */
+        padding: 6px; /* Añade padding interno */
+    }
+
+    .box_social div {
+        width: 8%; /* Ajusta el tamaño de los íconos sociales */
+		padding: 0px 0px 5px 0px;
+    }
+
+    .box_social p {
+        font-size: 12px; /* Reduce el tamaño del texto en las cajas sociales */
+		padding: 1px;
+    }
+
+    /* Contenedor del texto */
+.signin_email {
+    text-align: center; /* Centra el contenido horizontalmente */
+	height: 320px;
+    margin-top: 390px; /* Baja el bloque hacia abajo */
+    padding: 0px; /* Añade espacio interno */
+    font-size: 7px; /* Ajusta el tamaño del texto */
+    line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
+}
+
+/* Estilo para el enlace */
+.signin_email a {
+    display: inline-block; /* Asegura que el enlace ocupe su propio espacio */
+    margin-top: 0px; /* Baja el enlace más abajo del texto */
+    font-size: 11px; /* Ajusta el tamaño del texto */
+    color: #a9d066; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.signin_email a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+	
+
+.signin_email p {
+	font-size: 13px; /* Reduce el tamaño de la fuente */
+	text-align: left;
+	height: 0px;
+	width: 35%;
+	
+	
+	
+}
+
+/* Ajustar el enlace de Threads */
+	.signin_email a {
+		display: block; /* Asegura que el enlace ocupe su propia línea */
+		font-size: 13px; /* Ajusta el tamaño del texto del enlace */
+		color: #a9d066; /* Color del texto */
+		text-decoration: none; /* Quita el subrayado */
+		margin-top: 95px; /* Baja el enlace más abajo */
+		width: 35%;
+	}
+
+
+	
+.signin_social_media {
+    width: 100%;
+    height: 35%;   
+    box-sizing: border-box;
+}
+
+   /* Contenedor de las imágenes */
+.img_container {
+    display: flex; /* Usa flexbox para alinear las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente fila si no caben */
+    justify-content: space-between; /* Espacio uniforme entre imágenes */
+    margin-bottom: 0px; /* Espaciado inferior del contenedor */
+}
+
+/* Ajustar las imágenes individuales */
+	.img_background,
+	.img_background2,
+	.img_background3 {
+		width: 32%; /* Las imágenes ocuparán aproximadamente un tercio del ancho */
+		height: 300px; /* Altura fija para mantener proporción */
+		background-position: center;
+		background-size: cover; /* Asegura que la imagen cubra todo el área */
+		border-radius: 2px; /* Opcional: redondea las esquinas */
+		margin-bottom: 0px; /* Espacio entre filas de imágenes */
+		margin-right: 0px;
+		margin-top: 100px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+@media (width: 344px) and (height: 882px) {
 
 	body {
         padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
-		height: 140vh;	
+		height: 30vh;	
 
     }
-    
+
+
     #wrapper {
         width: 1200px;
-        height: 1080px;
-        margin: 5px 5px 5px 5px;
+        height: 1200px;
+        margin: 48px 5px 5px 5px;
         border-radius: 10px;
         background: white;
         overflow: hidden;
@@ -460,16 +470,13 @@ h1{
 
     /* Contenedor del texto */
 .signin_email {
-
-	height: 60px;
+	height: 300px;
     text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 90px; /* Baja el bloque hacia abajo */
     padding: 20px; /* Añade espacio interno */
     font-size: 18px; /* Ajusta el tamaño del texto */
     line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
-	margin-top: 180px; /* Baja el bloque hacia abajo */
 }
-
-
 
 /* Estilo para el enlace */
 .signin_email a {
@@ -498,10 +505,10 @@ h1{
 /* Ajustar el enlace de Threads */
 	.signin_email a {
 		display: block; /* Asegura que el enlace ocupe su propia línea */
-		font-size: 12px; /* Ajusta el tamaño del texto del enlace */
+		font-size: 10px; /* Ajusta el tamaño del texto del enlace */
 		color: #a9d066; /* Color del texto */
 		text-decoration: none; /* Quita el subrayado */
-		margin-top: 195px; /* Baja el enlace más abajo */
+		margin-top: 95px; /* Baja el enlace más abajo */
 		width: 30%;
 	}
 
@@ -511,7 +518,6 @@ h1{
     width: 100%;
     height: 45%;   
     box-sizing: border-box;
-	
 }
 
    /* Contenedor de las imágenes */
@@ -531,10 +537,11 @@ h1{
 		background-position: center;
 		background-size: cover; /* Asegura que la imagen cubra todo el área */
 		border-radius: 2px; /* Opcional: redondea las esquinas */
-		margin-bottom: 0px; /* Espacio entre filas de imágenes */
+		margin-bottom: 40%; /* Espacio entre filas de imágenes */
 		margin-right: 0px;
-		margin-top: 700px;
+		margin-top: 0px;
 	}
+
 
 
 }
@@ -542,7 +549,8 @@ h1{
 
 
 
-@media (max-width: 414px) and (max-height: 896px) {
+
+@media (width: 412px) and (height: 914px) {
 
 	body {
         padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
@@ -672,16 +680,21 @@ h1{
 
 
 
-@media (max-width: 375px) and (max-height: 812px) {
+
+
+
+@media (width: 412px) and (height: 915px) {
 
 	body {
         padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
-		height: 40vh;	
+		height: 30vh;	
 
     }
+
+
     #wrapper {
         width: 1200px;
-        height: 1300px;
+        height: 1390px;
         margin: 48px 5px 5px 5px;
         border-radius: 10px;
         background: white;
@@ -690,7 +703,6 @@ h1{
 
     .signin_social_media {
         padding: 20px 10px; /* Reduce el padding en dispositivos pequeños */
-		  
         text-align: center; /* Centra el contenido si es necesario */
     }
 
@@ -698,21 +710,490 @@ h1{
         font-size: 24px; /* Reduce aún más el tamaño del encabezado */
         margin: 10px 0; /* Ajusta márgenes para evitar desbordes */
     }
-	.signin_email{
-		margin-top: 370px; /* Baja el bloque hacia abajo */
+
+    .description {
+        font-size: 14px; /* Ajusta el tamaño del texto de descripción */
+        line-height: 1.4; /* Mejora la legibilidad en pantallas pequeñas */
+        margin: 0 0px; /* Añade márgenes internos */
+    }
+
+    .box_social {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px 0; /* Reduce márgenes */
+        padding: 6px; /* Añade padding interno */
+    }
+
+    .box_social div {
+        width: 8%; /* Ajusta el tamaño de los íconos sociales */
+		padding: 0px 0px 5px 0px;
+    }
+
+    .box_social p {
+        font-size: 12px; /* Reduce el tamaño del texto en las cajas sociales */
+		padding: 1px;
+    }
+
+    /* Contenedor del texto */
+.signin_email {
+	height: 300px;
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 150px; /* Baja el bloque hacia abajo */
+    padding: 20px; /* Añade espacio interno */
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
+}
+
+/* Estilo para el enlace */
+.signin_email a {
+    display: inline-block; /* Asegura que el enlace ocupe su propio espacio */
+    margin-top: 0px; /* Baja el enlace más abajo del texto */
+    font-size: 11px; /* Ajusta el tamaño del texto */
+    color: #a9d066; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.signin_email a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+	
+
+.signin_email p {
+	font-size: 10.5px; /* Reduce el tamaño de la fuente */
+	text-align: left;
+	height: 0px;
+	width: 35%;
+	
+	
+	
+}
+
+/* Ajustar el enlace de Threads */
+	.signin_email a {
+		display: block; /* Asegura que el enlace ocupe su propia línea */
+		font-size: 10px; /* Ajusta el tamaño del texto del enlace */
+		color: #a9d066; /* Color del texto */
+		text-decoration: none; /* Quita el subrayado */
+		margin-top: 95px; /* Baja el enlace más abajo */
+		width: 30%;
 	}
 
-    .img_background,
-    .img_background2,
-    .img_background3 {
-        width: 32%;
-        height: 300px; /* Ajuste proporcional */
-        background-position: center;
-        background-size: cover;
-        border-radius: 1px;
-		margin-top: 60px;
-    
+
 	
+.signin_social_media {
+    width: 100%;
+    height: 45%;   
+    box-sizing: border-box;
+}
+
+   /* Contenedor de las imágenes */
+.img_container {
+    display: flex; /* Usa flexbox para alinear las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente fila si no caben */
+    justify-content: space-between; /* Espacio uniforme entre imágenes */
+    margin-bottom: 0px; /* Espaciado inferior del contenedor */
+}
+
+/* Ajustar las imágenes individuales */
+	.img_background,
+	.img_background2,
+	.img_background3 {
+		width: 33%; /* Las imágenes ocuparán aproximadamente un tercio del ancho */
+		height: 300px; /* Altura fija para mantener proporción */
+		background-position: center;
+		background-size: cover; /* Asegura que la imagen cubra todo el área */
+		border-radius: 2px; /* Opcional: redondea las esquinas */
+		margin-bottom: 56%; /* Espacio entre filas de imágenes */
+		margin-right: 0px;
+		margin-top: 0px;
+	}
+
+}
+
+
+@media (width: 430px) and (height: 932px) {
+
+	body {
+        padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
+		height: 30vh;	
+
+    }
+
+
+    #wrapper {
+        width: 1200px;
+        height: 1000px;
+        margin: 48px 5px 5px 5px;
+        border-radius: 10px;
+        background: white;
+        overflow: hidden;
+    }
+
+    .signin_social_media {
+        padding: 20px 10px; /* Reduce el padding en dispositivos pequeños */
+        text-align: center; /* Centra el contenido si es necesario */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduce aún más el tamaño del encabezado */
+        margin: 10px 0; /* Ajusta márgenes para evitar desbordes */
+    }
+
+    .description {
+        font-size: 14px; /* Ajusta el tamaño del texto de descripción */
+        line-height: 1.4; /* Mejora la legibilidad en pantallas pequeñas */
+        margin: 0 0px; /* Añade márgenes internos */
+    }
+
+    .box_social {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px 0; /* Reduce márgenes */
+        padding: 6px; /* Añade padding interno */
+    }
+
+    .box_social div {
+        width: 8%; /* Ajusta el tamaño de los íconos sociales */
+		padding: 0px 0px 5px 0px;
+    }
+
+    .box_social p {
+        font-size: 12px; /* Reduce el tamaño del texto en las cajas sociales */
+		padding: 1px;
+    }
+
+    /* Contenedor del texto */
+.signin_email {
+	height: 300px;
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 70px; /* Baja el bloque hacia abajo */
+    padding: 20px; /* Añade espacio interno */
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
+}
+
+
+.signin_email a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+	
+
+.signin_email p {
+	font-size: 10.5px; /* Reduce el tamaño de la fuente */
+	text-align: left;
+	height: 0px;
+	width: 35%;
+	
+	
+	
+}
+
+/* Ajustar el enlace de Threads */
+	.signin_email a {
+		display: block; /* Asegura que el enlace ocupe su propia línea */
+		font-size: 10px; /* Ajusta el tamaño del texto del enlace */
+		color: #a9d066; /* Color del texto */
+		text-decoration: none; /* Quita el subrayado */
+		margin-top: 95px; /* Baja el enlace más abajo */
+		width: 30%;
+	}
+
+
+	
+.signin_social_media {
+    width: 100%;
+    height: 45%;   
+    box-sizing: border-box;
+}
+
+   /* Contenedor de las imágenes */
+.img_container {
+    display: flex; /* Usa flexbox para alinear las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente fila si no caben */
+    justify-content: space-between; /* Espacio uniforme entre imágenes */
+    margin-bottom: 0px; /* Espaciado inferior del contenedor */
+}
+
+/* Ajustar las imágenes individuales */
+	.img_background,
+	.img_background2,
+	.img_background3 {
+		width: 33%; /* Las imágenes ocuparán aproximadamente un tercio del ancho */
+		height: 250px; /* Altura fija para mantener proporción */
+		background-position: center;
+		background-size: cover; /* Asegura que la imagen cubra todo el área */
+		border-radius: 2px; /* Opcional: redondea las esquinas */
+		margin-bottom: 30%; /* Espacio entre filas de imágenes */
+		margin-right: 0px;
+		margin-top: 0px;
+	}
+
+
+
+}
+
+/************************* horizontal ***************************/
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+
+
+
+@media (width: 320px) {
+
+	
+	#wrapper {
+		width: 500px;
+		height: 1500px;
+	}
+
+    body {
+        padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
+		height: 16vh;	
+
+    }
+	
+
+    .signin_social_media {
+        padding: 5px 25px ; /* Reduce el padding en dispositivos pequeños */
+        text-align: center; /* Centra el contenido si es necesario */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamaño de fuente reducido */
+        font-weight: bold;
+        text-align: center; /* Centra el texto */
+        margin: 10px auto; /* Espaciado uniforme */
+        color: #000; /* Asegura el contraste */
+        display: block; /* Asegura que sea visible */
+    }
+
+    .description {
+        font-size: 14px; /* Ajusta el tamaño del texto de descripción */
+        line-height: 1.4; /* Mejora la legibilidad en pantallas pequeñas */
+        margin: 0 0px; /* Añade márgenes internos */
+    }
+
+    .box_social {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px 0; /* Reduce márgenes */
+        padding: 6px; /* Añade padding interno */
+    }
+
+    .box_social div {
+        width: 8%; /* Ajusta el tamaño de los íconos sociales */
+		padding: 0px 0px 5px 0px;
+    }
+
+    .box_social p {
+        font-size: 12px; /* Reduce el tamaño del texto en las cajas sociales */
+		padding: 1px;
+    }
+
+    /* Contenedor del texto */
+.signin_email {
+    text-align: center; /* Centra el contenido horizontalmente */
+	height: 320px;
+    margin-top: 570px; /* Baja el bloque hacia abajo */
+    padding: 0px; /* Añade espacio interno */
+    font-size: 7px; /* Ajusta el tamaño del texto */
+    line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
+}
+
+/* Estilo para el enlace */
+.signin_email a {
+    display: inline-block; /* Asegura que el enlace ocupe su propio espacio */
+    margin-top: 0px; /* Baja el enlace más abajo del texto */
+    font-size: 11px; /* Ajusta el tamaño del texto */
+    color: #a9d066; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.signin_email a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+	
+
+.signin_email p {
+	font-size: 13px; /* Reduce el tamaño de la fuente */
+	text-align: left;
+	height: 0px;
+	width: 35%;
+	
+	
+	
+}
+
+/* Ajustar el enlace de Threads */
+	.signin_email a {
+		display: block; /* Asegura que el enlace ocupe su propia línea */
+		font-size: 13px; /* Ajusta el tamaño del texto del enlace */
+		color: #a9d066; /* Color del texto */
+		text-decoration: none; /* Quita el subrayado */
+		margin-top: 95px; /* Baja el enlace más abajo */
+		width: 35%;
+	}
+
+
+	
+.signin_social_media {
+    width: 100%;
+    height: 35%;   
+    box-sizing: border-box;
+}
+
+   /* Contenedor de las imágenes */
+.img_container {
+    display: flex; /* Usa flexbox para alinear las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente fila si no caben */
+    justify-content: space-between; /* Espacio uniforme entre imágenes */
+    margin-bottom: 0px; /* Espaciado inferior del contenedor */
+}
+
+/* Ajustar las imágenes individuales */
+	.img_background,
+	.img_background2,
+	.img_background3 {
+		width: 32%; /* Las imágenes ocuparán aproximadamente un tercio del ancho */
+		height: 240px; /* Altura fija para mantener proporción */
+		background-position: center;
+		background-size: cover; /* Asegura que la imagen cubra todo el área */
+		border-radius: 2px; /* Opcional: redondea las esquinas */
+		margin-bottom: 0px; /* Espacio entre filas de imágenes */
+		margin-right: 0px;
+		margin-top: 250px;
+	}
+
+}
+
+
+
+
+
+@media (width: 412px) and (height: 915px) {
+
+	
+	#wrapper {
+		width: 500px;
+		height: 1080px;
+	}
+
+    body {
+        padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
+		height: 16vh;	
+
+    }
+	
+    .signin_social_media {
+        padding: 5px 25px ; /* Reduce el padding en dispositivos pequeños */
+        text-align: center; /* Centra el contenido si es necesario */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamaño de fuente reducido */
+        font-weight: bold;
+        text-align: center; /* Centra el texto */
+        margin: 10px auto; /* Espaciado uniforme */
+        color: #000; /* Asegura el contraste */
+        display: block; /* Asegura que sea visible */
+    }
+
+    .description {
+        font-size: 14px; /* Ajusta el tamaño del texto de descripción */
+        line-height: 1.4; /* Mejora la legibilidad en pantallas pequeñas */
+        margin: 0 0px; /* Añade márgenes internos */
+    }
+
+    .box_social {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px 0; /* Reduce márgenes */
+        padding: 6px; /* Añade padding interno */
+    }
+
+    .box_social div {
+        width: 8%; /* Ajusta el tamaño de los íconos sociales */
+		padding: 0px 0px 5px 0px;
+    }
+
+    .box_social p {
+        font-size: 12px; /* Reduce el tamaño del texto en las cajas sociales */
+		padding: 1px;
+    }
+
+    /* Contenedor del texto */
+.signin_email {
+    text-align: center; /* Centra el contenido horizontalmente */
+	height: 320px;
+    margin-top: 40px; /* Baja el bloque hacia abajo */
+    padding: 0px; /* Añade espacio interno */
+    font-size: 7px; /* Ajusta el tamaño del texto */
+    line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
+}
+
+/* Estilo para el enlace */
+.signin_email a {
+    display: inline-block; /* Asegura que el enlace ocupe su propio espacio */
+    margin-top: 0px; /* Baja el enlace más abajo del texto */
+    font-size: 11px; /* Ajusta el tamaño del texto */
+    color: #a9d066; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.signin_email a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+	
+
+.signin_email p {
+	font-size: 13px; /* Reduce el tamaño de la fuente */
+	text-align: left;
+	height: 0px;
+	width: 35%;
+	
+	
+	
+}
+
+/* Ajustar el enlace de Threads */
+	.signin_email a {
+		display: block; /* Asegura que el enlace ocupe su propia línea */
+		font-size: 13px; /* Ajusta el tamaño del texto del enlace */
+		color: #a9d066; /* Color del texto */
+		text-decoration: none; /* Quita el subrayado */
+		margin-top: 95px; /* Baja el enlace más abajo */
+		width: 35%;
+	}
+
+
+	
+.signin_social_media {
+    width: 100%;
+    height: 35%;   
+    box-sizing: border-box;
+}
+
+   /* Contenedor de las imágenes */
+.img_container {
+    display: flex; /* Usa flexbox para alinear las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente fila si no caben */
+    justify-content: space-between; /* Espacio uniforme entre imágenes */
+    margin-bottom: 0px; /* Espaciado inferior del contenedor */
+}
+
+/* Ajustar las imágenes individuales */
+	.img_background,
+	.img_background2,
+	.img_background3 {
+		width: 32%; /* Las imágenes ocuparán aproximadamente un tercio del ancho */
+		height: 300px; /* Altura fija para mantener proporción */
+		background-position: center;
+		background-size: cover; /* Asegura que la imagen cubra todo el área */
+		border-radius: 2px; /* Opcional: redondea las esquinas */
+		margin-bottom: 0px; /* Espacio entre filas de imágenes */
+		margin-right: 0px;
+		margin-top: 50px;
+	}
+
 }
 
 
@@ -720,20 +1201,704 @@ h1{
 
 
 
+@media (width: 414px) {
+
+	
+	#wrapper {
+		width: 500px;
+		height: 1100px;
+	}
+
+    body {
+        padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
+		height: 100%;	
+
+    }
+
+
+    .signin_social_media {
+        padding: 5px 25px ; /* Reduce el padding en dispositivos pequeños */
+        text-align: center; /* Centra el contenido si es necesario */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamaño de fuente reducido */
+        font-weight: bold;
+        text-align: center; /* Centra el texto */
+        margin: 10px auto; /* Espaciado uniforme */
+        color: #000; /* Asegura el contraste */
+        display: block; /* Asegura que sea visible */
+    }
+
+    .description {
+        font-size: 14px; /* Ajusta el tamaño del texto de descripción */
+        line-height: 1.4; /* Mejora la legibilidad en pantallas pequeñas */
+        margin: 0 0px; /* Añade márgenes internos */
+    }
+
+    .box_social {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px 0; /* Reduce márgenes */
+        padding: 6px; /* Añade padding interno */
+    }
+
+    .box_social div {
+        width: 8%; /* Ajusta el tamaño de los íconos sociales */
+		padding: 0px 0px 5px 0px;
+    }
+
+    .box_social p {
+        font-size: 12px; /* Reduce el tamaño del texto en las cajas sociales */
+		padding: 1px;
+    }
+
+    /* Contenedor del texto */
+.signin_email {
+    text-align: center; /* Centra el contenido horizontalmente */
+	height: 120px;
+    margin-top: 340px; /* Baja el bloque hacia abajo */
+    padding: 0px; /* Añade espacio interno */
+    font-size: 7px; /* Ajusta el tamaño del texto */
+    line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
+}
+
+/* Estilo para el enlace */
+.signin_email a {
+    display: inline-block; /* Asegura que el enlace ocupe su propio espacio */
+    margin-top: 0px; /* Baja el enlace más abajo del texto */
+    font-size: 11px; /* Ajusta el tamaño del texto */
+    color: #a9d066; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.signin_email a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+	
+
+.signin_email p {
+	font-size: 13px; /* Reduce el tamaño de la fuente */
+	text-align: left;
+	height: 0px;
+	width: 35%;
+	
+	
+	
+}
+
+/* Ajustar el enlace de Threads */
+	.signin_email a {
+		display: block; /* Asegura que el enlace ocupe su propia línea */
+		font-size: 13px; /* Ajusta el tamaño del texto del enlace */
+		color: #a9d066; /* Color del texto */
+		text-decoration: none; /* Quita el subrayado */
+		margin-top: 95px; /* Baja el enlace más abajo */
+		width: 35%;
+	}
+
+    
+/* Ajustar las imágenes individuales */
+	.img_background,
+	.img_background2,
+	.img_background3 {
+		width: 32%; /* Las imágenes ocuparán aproximadamente un tercio del ancho */
+		height: 190px; /* Altura fija para mantener proporción */
+		background-position: center;
+		background-size: cover; /* Asegura que la imagen cubra todo el área */
+		border-radius: 2px; /* Opcional: redondea las esquinas */
+		margin-bottom: 0px; /* Espacio entre filas de imágenes */
+		margin-right: 0px;
+		margin-top: 170px;
+	}
+
+} 
+
+
+
+
+
+
+@media (width: 375px)  {
+
+	
+	#wrapper {
+		width: 500px;
+		height: 1190px;
+	}
+
+    body {
+        padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
+		height: 100%;	
+
+    }
+
+    .signin_social_media {
+        padding: 5px 25px ; /* Reduce el padding en dispositivos pequeños */
+        text-align: center; /* Centra el contenido si es necesario */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamaño de fuente reducido */
+        font-weight: bold;
+        text-align: center; /* Centra el texto */
+        margin: 10px auto; /* Espaciado uniforme */
+        color: #000; /* Asegura el contraste */
+        display: block; /* Asegura que sea visible */
+    }
+
+    .description {
+        font-size: 14px; /* Ajusta el tamaño del texto de descripción */
+        line-height: 1.4; /* Mejora la legibilidad en pantallas pequeñas */
+        margin: 0 0px; /* Añade márgenes internos */
+    }
+
+    .box_social {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px 0; /* Reduce márgenes */
+        padding: 6px; /* Añade padding interno */
+    }
+
+    .box_social div {
+        width: 8%; /* Ajusta el tamaño de los íconos sociales */
+		padding: 0px 0px 5px 0px;
+    }
+
+    .box_social p {
+        font-size: 12px; /* Reduce el tamaño del texto en las cajas sociales */
+		padding: 1px;
+    }
+
+    /* Contenedor del texto */
+.signin_email {
+    text-align: center; /* Centra el contenido horizontalmente */
+	height: 120px;
+    margin-top: 370px; /* Baja el bloque hacia abajo */
+    padding: 0px; /* Añade espacio interno */
+    font-size: 7px; /* Ajusta el tamaño del texto */
+    line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
+}
+
+/* Estilo para el enlace */
+.signin_email a {
+    display: inline-block; /* Asegura que el enlace ocupe su propio espacio */
+    margin-top: 300px; /* Baja el enlace más abajo del texto */
+    font-size: 11px; /* Ajusta el tamaño del texto */
+    color: #a9d066; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.signin_email a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+	
+
+.signin_email p {
+	font-size: 13px; /* Reduce el tamaño de la fuente */
+	text-align: left;
+	height: 0px;
+	width: 35%;
+	
+	
+	
+}
+
+/* Ajustar el enlace de Threads */
+	.signin_email a {
+		display: block; /* Asegura que el enlace ocupe su propia línea */
+		font-size: 13px; /* Ajusta el tamaño del texto del enlace */
+		color: #a9d066; /* Color del texto */
+		text-decoration: none; /* Quita el subrayado */
+		margin-top: 95px; /* Baja el enlace más abajo */
+		width: 35%;
+	}
+
+    
+/* Ajustar las imágenes individuales */
+	.img_background,
+	.img_background2,
+	.img_background3 {
+		width: 32%; /* Las imágenes ocuparán aproximadamente un tercio del ancho */
+		height: 200px; /* Altura fija para mantener proporción */
+		background-position: center;
+		background-size: cover; /* Asegura que la imagen cubra todo el área */
+		border-radius: 2px; /* Opcional: redondea las esquinas */
+		margin-bottom: 0px; /* Espacio entre filas de imágenes */
+		margin-right: 0px;
+		margin-top: 180px;
+	}
+
+} 
+
+
+
+
+@media (width: 360px) {
+
+	
+	#wrapper {
+		width: 500px;
+		height: 1360px;
+	}
+
+    body {
+        padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
+		height: 100%;	
+
+    }
+
+    .signin_social_media {
+        padding: 5px 25px ; /* Reduce el padding en dispositivos pequeños */
+        text-align: center; /* Centra el contenido si es necesario */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamaño de fuente reducido */
+        font-weight: bold;
+        text-align: center; /* Centra el texto */
+        margin: 10px auto; /* Espaciado uniforme */
+        color: #000; /* Asegura el contraste */
+        display: block; /* Asegura que sea visible */
+    }
+
+    .description {
+        font-size: 14px; /* Ajusta el tamaño del texto de descripción */
+        line-height: 1.4; /* Mejora la legibilidad en pantallas pequeñas */
+        margin: 0 0px; /* Añade márgenes internos */
+    }
+
+    .box_social {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px 0; /* Reduce márgenes */
+        padding: 6px; /* Añade padding interno */
+    }
+
+    .box_social div {
+        width: 8%; /* Ajusta el tamaño de los íconos sociales */
+		padding: 0px 0px 5px 0px;
+    }
+
+    .box_social p {
+        font-size: 12px; /* Reduce el tamaño del texto en las cajas sociales */
+		padding: 1px;
+    }
+
+    /* Contenedor del texto */
+.signin_email {
+    text-align: center; /* Centra el contenido horizontalmente */
+	height: 120px;
+    margin-top: 380px; /* Baja el bloque hacia abajo */
+    padding: 0px; /* Añade espacio interno */
+    font-size: 7px; /* Ajusta el tamaño del texto */
+    line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
+}
+
+/* Estilo para el enlace */
+.signin_email a {
+    display: inline-block; /* Asegura que el enlace ocupe su propio espacio */
+    margin-top: 300px; /* Baja el enlace más abajo del texto */
+    font-size: 11px; /* Ajusta el tamaño del texto */
+    color: #a9d066; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+.signin_email a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}
+	
+
+.signin_email p {
+	font-size: 13px; /* Reduce el tamaño de la fuente */
+	text-align: left;
+	height: 0px;
+	width: 35%;
+	
+	
+	
+}
+
+/* Ajustar el enlace de Threads */
+	.signin_email a {
+		display: block; /* Asegura que el enlace ocupe su propia línea */
+		font-size: 13px; /* Ajusta el tamaño del texto del enlace */
+		color: #a9d066; /* Color del texto */
+		text-decoration: none; /* Quita el subrayado */
+		margin-top: 95px; /* Baja el enlace más abajo */
+		width: 35%;
+	}
+
+    
+/* Ajustar las imágenes individuales */
+	.img_background,
+	.img_background2,
+	.img_background3 {
+		width: 32%; /* Las imágenes ocuparán aproximadamente un tercio del ancho */
+		height: 200px; /* Altura fija para mantener proporción */
+		background-position: center;
+		background-size: cover; /* Asegura que la imagen cubra todo el área */
+		border-radius: 2px; /* Opcional: redondea las esquinas */
+		margin-bottom: 0px; /* Espacio entre filas de imágenes */
+		margin-right: 0px;
+		margin-top: 220px;
+	}
+
+} 
+
+
+@media (width: 428px) {
+
+	
+	#wrapper {
+		width: 500px;
+		height: 1500px;
+	}
+
+    body {
+        padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
+		height: 100%;	
+
+    }
+	
+    .signin_social_media {
+        padding: 5px 25px ; /* Reduce el padding en dispositivos pequeños */
+        text-align: center; /* Centra el contenido si es necesario */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamaño de fuente reducido */
+        font-weight: bold;
+        text-align: center; /* Centra el texto */
+        margin: 10px auto; /* Espaciado uniforme */
+        color: #000; /* Asegura el contraste */
+        display: block; /* Asegura que sea visible */
+    }
+
+    .description {
+        font-size: 14px; /* Ajusta el tamaño del texto de descripción */
+        line-height: 1.4; /* Mejora la legibilidad en pantallas pequeñas */
+        margin: 0 0px; /* Añade márgenes internos */
+    }
+
+    .box_social {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px 0; /* Reduce márgenes */
+        padding: 6px; /* Añade padding interno */
+    }
+
+    .box_social div {
+        width: 8%; /* Ajusta el tamaño de los íconos sociales */
+		padding: 0px 0px 5px 0px;
+    }
+
+    .box_social p {
+        font-size: 12px; /* Reduce el tamaño del texto en las cajas sociales */
+		padding: 1px;
+    }
+
+    /* Contenedor del texto */
+    .signin_email {
+        text-align: center; /* Centra el contenido horizontalmente */
+        height: 20px;
+        margin-top: 650px; /* Baja el bloque hacia abajo */
+        padding: 0px; /* Añade espacio interno */
+        font-size: 7px; /* Ajusta el tamaño del texto */
+        line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
+    }
+
+
+    .signin_email a:hover {
+        text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+    }
+        
+
+    .signin_email p {
+        font-size: 13px; /* Reduce el tamaño de la fuente */
+        text-align: left;
+        height: 0px;
+        width: 25%;
+        
+    }
+
+/* Ajustar el enlace de Threads */
+	.signin_email a {
+		display: block; /* Asegura que el enlace ocupe su propia línea */
+		font-size: 13px; /* Ajusta el tamaño del texto del enlace */
+		color: #a9d066; /* Color del texto */
+		text-decoration: none; /* Quita el subrayado */
+		margin-top: 25px; /* Baja el enlace más abajo */
+		width: 35%;
+	}
+
+
+	
+    .signin_social_media {
+        width: 100%;
+        height: 35%;   
+        box-sizing: border-box;
+    }
+
+    /* Contenedor de las imágenes */
+    .img_container {
+        display: flex; /* Usa flexbox para alinear las imágenes */
+        flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente fila si no caben */
+        justify-content: space-between; /* Espacio uniforme entre imágenes */
+        margin-bottom: 0px; /* Espaciado inferior del contenedor */
+    }
+
+    /* Ajustar las imágenes individuales */
+        .img_background,
+        .img_background2,
+        .img_background3 {
+            width: 32%; /* Las imágenes ocuparán aproximadamente un tercio del ancho */
+            height: 240px; /* Altura fija para mantener proporción */
+            background-position: center;
+            background-size: cover; /* Asegura que la imagen cubra todo el área */
+            border-radius: 2px; /* Opcional: redondea las esquinas */
+            margin-bottom: 0px; /* Espacio entre filas de imágenes */
+            margin-right: 0px;
+            margin-top: 220px;
+        }
+
+}
+
+
+
+
+@media (width: 412px) and (height: 869px) {
+
+	
+	#wrapper {
+		width: 500px;
+		height: 1500px;
+	}
+
+    body {
+        padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
+		height: 100%;	
+
+    }
+	
+    .signin_social_media {
+        padding: 5px 25px ; /* Reduce el padding en dispositivos pequeños */
+        text-align: center; /* Centra el contenido si es necesario */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamaño de fuente reducido */
+        font-weight: bold;
+        text-align: center; /* Centra el texto */
+        margin: 10px auto; /* Espaciado uniforme */
+        color: #000; /* Asegura el contraste */
+        display: block; /* Asegura que sea visible */
+    }
+
+    .description {
+        font-size: 14px; /* Ajusta el tamaño del texto de descripción */
+        line-height: 1.4; /* Mejora la legibilidad en pantallas pequeñas */
+        margin: 0 0px; /* Añade márgenes internos */
+    }
+
+    .box_social {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px 0; /* Reduce márgenes */
+        padding: 6px; /* Añade padding interno */
+    }
+
+    .box_social div {
+        width: 8%; /* Ajusta el tamaño de los íconos sociales */
+		padding: 0px 0px 5px 0px;
+    }
+
+    .box_social p {
+        font-size: 12px; /* Reduce el tamaño del texto en las cajas sociales */
+		padding: 1px;
+    }
+
+    /* Contenedor del texto */
+    .signin_email {
+        text-align: center; /* Centra el contenido horizontalmente */
+        height: 20px;
+        margin-top: 650px; /* Baja el bloque hacia abajo */
+        padding: 0px; /* Añade espacio interno */
+        font-size: 7px; /* Ajusta el tamaño del texto */
+        line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
+    }
+
+
+    .signin_email a:hover {
+        text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+    }
+        
+
+    .signin_email p {
+        font-size: 13px; /* Reduce el tamaño de la fuente */
+        text-align: left;
+        height: 0px;
+        width: 25%;
+        
+    }
+
+/* Ajustar el enlace de Threads */
+	.signin_email a {
+		display: block; /* Asegura que el enlace ocupe su propia línea */
+		font-size: 13px; /* Ajusta el tamaño del texto del enlace */
+		color: #a9d066; /* Color del texto */
+		text-decoration: none; /* Quita el subrayado */
+		margin-top: 25px; /* Baja el enlace más abajo */
+		width: 35%;
+	}
+
+
+	
+    .signin_social_media {
+        width: 100%;
+        height: 35%;   
+        box-sizing: border-box;
+    }
+
+    /* Contenedor de las imágenes */
+    .img_container {
+        display: flex; /* Usa flexbox para alinear las imágenes */
+        flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente fila si no caben */
+        justify-content: space-between; /* Espacio uniforme entre imágenes */
+        margin-bottom: 0px; /* Espaciado inferior del contenedor */
+    }
+
+    /* Ajustar las imágenes individuales */
+        .img_background,
+        .img_background2,
+        .img_background3 {
+            width: 32%; /* Las imágenes ocuparán aproximadamente un tercio del ancho */
+            height: 240px; /* Altura fija para mantener proporción */
+            background-position: center;
+            background-size: cover; /* Asegura que la imagen cubra todo el área */
+            border-radius: 2px; /* Opcional: redondea las esquinas */
+            margin-bottom: 0px; /* Espacio entre filas de imágenes */
+            margin-right: 0px;
+            margin-top: 220px;
+        }
+
+}
+
+
+
+@media (width: 1280px) and (width: 1080) {
+
+	
+	#wrapper {
+		width: 500px;
+		height: 1500px;
+	}
+
+    body {
+        padding: 0; /* Elimina cualquier padding que pueda causar desbordamiento */
+		height: 100%;	
+
+    }
+	
+    .signin_social_media {
+        padding: 5px 25px ; /* Reduce el padding en dispositivos pequeños */
+        text-align: center; /* Centra el contenido si es necesario */
+    }
+
+    h1 {
+        font-size: 20px; /* Tamaño de fuente reducido */
+        font-weight: bold;
+        text-align: center; /* Centra el texto */
+        margin: 10px auto; /* Espaciado uniforme */
+        color: #000; /* Asegura el contraste */
+        display: block; /* Asegura que sea visible */
+    }
+
+    .description {
+        font-size: 14px; /* Ajusta el tamaño del texto de descripción */
+        line-height: 1.4; /* Mejora la legibilidad en pantallas pequeñas */
+        margin: 0 0px; /* Añade márgenes internos */
+    }
+
+    .box_social {
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        margin: 10px 0; /* Reduce márgenes */
+        padding: 6px; /* Añade padding interno */
+    }
+
+    .box_social div {
+        width: 8%; /* Ajusta el tamaño de los íconos sociales */
+		padding: 0px 0px 5px 0px;
+    }
+
+    .box_social p {
+        font-size: 12px; /* Reduce el tamaño del texto en las cajas sociales */
+		padding: 1px;
+    }
+
+    /* Contenedor del texto */
+    .signin_email {
+        text-align: center; /* Centra el contenido horizontalmente */
+        height: 20px;
+        margin-top: 650px; /* Baja el bloque hacia abajo */
+        padding: 0px; /* Añade espacio interno */
+        font-size: 7px; /* Ajusta el tamaño del texto */
+        line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
+    }
+
+
+    .signin_email a:hover {
+        text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+    }
+        
+
+    .signin_email p {
+        font-size: 13px; /* Reduce el tamaño de la fuente */
+        text-align: left;
+        height: 0px;
+        width: 25%;
+        
+    }
+
+/* Ajustar el enlace de Threads */
+	.signin_email a {
+		display: block; /* Asegura que el enlace ocupe su propia línea */
+		font-size: 13px; /* Ajusta el tamaño del texto del enlace */
+		color: #a9d066; /* Color del texto */
+		text-decoration: none; /* Quita el subrayado */
+		margin-top: 25px; /* Baja el enlace más abajo */
+		width: 35%;
+	}
+
+
+	
+    .signin_social_media {
+        width: 100%;
+        height: 35%;   
+        box-sizing: border-box;
+    }
+
+    /* Contenedor de las imágenes */
+    .img_container {
+        display: flex; /* Usa flexbox para alinear las imágenes */
+        flex-wrap: wrap; /* Permite que las imágenes pasen a la siguiente fila si no caben */
+        justify-content: space-between; /* Espacio uniforme entre imágenes */
+        margin-bottom: 0px; /* Espaciado inferior del contenedor */
+    }
+
+    /* Ajustar las imágenes individuales */
+        .img_background,
+        .img_background2,
+        .img_background3 {
+            width: 32%; /* Las imágenes ocuparán aproximadamente un tercio del ancho */
+            height: 240px; /* Altura fija para mantener proporción */
+            background-position: center;
+            background-size: cover; /* Asegura que la imagen cubra todo el área */
+            border-radius: 2px; /* Opcional: redondea las esquinas */
+            margin-bottom: 0px; /* Espacio entre filas de imágenes */
+            margin-right: 0px;
+            margin-top: 220px;
+        }
+
+}
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     /* Ajustes generales */
-
-    .signin_email {
-		
-        width: 90%;
-        margin: 20px auto;
-        padding: 15px;
-        text-align: center;
-        font-size: 14px;
-        color: #737881;
-        border-top: 1px solid #e8eff6;
-		margin-top: 10px; /* Baja el bloque hacia abajo */
-    }
 
     body {
 
@@ -747,13 +1912,15 @@ h1{
         height: auto;
         margin: 0;
         overflow-x: hidden;
-		height: 2900px;
+		height: 1400px;
     }
+
+
 
     #wrapper {
         width: 100%;
         max-width: 708px;
-		height: 2500px;
+		height: 1250px;
         margin: 1px;
         padding: 0.5px 0px;
         background: white;
@@ -762,6 +1929,21 @@ h1{
         overflow: hidden;
 		margin-top: 0px;
     }
+
+
+    .signin_email {
+		
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+        text-align: center;
+        font-size: 14px;
+        color: #737881;
+        border-top: 1px solid #e8eff6;
+		margin-top: 280px; /* Baja el bloque hacia abajo */
+    }
+
+   
 
     h1 {
         font-size: 28px; /* Tamaño adecuado para el iPad */
@@ -819,11 +2001,11 @@ h1{
     .img_background2,
     .img_background3 {
         width: 32%;
-        height: 400px; /* Ajuste proporcional */
+        height: 350px; /* Ajuste proporcional */
         background-position: center;
         background-size: cover;
         border-radius: 1px;
-		margin-top: 10px;
+		margin-top: 50px;
     }
 
 
@@ -839,21 +2021,3 @@ h1{
     }
 
 }
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
