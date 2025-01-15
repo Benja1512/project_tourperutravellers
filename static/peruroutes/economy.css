@@ -28,9 +28,7 @@ p{margin: 0px;}
 	height: 100%;
 	float: left;	
 }
-.signin_email{
-	margin-top: 150px;
-}
+
 
 .signin_social_media{
 	width: 100%;
@@ -109,7 +107,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0 auto;
+    margin-top: 420px;
 	margin-bottom: 200px;
 }
 
@@ -596,7 +594,7 @@ h1{
 .signin_email {
 	height: 300px;
     text-align: center; /* Centra el contenido horizontalmente */
-    margin-top: 150px; /* Baja el bloque hacia abajo */
+    margin-top: 350px; /* Baja el bloque hacia abajo */
     padding: 20px; /* Añade espacio interno */
     font-size: 18px; /* Ajusta el tamaño del texto */
     line-height: 1.6; /* Incrementa el espacio entre líneas para mejor legibilidad */
@@ -661,7 +659,7 @@ h1{
 		background-position: center;
 		background-size: cover; /* Asegura que la imagen cubra todo el área */
 		border-radius: 2px; /* Opcional: redondea las esquinas */
-		margin-bottom: 30%; /* Espacio entre filas de imágenes */
+		margin-bottom: 45%; /* Espacio entre filas de imágenes */
 		margin-right: 0px;
 		margin-top: 0px;
 	}
