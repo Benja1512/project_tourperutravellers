@@ -183,7 +183,7 @@ a path:hover {
 
 /* Responsive Design */
 
-@media  screen and (width: 320px) and (height: 658px) {
+@media  screen and (max-width: 320px)  {
     html, body {
         margin: 0; /* Elimina márgenes */
         padding: 0; /* Elimina padding */
@@ -193,56 +193,15 @@ a path:hover {
         box-sizing: border-box;       
     }
     .mapadiv {
-        width: 13rem;
+        width: 8rem;
         margin: 0 auto 0;
-        margin-top: 5rem;
-    }
-    .container2 {
-        font-size: 14px;
-        margin-top: 9rem;
-        padding: 15px;
-        
-    }
-
-    h1 {
-
-        font-size: 1rem;
-
-    }
-
-    p {
-        font-size: 0.7rem;
-    }
-
-    .social_media {
-        height: 30vh;
-
-    }
-    .social_media ul {
-        padding-right: 15px;
-    }
-
-}
-
-@media  screen and (width: 344px) and (height: 882px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 17rem;
-        margin: 0 auto 0;
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
     
     h1 {
 
-        font-size: 1.2rem;
+        font-size: 1rem;
 
     }
 
@@ -257,7 +216,7 @@ a path:hover {
         
     }
     .social_media {
-        height: 30vh;
+        height: 29vh;
 
     }
     .social_media ul {
@@ -267,7 +226,7 @@ a path:hover {
 }
 
 
-@media  screen and (width: 375px) and (height: 667px ) {
+@media  screen and (width: 360px)  {
     html, body {
         margin: 0; /* Elimina márgenes */
         padding: 0; /* Elimina padding */
@@ -278,552 +237,39 @@ a path:hover {
     }
     .mapadiv {
         width: 15rem;
-        margin: 7 auto 0;
-    }
-
-    h1 {
-
-        font-size: 1.2rem;
-
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .container2 {
-        font-size: 14px;
-        margin-top: 0rem;
-        padding: 20px;
-        
-    }
-    .social_media {
-        height: 35vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-}
-
-
-
-@media  screen and (width: 360px) and (height: 760px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 15rem;
-        margin: 45px auto 0;
-
-    }
-
-    h1 {
-
-        font-size: 1.2rem;
-
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-    .container2 {
-        font-size: 14px;
-        margin-top: 0rem;
-        padding: 20px;
-        
-    }
-    .social_media {
-        height: 35vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-}
-
-
-@media  screen and (width: 360px) and (height: 740px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 15rem;
-        margin: 44px auto 0;
-
+        margin: 0 auto 0;
+        margin-top: 5rem;
     }
 
     
     h1 {
 
-        font-size: 1.2rem;
-
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .container2 {
-        font-size: 14px;
-        margin-top: 0rem;
-        padding: 20px;
-        
-    }
-    .social_media {
-        height: 40vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-}
-
-@media  screen and (width: 390px) and (height: 844px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 15rem;
-        margin: 60px auto 0;
-
-    }
-
-    h1 {
-
-        font-size: 1.2rem;
-
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .container2 {
-        font-size: 14px;
-        margin-top: 0rem;
-        padding: 20px;
-        
-    }
-    .social_media {
-        height: 35vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-}
-
-
-
-@media  screen and (width: 412px) and (height: 869px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 19rem;
-        margin: 80px auto 0;
-
-    }
-
-    h1 {
-
-        font-size: 1.2rem;
-
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .container2 {
-        font-size: 17px;
-        margin-top: 0rem;
-        padding: 20px;
-        
-    }
-
-    .social_media {
-        height: 30vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-}
-
-
-
-
-@media  screen and (width: 414px) and (height: 896px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 19rem;
-        margin: 80px auto 0;
-
-    }
-
-    h1 {
-
-        font-size: 1.4rem;
-
-    }
-
-    p {
-        font-size: 1.2rem;
-    }
-
-    .container2 {
-        font-size: 17px;
-        margin-top: 0rem;
-        padding: 20px;
-        
-    }
-    .social_media {
-        height: 30vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-}
-
-@media  screen and (width: 375px) and (height: 812px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 19rem;
-        margin: 80px auto 0;
-
-    }
-
-    h1 {
-
-        font-size: 1.2rem;
-
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .container2 {
-        font-size: 17px;
-        margin-top: 0rem;
-        padding: 60px 10px 0px 10px;
-        
-    }
-    .social_media {
-        height: 30vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }   
-}
-
-
-@media  screen and (width: 390px) and (height: 844px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 16rem;
-        margin: 70px auto 0;
-
-    }
-
-    
-    h1 {
-
-        font-size: 1.4rem;
-
-    }
-
-    p {
-        font-size: 1rem;
-    }
-    
-    .container2 {
-        font-size: 14px;
-        margin-top: 0rem;
-        padding: 20px;
-        
-    }
-    .social_media {
-        height: 35vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-}
-
-
-
-@media  screen and (width: 412px) and (height: 914px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 19rem;
-        margin: 80px auto 0;
-
-    }
-
-    h1 {
-
-        font-size: 1.2rem;
-
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .container2 {
-        font-size: 17px;
-        margin-top: 0rem;
-        padding: 20px;
-        
-    }
-    .social_media {
-        height: 30vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-}
-
-
-
-@media screen and (width: 430px) and (height: 932px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 18rem;
-        margin: 90px auto 0;
-
-    }
-
-    h1 {
-
-        font-size: 1.3rem;
-
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .container2 {
-        font-size: 14px;
-        margin-top: 0rem;
-        padding: 10px;
-        
-    }
-    .social_media {
-        height: 35vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-}
-
-
-
-
-@media screen and (width: 412px) and (height: 915px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 18rem;
-        margin: 90px auto 0;
-
-    }
-    h1 {
-
-        font-size: 1.3rem;
-
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .container2 {
-        font-size: 14px;
-        margin-top: 0rem;
-        padding: 10px;
-        
-    }
-    .social_media {
-        height: 35vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-
-}
-
-
-
-@media screen and (width: 540px) and (height: 720px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 16rem;
-        margin: 90px auto 0;
-
-    }
-
-    h1 {
-
-        font-size: 1.4rem;
-
-    }
-
-    p {
         font-size: 1.1rem;
-    }
-
-    .container2 {
-        font-size: 14px;
-        margin-top: 0rem;
-        padding: 10px;
-        
-    }
-    .social_media {
-        height: 35vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-
-}
-
-
-
-@media  screen and (width: 912px) and (height: 1368px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 28rem;
-        margin: 80px auto 0;
-
-    }
-
-    h1 {
-
-        font-size: 1.9rem;
 
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 0.9rem;
     }
 
     .container2 {
-        font-size: 17px;
+        font-size: 12px;
         margin-top: 0rem;
-        padding: 60px 10px 0px 10px;
+        padding: 15px;
         
     }
     .social_media {
-        height: 28vh;
+        height: 29vh;
 
     }
     .social_media ul {
-        padding-right: 20px;
+        padding-right: 15px;
     }
 
 }
 
 
-
-@media  screen and (min-width: 820px) and (min-height: 1180px ) {
+@media  screen and (width: 375px)  {
     html, body {
         margin: 0; /* Elimina márgenes */
         padding: 0; /* Elimina padding */
@@ -833,196 +279,26 @@ a path:hover {
         box-sizing: border-box;       
     }
     .mapadiv {
-        width: 30rem;
-        margin: 80px auto 0;
-
+        width: 15rem;
+        margin: 0 auto 0;
+        margin-top: 5rem;
     }
 
     
     h1 {
 
-        font-size: 1.9rem;
+        font-size: 1.1rem;
 
     }
 
     p {
-        font-size: 1.5rem;
+        font-size: 0.9rem;
     }
 
     .container2 {
-        font-size: 17px;
+        font-size: 12px;
         margin-top: 0rem;
-        padding: 10px 10px 0px 10px;
-        
-    }
-    .social_media {
-        height: 35vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-}
-
-
-
-@media  screen and (width: 1024px) and (height: 1366px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 28rem;
-        margin: 80px auto 0;
-
-    }
-
-    
-    h1 {
-
-        font-size: 1.9rem;
-
-    }
-
-    p {
-        font-size: 1.5rem;
-    }
-
-    .container2 {
-        font-size: 17px;
-        margin-top: 0rem;
-        padding: 60px 10px 0px 10px;
-        
-    }
-    .social_media {
-        height: 38vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-}
-
-
-@media  screen and (width: 768px) and (height: 1024px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 25rem;
-        margin: 80px auto 0;
-
-    }
-    
-    h1 {
-
-        font-size: 1.9rem;
-
-    }
-
-    p {
-        font-size: 1.5rem;
-    }
-    .container2 {
-        font-size: 17px;
-        margin-top: 0rem;
-        padding: 60px 10px 0px 10px;
-        
-    }
-    .social_media {
-        height: 28vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-}
-
-
-
-@media screen and (width: 853px) and (height: 1280px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 25rem;
-        margin: 100px auto 0;
-
-    }
-    
-    h1 {
-
-        font-size: 1.9rem;
-
-    }
-
-    p {
-        font-size: 1.5rem;
-    }
-
-    .container2 {
-        font-size: 19px;
-        margin-top: 0rem;
-        padding: 10px;
-        
-    }
-    .social_media {
-        height: 35vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-    .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-   
-
-}
-
-
-@media  screen and (width: 1920px) and (height: 1080px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 25rem;
-        margin: 80px auto 0;
-
-    }
-    .container2 {
-        font-size: 17px;
-        margin-top: 0rem;
-        padding: 60px 10px 0px 10px;
+        padding: 15px;
         
     }
     .social_media {
@@ -1030,49 +306,14 @@ a path:hover {
 
     }
     .social_media ul {
-        padding-right: 20px;
+        padding-right: 15px;
     }
 
 }
 
 
 
-
-@media  screen and (width: 2048px) and (height: 1536px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 25rem;
-        margin: 150px auto 0;
-
-    }
-    .container2 {
-        font-size: 17px;
-        margin-top: 0rem;
-        padding: 60px 10px 0px 10px;
-        
-    }
-    .social_media {
-        height: 38vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-
-}
-
-
-/**-Horizontal--**/
-
-
-@media  screen and (width: 914px) and (height: 412px ) {
+@media  screen and (max-width: 393px)    {
     html, body {
         margin: 0; /* Elimina márgenes */
         padding: 0; /* Elimina padding */
@@ -1083,142 +324,70 @@ a path:hover {
     }
     .mapadiv {
         width: 10rem;
-        margin: 30px auto 0;
-
-    }
-    .container2 {
-        font-size: 12px;
-        margin-top: 0rem;
-        padding: 20px;
-        
-    }
-    .social_media {
-        height: 30vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-    
-    .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-}
-
-
-@media  screen and (width: 658px) and (height: 320px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 8rem;
-        margin: 0 auto 0;
-        margin-top: 1rem;
-    }
-    .container2 {
-        font-size: 10px;
-        margin-top: 1rem;
-        padding: 3px;
-        
-    }
-    .social_media {
-        height: 35vh;
-
-    }
-    .social_media ul {
-        padding-right: 15px;
-    }
-
- 
-    .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-}
-
-
-
-@media  screen and (width: 667px) and (height: 375px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 8rem;
-        margin: 0 auto 0;
-        margin-top: 3em;
-    }
-    .container2 {
-        font-size: 10px;
-        margin-top: 1rem;
-        padding: 3px;
-        
-    }
-    .social_media {
-        height: 35vh;
-
-    }
-    .social_media ul {
-        padding-right: 15px;
-    }
-
-    .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-
-}
-
-
-@media  screen and (width: 882px) and (height: 344px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 8rem;
         margin: 0 auto 0;
         margin-top: 2rem;
     }
+
+    
+    h1 {
+
+        font-size: 1.1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
     .container2 {
-        font-size: 10px;
-        margin-top: 1rem;
-        padding: 3px;
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 0px;
+        
+    }
+    .social_media {
+        height: 41vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+}
+
+
+
+
+@media  screen and (min-width: 412px)  {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 15rem;
+        margin: 0 auto 0;
+        margin-top: 5rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1.4rem;
+
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
         
     }
     .social_media {
@@ -1229,192 +398,10 @@ a path:hover {
         padding-right: 15px;
     }
 
-    .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-
 }
 
 
-@media  screen and (width: 844px) and (height: 390px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 8rem;
-        margin: 0 auto 0;
-        margin-top: 3em;
-    }
-    .container2 {
-        font-size: 10px;
-        margin-top: 1rem;
-        padding: 3px;
-        
-    }
-    .social_media {
-        height: 35vh;
-
-    }
-    .social_media ul {
-        padding-right: 15px;
-    }
-
-    .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-}
-
-
-@media  screen and (width: 869px) and (height: 412px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 10rem;
-        margin: 0 auto 0;
-        margin-top: 1rem;
-    }
-    .container2 {
-        font-size: 10px;
-        margin-top: 1rem;
-        padding: 3px;
-        
-    }
-    .social_media {
-        height: 40vh;
-
-    }
-    .social_media ul {
-        padding-right: 15px;
-    }
-
-    .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-
-}
-
-@media  screen and (width: 760px) and (height: 360px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 10rem;
-        margin: 0 auto 0;
-        margin-top: 1rem;
-    }
-    .container2 {
-        font-size: 10px;
-        margin-top: 1rem;
-        padding: 3px;
-        
-    }
-    .social_media {
-        height: 30vh;
-
-    }
-    .social_media ul {
-        padding-right: 15px;
-    }
-
-    .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-
-}
-
-@media  screen and (width: 740px) and (height: 360px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 10rem;
-        margin: 0 auto 0;
-        margin-top: 1rem;
-    }
-    .container2 {
-        font-size: 10px;
-        margin-top: 1rem;
-        padding: 3px;
-        
-    }
-    .social_media {
-        height: 30vh;
-
-    }
-    .social_media ul {
-        padding-right: 15px;
-    }
-
-    .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-
-}
-
-
-
-@media  screen and (width: 720px) and (height: 540px) {
+@media  screen and (min-width: 820px)  {
     html, body {
         margin: 0; /* Elimina márgenes */
         padding: 0; /* Elimina padding */
@@ -1425,38 +412,40 @@ a path:hover {
     }
     .mapadiv {
         width: 13rem;
-        margin: 0 auto 0;
-        margin-top: 4rem;
     }
-    .container2 {
-        font-size: 10px;
-        margin-top: 1rem;
-        padding: 3px;
-        
-    }
-    .social_media {
-        height: 30vh;
+    
+    h1 {
+
+        font-size: 1.4rem;
 
     }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 0px;
+        
+    }
+
+    .social_media {
+        height: 39vh;
+
+    }
+   
     .social_media ul {
         padding-right: 15px;
     }
 
-    .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-
 }
 
-@media  screen and (width: 896px) and (height: 414px) {
+
+
+
+@media  screen and (min-width: 853px) and (min-height: 1280px) {
     html, body {
         margin: 0; /* Elimina márgenes */
         padding: 0; /* Elimina padding */
@@ -1466,39 +455,94 @@ a path:hover {
         box-sizing: border-box;       
     }
     .mapadiv {
-        width: 10rem;
-        margin: 0 auto 0;
-        margin-top: 4rem;
+        width: 25rem;
+        margin-top: 6rem;
     }
-    .container2 {
-        font-size: 10px;
-        margin-top: 1rem;
-        padding: 3px;
-        
-    }
-    .social_media {
-        height: 30vh;
+    
+    h1 {
+
+        font-size: 1.4rem;
 
     }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 0px;
+        
+    }
+
+    .social_media {
+        height: 50vh;
+
+    }
+   
     .social_media ul {
         padding-right: 15px;
     }
 
-    .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
+}
+
+
+
+
+
+
+@media  screen and (min-width: 1024px) and (min-height: 600px) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 15rem;
+        margin-top: 6rem;
+    }
+    
+    h1 {
+
+        font-size: 1.4rem;
+
     }
 
+    p {
+        font-size: 1.2rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 0px;
+        
+    }
+
+    .social_media {
+        height: 43vh;
+
+    }
+   
+    .social_media ul {
+        padding-right: 15px;
+    }
 
 }
 
-@media  screen and (width: 812px) and (height: 375px) {
+
+
+
+/***************************-----------------------------------***********************/
+
+
+
+
+@media  screen and (width: 658px) and (height: 320px) and (orientation: landscape) {
     html, body {
         margin: 0; /* Elimina márgenes */
         padding: 0; /* Elimina padding */
@@ -1510,39 +554,770 @@ a path:hover {
     .mapadiv {
         width: 9rem;
         margin: 0 auto 0;
-        margin-top: 2rem;
-    }
-    .container2 {
-        font-size: 8px;
         margin-top: 1rem;
-        padding: 3px;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
         
     }
     .social_media {
-        height: 35vh;
+        height: 29vh;
 
     }
     .social_media ul {
         padding-right: 15px;
     }
 
+
     .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+@media  screen and (width: 720px) and (height: 540px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 6rem;
     }
 
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 29vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+@media  screen and (width: 896px) and (height: 414px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 29vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
 
 }
 
 
 
-@media screen and (width: 896px) and (height: 412px) {
+
+@media  screen and (width: 844px) and (height: 390px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 29vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+
+
+
+@media  screen and (width: 658px) and (height: 320px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 29vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+
+
+@media  screen and (width: 1114px) and (height: 705px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 29vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+
+@media  screen and (width: 667px) and (height: 375px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 29vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+@media  screen and (width: 932px) and (height: 430px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 29vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+
+
+
+@media  screen and (width: 915px) and (height: 412px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 29vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+
+
+@media  screen and (width: 740px) and (height: 360px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 29vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+@media  screen and (width: 882px) and (height: 344px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 29vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+
+
+
+@media  screen and (width: 914px) and (height: 412px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 29vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+
+@media  screen and (width: 1366px) and (height: 1024px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 29vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+@media  screen and (width: 1024px) and (height: 600px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 5rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 29vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+
+
+@media  screen and (width: 1280px) and (height: 800px) and (orientation: landscape) {
+    html, body {
+        margin: 0; /* Elimina márgenes */
+        padding: 0; /* Elimina padding */
+        overflow-x: hidden; /* Oculta el scrollbar horizontal */
+        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
+        height: 100%; /* Opcional: Ocupa toda la altura */
+        box-sizing: border-box;       
+    }
+    .mapadiv {
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 5rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
+
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .container2 {
+        font-size: 12px;
+        margin-top: 0rem;
+        padding: 15px;
+        
+    }
+    .social_media {
+        height: 34vh;
+
+    }
+    .social_media ul {
+        padding-right: 15px;
+    }
+
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
+
+}
+
+
+
+/***************************************************************************************/
+
+
+
+
+@media  screen and (width: 780px)  and (orientation: landscape) {
     html, body {
         margin: 0; /* Elimina márgenes */
         padding: 0; /* Elimina padding */
@@ -1553,40 +1328,48 @@ a path:hover {
     }
     .mapadiv {
         width: 8rem;
-        margin: 90px auto 0;
+        margin: 0 auto 0;
+        margin-top: 0.5rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
 
     }
+
+    p {
+        font-size: 0.9rem;
+    }
+
     .container2 {
         font-size: 12px;
         margin-top: 0rem;
-        padding: 10px;
+        padding: 15px;
         
     }
     .social_media {
-        height: 35vh;
+        height: 29vh;
 
     }
     .social_media ul {
-        padding-right: 20px;
+        padding-right: 15px;
     }
+
 
     .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
- }
+    
+        line-height: 1.4em;
+
+}
+
+}
 
 
 
 
-
-@media screen and (width: 915px) and (height: 412px) {
+@media  screen and (width: 800px)  and (orientation: landscape) {
     html, body {
         margin: 0; /* Elimina márgenes */
         padding: 0; /* Elimina padding */
@@ -1597,39 +1380,49 @@ a path:hover {
     }
     .mapadiv {
         width: 8rem;
-        margin: 90px auto 0;
+        margin: 0 auto 0;
+        margin-top: 0.5rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
 
     }
+
+    p {
+        font-size: 0.9rem;
+    }
+
     .container2 {
         font-size: 12px;
         margin-top: 0rem;
-        padding: 10px;
+        padding: 15px;
         
     }
     .social_media {
-        height: 35vh;
+        height: 29vh;
 
     }
     .social_media ul {
-        padding-right: 20px;
+        padding-right: 15px;
     }
+
 
     .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-
+    
+        line-height: 1.4em;
 
 }
 
-@media screen and (width: 932px) and (height: 430px) {
+}
+
+
+
+
+
+@media  screen and (width: 880px) and (orientation: landscape) {
     html, body {
         margin: 0; /* Elimina márgenes */
         padding: 0; /* Elimina padding */
@@ -1639,39 +1432,49 @@ a path:hover {
         box-sizing: border-box;       
     }
     .mapadiv {
-        width: 8rem;
-        margin: 90px auto 0;
+        width: 9rem;
+        margin: 0 auto 0;
+        margin-top: 0.1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
 
     }
+
+    p {
+        font-size: 0.9rem;
+    }
+
     .container2 {
         font-size: 12px;
         margin-top: 0rem;
-        padding: 10px;
+        padding: 15px;
         
     }
     .social_media {
-        height: 35vh;
+        height: 29vh;
 
     }
     .social_media ul {
-        padding-right: 20px;
+        padding-right: 15px;
     }
+
+
     .social_media ul li a {
-        display: block;
-        padding: 0px;
-        background: #333;
-        color: #fff;
-        line-height: 1.1rem;
-        font-size: .6rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
+    
+        line-height: 1.4em;
+
+}
 
 }
 
 
 
-@media screen and (width: 1180px) and (height: 820px) {
+
+@media  screen and (max-width: 812px) and (orientation: landscape) {
     html, body {
         margin: 0; /* Elimina márgenes */
         padding: 0; /* Elimina padding */
@@ -1681,39 +1484,50 @@ a path:hover {
         box-sizing: border-box;       
     }
     .mapadiv {
-        width: 20rem;
-        margin: 100px auto 0;
+        width: 6rem;
+        margin: 0 auto 0;
+        margin-top: 1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
 
     }
+
+    p {
+        font-size: 0.9rem;
+    }
+
     .container2 {
-        font-size: 19px;
+        font-size: 12px;
         margin-top: 0rem;
-        padding: 10px;
+        padding: 15px;
         
     }
     .social_media {
-        height: 30vh;
+        height: 50vh;
 
     }
     .social_media ul {
-        padding-right: 20px;
+        padding-right: 15px;
     }
+
+
     .social_media ul li a {
-        display: block;
-        padding: 0 10%;
-        background: #333;
-        color: #fff;
-        line-height: 3.125rem;
-        font-size: 1.125rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
+    
+        line-height: 1.4em;
+
+}
 
 }
 
 
 
-@media screen and (width: 1368px) and (height: 912px) {
+
+
+@media  screen and (max-width: 926px) and (orientation: landscape) {
     html, body {
         margin: 0; /* Elimina márgenes */
         padding: 0; /* Elimina padding */
@@ -1723,331 +1537,43 @@ a path:hover {
         box-sizing: border-box;       
     }
     .mapadiv {
-        width: 20rem;
-        margin: 100px auto 0;
+        width: 7rem;
+        margin: 0 auto 0;
+        margin-top: 1rem;
+    }
+
+    
+    h1 {
+
+        font-size: 1rem;
 
     }
+
+    p {
+        font-size: 0.9rem;
+    }
+
     .container2 {
-        font-size: 19px;
+        font-size: 12px;
         margin-top: 0rem;
-        padding: 10px;
+        padding: 15px;
         
     }
     .social_media {
-        height: 30vh;
+        height: 42vh;
 
     }
     .social_media ul {
-        padding-right: 20px;
-    }
-    .social_media ul li a {
-        display: block;
-        padding: 0 10%;
-        background: #333;
-        color: #fff;
-        line-height: 3.125rem;
-        font-size: 1.125rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
+        padding-right: 15px;
     }
 
+
+    .social_media ul li a {
+    
+        line-height: 1.4em;
+
+}
 
 }
 
 
-@media screen and (width: 1280px) and (height: 853px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 20rem;
-        margin: 100px auto 0;
-
-    }
-    .container2 {
-        font-size: 19px;
-        margin-top: 0rem;
-        padding: 10px;
-        
-    }
-    .social_media {
-        height: 30vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-    .social_media ul li a {
-        display: block;
-        padding: 0 10%;
-        background: #333;
-        color: #fff;
-        line-height: 3.125rem;
-        font-size: 1.125rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-   
-}
-
-
-
-@media screen and (width: 1280px) and (height: 720px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 16rem;
-        margin: 100px auto 0;
-
-    }
-    .container2 {
-        font-size: 19px;
-        margin-top: 0rem;
-        padding: 10px;
-        
-    }
-    .social_media {
-        height: 30vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-    .social_media ul li a {
-        display: block;
-        padding: 0 10%;
-        background: #333;
-        color: #fff;
-        line-height: 3.125rem;
-        font-size: 1.125rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-   
-}
-
-
-
-@media screen and (width: 1920px) and (height: 1080px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 25rem;
-        margin: 100px auto 0;
-
-    }
-    .container2 {
-        font-size: 29px;
-        margin-top: 0rem;
-        padding: 10px;
-        
-    }
-    .social_media {
-        height: 30vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-    .social_media ul li a {
-        display: block;
-        padding: 0 10%;
-        background: #333;
-        color: #fff;
-        line-height: 3.125rem;
-        font-size: 1.125rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-   
-}
-
-
-
-@media screen and (width: 1024px) and (height: 600px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 15rem;
-        margin: 100px auto 0;
-
-    }
-    .container2 {
-        font-size: 19px;
-        margin-top: 3rem;
-        padding: 10px;
-        
-    }
-    .social_media {
-        height: 25vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-    .social_media ul li a {
-        display: block;
-        padding: 0 10%;
-        background: #333;
-        color: #fff;
-        line-height: 3.125rem;
-        font-size: 1.125rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-   
-
-}
-
-
-
-
-
-@media screen and (width: 1024px) and (height: 768px) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 17rem;
-        margin: 100px auto 0;
-
-    }
-    .container2 {
-        font-size: 19px;
-        margin-top: 0rem;
-        padding: 10px;
-        
-    }
-    .social_media {
-        height: 30vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-    .social_media ul li a {
-        display: block;
-        padding: 0 10%;
-        background: #333;
-        color: #fff;
-        line-height: 3.125rem;
-        font-size: 1.125rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-   
-
-}
-
-@media  screen and (width: 1366px) and (height: 1024px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 18rem;
-        margin: 200px auto 0;
-
-    }
-    .container2 {
-        font-size: 15px;
-        margin-top: 0rem;
-        padding: 60px 10px 0px 10px;
-        
-    }
-    .social_media {
-        height: 20vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-    .social_media ul li a {
-        display: block;
-        padding: 0 10%;
-        background: #333;
-        color: #fff;
-        line-height: 3.125rem;
-        font-size: 1.125rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-}
-
-@media  screen and (width: 2048px) and (height: 1536px ) {
-    html, body {
-        margin: 0; /* Elimina márgenes */
-        padding: 0; /* Elimina padding */
-        overflow-x: hidden; /* Oculta el scrollbar horizontal */
-        width: 100%; /* Asegura que no exceda el 100% de la pantalla */
-        height: 100%; /* Opcional: Ocupa toda la altura */
-        box-sizing: border-box;       
-    }
-    .mapadiv {
-        width: 34rem;
-        margin: 200px auto 0;
-
-    }
-    .container2 {
-        font-size: 34px;
-        margin-top: 0rem;
-        padding: 60px 10px 0px 10px;
-        
-    }
-    .social_media {
-        height: 28vh;
-
-    }
-    .social_media ul {
-        padding-right: 20px;
-    }
-    .social_media ul li a {
-        display: block;
-        padding: 0 10%;
-        background: #333;
-        color: #fff;
-        line-height: 3.125rem;
-        font-size: 1.125rem;
-        box-shadow: 0 0.1875rem 0.3125rem 0px rgba(0, 0, 0, 0.2);
-        transition: 0.2s;
-    }
-
-}
